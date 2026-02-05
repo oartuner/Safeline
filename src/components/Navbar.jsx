@@ -42,8 +42,8 @@ const Navbar = () => {
   return (
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? 'bg-white/80 backdrop-blur-md shadow-lg border-b border-white/30'
-          : 'bg-transparent'
+        ? 'bg-white/80 backdrop-blur-md shadow-lg border-b border-white/30'
+        : 'bg-transparent'
         }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -52,8 +52,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center">
-            <img src={logo} alt="Safe Line Lojistik" className="h-12 w-auto object-contain" />
+          <a href="#home" className="flex items-center flex-shrink-0 z-50">
+            <img
+              src={logo}
+              alt="Safe Line Lojistik"
+              className="h-12 w-auto object-contain"
+              style={{ maxHeight: '48px', maxWidth: '180px' }}
+            />
           </a>
 
           {/* Desktop Menu */}
