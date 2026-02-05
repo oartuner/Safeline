@@ -115,6 +115,9 @@ const Services = () => {
           transition: var(--transition);
           animation: fadeInUp 0.6s ease-out forwards;
           opacity: 0;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
         }
 
         .service-card:hover {
@@ -172,10 +175,13 @@ const Services = () => {
         .card-link {
           display: inline-flex;
           align-items: center;
-          gap: 0.4rem;
+          gap: 0.5rem;
           color: var(--secondary);
-          font-size: 0.85rem;
-          font-weight: 600;
+          font-size: 1rem;
+          font-weight: 700;
+          margin-top: auto;
+          align-self: flex-start;
+          padding-top: 1rem;
         }
 
         .card-link:hover { gap: 0.8rem; }
