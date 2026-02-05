@@ -128,6 +128,38 @@
             }
         }
     },
+    "services_bento": {
+        "land": {
+            "title": "Landverkehr",
+            "desc": "Zuverlässige und schnelle Straßenlogistik.",
+            "content": "Wir bieten weltweit FTL (Komplettladung), LTL (Teilladung), FTL Express Service, Super Express Minivan, Schwertransporte und Transitverkehre an."
+        },
+        "air": {
+            "title": "Luftfracht",
+            "desc": "Weltweit schnelle und sichere Luftfracht.",
+            "content": "Unsere Lösungen umfassen allgemeine Luftfracht, Charterflüge, Transitverkehre, Hand Carry, Tür-zu-Tür-Lieferungen, DGR (Gefahrgut) und Platzgarantien bei Fluggesellschaften."
+        },
+        "sea": {
+            "title": "Seefracht",
+            "desc": "Kosteneffiziente Lösungen für große Volumina.",
+            "content": "Wir bieten FCL- und LCL-Verladungen, Spezialausrüstung, Schiffscharterung, Schwer- und Übermaßtransporte, Tür-zu-Tür-Lieferungen und wöchentliche Liniendienste."
+        },
+        "rail": {
+            "title": "Schienenverkehr",
+            "desc": "Nachhaltiger und effizienter Schienentransport.",
+            "content": "Wir unterstützen Sie bei Container- und konventionellen Waggontransporten, Projekttransporten, Transitverladungen, Mehrwertdiensten und im Tür-zu-Tür-Service."
+        },
+        "project": {
+            "title": "Projektlogistik",
+            "desc": "Fachlösungen für Spezial- und Schwergut.",
+            "content": "Wir bieten Logistikberatung, Routenplanung, HeavyLift, Project Vessel Chartering, Hafenabwicklung, Begleitfahrzeuge und schlüsselfertige Projektlösungen."
+        },
+        "warehouse": {
+            "title": "Lager & Zoll",
+            "desc": "Sichere Lagerung und Experten-Zollabwicklung.",
+            "content": "Unsere modernen Lagerhäuser bieten 24/7-Sicherheit, Bestandsmanagement, Auftragsabwicklung und professionelle Zollabwicklung für Ihre Logistik."
+        }
+    },
     "contact": {
         "tag": "KONTAKT",
         "title": "Kontaktieren Sie Uns",

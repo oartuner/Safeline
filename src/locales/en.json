@@ -128,6 +128,38 @@
             }
         }
     },
+    "services_bento": {
+        "land": {
+            "title": "Land Freight",
+            "desc": "Reliable and fast road logistics solutions.",
+            "content": "We offer FTL (Full Truck Load), LTL (Less Than Truck Load), FTL Express Service, Super Express Minivan, Out Of Gauge and Heavy Weight Transportation, and Transit Shipments globally."
+        },
+        "air": {
+            "title": "Air Freight",
+            "desc": "Fast and secure air cargo services worldwide.",
+            "content": "Our solutions include General Cargo, Charter Flight Service, Cross and Transit Transportation, Hand Carry, Door to Door Delivery, DGR Transportation, and Space Allocation with Airlines."
+        },
+        "sea": {
+            "title": "Sea Freight",
+            "desc": "Cost-effective solutions for large volumes.",
+            "content": "We provide FCL and LCL Loading, Special Equipment, Vessel Chartering, Heavy and Out of Gauge Transportation, Door to Door Delivery, Intermodal/Multimodal, and Weekly Regular Services."
+        },
+        "rail": {
+            "title": "Rail Freight",
+            "desc": "Sustainable and efficient rail transport.",
+            "content": "We support you with Container and Conventional Wagon Transportation, Project Transportation, Cross and Transit Shipment, Value Added Services, and Door to Door Service."
+        },
+        "project": {
+            "title": "Project Logistics",
+            "desc": "Expert solutions for special and heavy cargo.",
+            "content": "We offer Logistics Consulting, Route Planning, HeavyLift, Project Vessel Chartering, Port Handling, Escort Vehicle Arrangement, and Turnkey Project Solutions."
+        },
+        "warehouse": {
+            "title": "Warehousing & Customs",
+            "desc": "Secure storage and expert customs support.",
+            "content": "Our modern warehousing facilities feature 24/7 security, inventory management, order fulfillment, and professional customs clearance to streamline your operations."
+        }
+    },
     "contact": {
         "tag": "CONTACT",
         "title": "Get in Touch",

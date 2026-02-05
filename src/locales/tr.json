@@ -128,6 +128,38 @@
             }
         }
     },
+    "services_bento": {
+        "land": {
+            "title": "Kara Yolu Taşımacılığı",
+            "desc": "Güvenilir ve hızlı kara yolu lojistik çözümleri.",
+            "content": "FTL (Komple Kamyon), LTL (Parsiyel Taşıma), FTL Ekspres Servis, Süper Ekspres Minivan, Gabari Dışı ve Ağır Yük Taşıma ve Transit Taşımalar ile küresel ölçekte hizmet veriyoruz."
+        },
+        "air": {
+            "title": "Hava Yolu Taşımacılığı",
+            "desc": "Dünya çapında hızlı ve güvenli hava kargo.",
+            "content": "Genel Kargo, Charter Uçuş Hizmeti, Çapraz ve Transit Taşımalar, Hand Carry (Elden Teslim), Kapıdan Kapıya Teslimat, DGR (Tehlikeli Madde) ve Havayolları ile Yer Garantili taşımacılık çözümleri sunuyoruz."
+        },
+        "sea": {
+            "title": "Deniz Yolu Taşımacılığı",
+            "desc": "Büyük hacimli yükler için ekonomik çözümler.",
+            "content": "FCL ve LCL Yükleme, Özel Ekipman, Gemi Kiralama (Chartering), Ağır ve Gabari Dışı Taşıma, Kapıdan Kapıya Teslimat, Intermodal/Multimodal ve Haftalık Düzenli Seferler sağlıyoruz."
+        },
+        "rail": {
+            "title": "Demir Yolu Taşımacılığı",
+            "desc": "Sürdürülebilir ve verimli demir yolu taşımacılığı.",
+            "content": "Konteyner ve Konvansiyonel Vagon Taşımacılığı, Proje Taşımacılığı, Çapraz ve Transit Sevkiyat, Katma Değerli Hizmetler ve Kapıdan Kapıya Servis ile yanınızdayız."
+        },
+        "project": {
+            "title": "Proje Lojistiği",
+            "desc": "Özel ve ağır yükler için uzman çözümler.",
+            "content": "Lojistik Danışmanlığı, Rota Planlama, HeavyLift, Proje Gemisi Kiralama, Liman Elleçleme, Eskort Araç Temini ve Anahtar Teslim Proje Çözümleri sunuyoruz."
+        },
+        "warehouse": {
+            "title": "Depolama & Gümrük",
+            "desc": "Güvenli depolama ve uzman gümrük desteği.",
+            "content": "Modern depolama tesislerimizde 7/24 güvenlik, envanter yönetimi, sipariş hazırlama ve profesyonel gümrükleme hizmetleri ile operasyonlarınızı kolaylaştırıyoruz."
+        }
+    },
     "contact": {
         "tag": "İLETİŞİM",
         "title": "Bizimle İletişime Geçin",
