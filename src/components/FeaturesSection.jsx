@@ -110,8 +110,8 @@ const FeaturesSection = () => {
                 isOpen={!!selectedService}
                 onClose={() => setSelectedService(null)}
                 title={selectedService?.title}
-                content={selectedService?.content} // Using content field
-                icon={<selectedService.icon size={32} />}
+                content={selectedService?.content}
+                icon={selectedService ? <selectedService.icon size={32} /> : null}
             />
         </section>
     );
