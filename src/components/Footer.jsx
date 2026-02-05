@@ -8,9 +8,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <div className="logo">
-            <span className="logo-safe">SAFE</span><span className="logo-line">LINE</span>
-            <p className="logo-sub">LOJİSTİK</p>
+          <div className="logo footer-logo">
+            <img src="/safeline_secilen_logo.png" alt="Safe Line Lojistik" className="logo-img" />
           </div>
           <p className="brand-desc">{t('footer.description')}</p>
           <div className="social-links">
@@ -93,25 +92,16 @@ const Footer = () => {
           margin-bottom: 1.2rem;
         }
 
-        .logo-safe {
-          font-family: 'Outfit', sans-serif;
-          font-weight: 800;
-          font-size: 1.4rem;
-          color: white;
+        .footer-logo {
+          background: white;
+          padding: 0.8rem 1.2rem;
+          border-radius: 8px;
+          display: inline-block;
         }
 
-        .logo-line {
-          font-family: 'Outfit', sans-serif;
-          font-weight: 400;
-          font-size: 1.4rem;
-          color: var(--secondary-light);
-        }
-
-        .logo-sub {
-          width: 100%;
-          font-size: 0.5rem;
-          letter-spacing: 0.4rem;
-          color: rgba(255, 255, 255, 0.5);
+        .logo-img {
+          height: 50px;
+          object-fit: contain;
         }
 
         .brand-desc {

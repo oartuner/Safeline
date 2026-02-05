@@ -31,8 +31,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-content">
         <a href="#home" className="logo">
-          <span className="logo-safe">SAFE</span><span className="logo-line">LINE</span>
-          <p className="logo-sub">LOJİSTİK</p>
+          <img src="/safeline_secilen_logo.png" alt="Safe Line Lojistik" className="logo-img" />
         </a>
 
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
@@ -107,26 +106,9 @@ const Navbar = () => {
           line-height: 1;
         }
 
-        .logo-safe {
-          font-family: 'Outfit', sans-serif;
-          font-weight: 800;
-          font-size: 1.5rem;
-          color: var(--primary);
-        }
-
-        .logo-line {
-          font-family: 'Outfit', sans-serif;
-          font-weight: 400;
-          font-size: 1.5rem;
-          color: var(--secondary);
-        }
-
-        .logo-sub {
-          width: 100%;
-          font-size: 0.5rem;
-          letter-spacing: 0.4rem;
-          color: var(--text-muted);
-          margin-top: 2px;
+        .logo-img {
+          height: 60px;
+          object-fit: contain;
         }
 
         .nav-links {

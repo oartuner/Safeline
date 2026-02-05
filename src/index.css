@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap');
 
 :root {
-  /* Light Theme - Professional & Clean */
-  --primary: #1E3A5F;
-  --primary-light: #2E5A8F;
-  --secondary: #0D9488;
-  --secondary-light: #14B8A6;
-  --secondary-glow: rgba(13, 148, 136, 0.3);
-  --accent: #F59E0B;
+  /* New Logo Palette */
+  --primary: #233778;
+  /* Deep Corporate Blue */
+  --primary-light: #324a96;
+  --primary-dark: #1a2a5e;
+
+  --secondary: #2d87c2;
+  /* Bright Azure Blue */
+  --secondary-light: #5aaeee;
+  --secondary-dark: #206a9e;
+
+  --accent: #f59e0b;
+  /* Amber (Complementary) */
+  --accent-glow: rgba(245, 158, 11, 0.4);
   --accent-light: #FBBF24;
   --success: #10B981;
   --error: #EF4444;
