@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import logo from '../assets/logo.png';
 
 const languages = [
   { code: 'tr', label: 'TR', flag: '🇹🇷' },
@@ -31,7 +32,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-content">
         <a href="#home" className="logo">
-          <img src="/safeline_secilen_logo.png" alt="Safe Line Lojistik" className="logo-img" />
+          <img src={logo} alt="Safe Line Lojistik" className="logo-img" />
         </a>
 
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>

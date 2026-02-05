@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="logo footer-logo">
-            <img src="/safeline_secilen_logo.png" alt="Safe Line Lojistik" className="logo-img" />
+            <img src={logo} alt="Safe Line Lojistik" className="logo-img" />
           </div>
           <p className="brand-desc">{t('footer.description')}</p>
           <div className="social-links">
