@@ -24,6 +24,10 @@ const Hero = () => {
 
   const options = useMemo(
     () => ({
+      fullScreen: {
+        enable: false,
+        zIndex: 0
+      },
       background: {
         color: {
           value: "transparent",
