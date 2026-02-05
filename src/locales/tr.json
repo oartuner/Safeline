@@ -141,6 +141,11 @@
     "footer": {
         "description": "Küresel lojistiğin güvenilir ismi. 20+ yıllık tecrübemiz ve yenilikçi çözümlerimizle işinizi dünyaya taşıyoruz.",
         "services": "Hizmetler",
+        "sea": "Deniz Yolu",
+        "land": "Kara Yolu",
+        "air": "Hava Yolu",
+        "rail": "Demir Yolu",
+        "project": "Proje Lojistiği",
         "corporate": "Kurumsal",
         "newsletter_title": "Bültene Abone Ol",
         "newsletter_desc": "Sektörel güncellemeler ve haberler için e-posta listemize katılın.",

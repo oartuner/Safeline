@@ -141,6 +141,11 @@
     "footer": {
         "description": "The trusted name in global logistics. We carry your business to the world with 20+ years of experience and innovative solutions.",
         "services": "Services",
+        "sea": "Sea Freight",
+        "land": "Land Freight",
+        "air": "Air Freight",
+        "rail": "Rail Freight",
+        "project": "Project Logistics",
         "corporate": "Corporate",
         "newsletter_title": "Subscribe to Newsletter",
         "newsletter_desc": "Join our mailing list for industry updates and news.",

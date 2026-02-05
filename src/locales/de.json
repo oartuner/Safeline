@@ -141,6 +141,11 @@
     "footer": {
         "description": "Der vertrauenswürdige Name in der globalen Logistik. Mit über 20 Jahren Erfahrung tragen wir Ihr Geschäft in die Welt.",
         "services": "Dienstleistungen",
+        "sea": "Seefracht",
+        "land": "Landverkehr",
+        "air": "Luftfracht",
+        "rail": "Schienenverkehr",
+        "project": "Projektlogistik",
         "corporate": "Unternehmen",
         "newsletter_title": "Newsletter Abonnieren",
         "newsletter_desc": "Abonnieren Sie unseren Newsletter für Updates.",
