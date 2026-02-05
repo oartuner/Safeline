@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SITE_DATA } from '../data/siteData';
+import Modal from './Modal';
 
 const About = () => {
   const { t } = useTranslation();
+  const [selectedVal, setSelectedVal] = useState(null);
 
   // Get arrays/objects from i18n
   const values = t('about.values', { returnObjects: true }) || [];
+  const valuesDesc = t('about.values_desc', { returnObjects: true }) || [];
+
+  const handleValueClick = (index) => {
+    setSelectedVal({
+      title: values[index],
+      content: valuesDesc[index] || t('about.description') // Fallback
+    });
+  };
 
   return (
     <section id="about" className="section-padding">
@@ -51,7 +61,13 @@ const About = () => {
               <h4>{t('about.values_title')}</h4>
               <div className="values-grid">
                 {values.map((val, i) => (
-                  <span key={i} className="value-tag">{val}</span>
+                  <button
+                    key={i}
+                    className="value-tag interactable"
+                    onClick={() => handleValueClick(i)}
+                  >
+                    {val}
+                  </button>
                 ))}
               </div>
             </div>
@@ -71,6 +87,14 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <Modal
+        isOpen={!!selectedVal}
+        onClose={() => setSelectedVal(null)}
+        title={selectedVal?.title}
+        content={selectedVal?.content}
+        icon="💎"
+      />
 
       <style jsx="true">{`
         .about-grid {
@@ -220,11 +244,15 @@ const About = () => {
           font-weight: 600;
           color: var(--text-muted);
           transition: var(--transition);
+          cursor: pointer;
         }
 
         .value-tag:hover {
           border-color: var(--secondary);
           color: var(--secondary);
+          background: white;
+          transform: translateY(-2px);
+          box-shadow: var(--shadow-sm);
         }
 
         .policies-grid {
