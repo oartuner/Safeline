@@ -20,11 +20,27 @@
     "about": {
         "tag": "HAKKIMIZDA",
         "title": "Lojistikte Güvenilir İsim",
+        "description": "SAFE LINE LOJİSTİK, 20 yılı aşkın tecrübesi ve uzman kadrosuyla, müşteri ihtiyaçlarına yönelik alternatif ve yenilikçi çözümler üreterek sektörün önde gelen firmalarına entegre lojistik hizmetleri sunmaktadır.",
         "mission_title": "MİSYON",
+        "mission_desc": "Entegre lojistik çözümleri sunarak müşterilerine yenilikçi ve sürdürülebilir katma değer sağlamak.",
         "vision_title": "VİZYON",
+        "vision_desc": "Yenilikçi ve çözüm odaklı yaklaşımlarla pazar standartlarını geliştiren ve sürekli büyüyen lider bir marka olmak.",
         "values_title": "DEĞERLERİMİZ",
+        "values": [
+            "Müşteri Odaklılık",
+            "Takım Ruhu",
+            "Sürdürülebilirlik",
+            "Sonuç Odaklılık",
+            "Dürüstlük ve Şeffaflık",
+            "Güvenilirlik",
+            "Çevreye ve Topluma Saygı",
+            "Etik Değerler",
+            "Değişim ve Gelişim"
+        ],
         "quality_title": "KALİTE POLİTİKASI",
-        "satisfaction_title": "MÜŞTERİ MEMNUNİYETİ"
+        "quality_desc": "Müşteri Memnuniyeti: Müşteri odaklı bir yaklaşım benimsiyor ve müşteri memnuniyetini en üst düzeyde tutuyoruz. Müşteri ihtiyaçlarını anlamak, beklentilerini karşılamak ve onlara değer katmak için çalışıyoruz.",
+        "satisfaction_title": "MÜŞTERİ MEMNUNİYETİ",
+        "satisfaction_desc": "Şeffaf ve Kaliteli Hizmet: Müşterilerimize ihtiyaç ve beklentileri doğrultusunda açık, şeffaf, güvenilir ve kaliteli hizmet sunuyoruz."
     },
     "services": {
         "tag": "HİZMETLERİMİZ",
@@ -33,11 +49,73 @@
         "cta": "Teklif Al",
         "sectors_tag": "SEKTÖRLER",
         "sectors_title": "Uzmanlık Alanlarımız",
-        "sea": "DENİZ YOLU",
-        "land": "KARA YOLU",
-        "air": "HAVA YOLU",
-        "rail": "DEMİR YOLU",
-        "project": "PROJE LOJİSTİĞİ"
+        "sectors_list": [
+            "ELEKTRONİK",
+            "GIDA",
+            "TEKSTİL",
+            "OTOMOTİV",
+            "ÇELİK",
+            "ENERJİ",
+            "MOBİLYA",
+            "KİMYA"
+        ],
+        "items": {
+            "sea": {
+                "title": "DENİZ YOLU",
+                "features": [
+                    "FCL ve LCL Yükleme",
+                    "Özel Ekipman Yüklemesi",
+                    "Gemi Kiralama (Chartering)",
+                    "Ağır ve Gabari Dışı Taşıma",
+                    "Kapıdan Kapıya Teslimat",
+                    "Intermodal ve Multimodal",
+                    "Çapraz ve Transit Taşımalar",
+                    "Haftalık Düzenli Seferler"
+                ]
+            },
+            "land": {
+                "title": "KARA YOLU",
+                "features": [
+                    "FTL (Komple Kamyon)",
+                    "LTL (Parsiyel Taşıma)",
+                    "FTL Ekspres Servis",
+                    "Süper Ekspres Minivan",
+                    "Gabari Dışı ve Ağır Yük Taşıma",
+                    "Transit Taşımalar"
+                ]
+            },
+            "air": {
+                "title": "HAVA YOLU",
+                "features": [
+                    "Genel Kargo Taşımacılığı",
+                    "Charter Uçuş Hizmeti",
+                    "Hand Carry (Elden Teslim)",
+                    "DGR (Tehlikeli Madde) Taşıma",
+                    "Havayolları ile Yer Garantisi",
+                    "Kapıdan Kapıya Teslimat"
+                ]
+            },
+            "rail": {
+                "title": "DEMİR YOLU",
+                "features": [
+                    "Konteyner ve Konvansiyonel Vagon",
+                    "Katma Değerli Hizmetler",
+                    "Terminal Elleçleme Hizmetleri",
+                    "Kapıdan Kapıya Servis"
+                ]
+            },
+            "project": {
+                "title": "PROJE LOJİSTİĞİ",
+                "features": [
+                    "Danışmanlık ve Rota Planlama",
+                    "HeavyLift ve Gabari Dışı Yükler",
+                    "Proje Gemisi Kiralama (Full/Part)",
+                    "Liman Elleçleme Hizmetleri",
+                    "Eskort Araç Temini",
+                    "Anahtar Teslim Proje Çözümleri"
+                ]
+            }
+        }
     },
     "contact": {
         "tag": "İLETİŞİM",
@@ -53,7 +131,12 @@
         "form_service": "HİZMET TİPİ",
         "form_message": "MESAJINIZ",
         "form_select": "Seçiniz...",
-        "form_submit": "TEKLİF TALEBİ GÖNDER"
+        "form_submit": "TEKLİF TALEBİ GÖNDER",
+        "address": "Enka Binası, Esentepe Mahallesi, Büyükdere Caddesi No:108 K:9",
+        "phone_val": "+90 212 282 00 45",
+        "fax_val": "+90 212 272 30 20",
+        "kz_val": "+7 747 120 87 89",
+        "email_val": "info@safelinelog.com"
     },
     "footer": {
         "description": "Küresel lojistiğin güvenilir ismi. 20+ yıllık tecrübemiz ve yenilikçi çözümlerimizle işinizi dünyaya taşıyoruz.",
@@ -66,11 +149,6 @@
         "privacy": "KVKK",
         "cookies": "Çerez Politikası",
         "terms": "Kullanım Koşulları",
-        "sea": "Denizyolu",
-        "land": "Karayolu",
-        "air": "Havayolu",
-        "rail": "Demiryolu",
-        "project": "Proje Lojistiği",
         "about_us": "Hakkımızda",
         "mission_vision": "Misyon & Vizyon",
         "quality_policy": "Kalite Politikası"

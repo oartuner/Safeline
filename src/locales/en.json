@@ -20,11 +20,27 @@
     "about": {
         "tag": "ABOUT US",
         "title": "A Trusted Name in Logistics",
+        "description": "SAFE LINE LOGISTICS, with its expert staff with more than 20 years of experience, provides integrated logistics services to the leading companies of the sector by creating alternative and innovative solutions regarding customer needs.",
         "mission_title": "MISSION",
+        "mission_desc": "To provide innovative and sustainable value-added services to its customers by offering integrated logistics solutions.",
         "vision_title": "VISION",
+        "vision_desc": "To be a leading brand that maintains continuous growth and improves market standards by innovative and solution-oriented approaches.",
         "values_title": "OUR VALUES",
+        "values": [
+            "Customer Orientation",
+            "Team Spirit",
+            "Sustainability",
+            "Result-Oriented",
+            "Integrity and Transparency",
+            "Reliability",
+            "Respect to Environment and Society",
+            "Ethical Values",
+            "Change and Development"
+        ],
         "quality_title": "QUALITY POLICY",
-        "satisfaction_title": "CUSTOMER SATISFACTION"
+        "quality_desc": "Customer Satisfaction: We adopt a customer-focused approach and keep customer satisfaction at the highest level. We strive to understand customer needs, meet their expectations and add value to them.",
+        "satisfaction_title": "CUSTOMER SATISFACTION",
+        "satisfaction_desc": "Transparent and Quality Service: We provide our customers with open, transparent, reliable and high quality service in accordance with their needs and expectations."
     },
     "services": {
         "tag": "OUR SERVICES",
@@ -33,11 +49,73 @@
         "cta": "Get Quote",
         "sectors_tag": "SECTORS",
         "sectors_title": "Our Expertise",
-        "sea": "SEA FREIGHT",
-        "land": "LAND FREIGHT",
-        "air": "AIR FREIGHT",
-        "rail": "RAIL FREIGHT",
-        "project": "PROJECT LOGISTICS"
+        "sectors_list": [
+            "ELECTRONIC",
+            "FOOD",
+            "TEXTILE",
+            "AUTOMOTIVE",
+            "STEEL",
+            "ENERGY",
+            "FURNITURE",
+            "CHEMICAL"
+        ],
+        "items": {
+            "sea": {
+                "title": "SEA FREIGHT",
+                "features": [
+                    "FCL and LCL Loading",
+                    "Special Equipment Loading",
+                    "Vessel Chartering",
+                    "Heavy and Out of Gauge Transportation",
+                    "Door to Door Delivery",
+                    "Intermodal and Multimodal",
+                    "Cross and Transit Shipments",
+                    "Weekly Regular Services"
+                ]
+            },
+            "land": {
+                "title": "LAND FREIGHT",
+                "features": [
+                    "FTL (Full Truck Load)",
+                    "LTL (Less Than Truck Load)",
+                    "FTL Express Service",
+                    "Super Express Minivan Service",
+                    "Out Of Gauge and Heavy Weight Transportation",
+                    "Transit Shipments"
+                ]
+            },
+            "air": {
+                "title": "AIR FREIGHT",
+                "features": [
+                    "General Cargo Transportation",
+                    "Charter Flight Service",
+                    "Hand Carry Service",
+                    "DGR (Dangerous Goods) Transportation",
+                    "Space Allocation with Airlines",
+                    "Door to Door Transportation"
+                ]
+            },
+            "rail": {
+                "title": "RAIL FREIGHT",
+                "features": [
+                    "Container and Conventional Wagon Transportation",
+                    "Value Added Services",
+                    "Terminal Handling Services",
+                    "Door to Door Service"
+                ]
+            },
+            "project": {
+                "title": "PROJECT LOGISTICS",
+                "features": [
+                    "Consulting and Route Planning",
+                    "HeavyLift and Out of Gauge Cargoes",
+                    "Full/Part Chartering of Project Vessels",
+                    "Port Handling Services",
+                    "Escort Vehicle Arrangement",
+                    "Turnkey Project Solutions"
+                ]
+            }
+        }
     },
     "contact": {
         "tag": "CONTACT",
@@ -53,7 +131,12 @@
         "form_service": "SERVICE TYPE",
         "form_message": "YOUR MESSAGE",
         "form_select": "Select...",
-        "form_submit": "SEND QUOTE REQUEST"
+        "form_submit": "SEND QUOTE REQUEST",
+        "address": "Enka Binası, Esentepe Mahallesi, Büyükdere Caddesi No:108 K:9",
+        "phone_val": "+90 212 282 00 45",
+        "fax_val": "+90 212 272 30 20",
+        "kz_val": "+7 747 120 87 89",
+        "email_val": "info@safelinelog.com"
     },
     "footer": {
         "description": "The trusted name in global logistics. We carry your business to the world with 20+ years of experience and innovative solutions.",
@@ -66,11 +149,6 @@
         "privacy": "Privacy Policy",
         "cookies": "Cookie Policy",
         "terms": "Terms of Use",
-        "sea": "Sea Freight",
-        "land": "Land Freight",
-        "air": "Air Freight",
-        "rail": "Rail Freight",
-        "project": "Project Logistics",
         "about_us": "About Us",
         "mission_vision": "Mission & Vision",
         "quality_policy": "Quality Policy"

@@ -20,7 +20,7 @@ const Contact = () => {
               <span className="info-icon">📍</span>
               <div className="info-content">
                 <h4>{t('contact.main_office')}</h4>
-                <p>{SITE_DATA.contact.address}</p>
+                <p>{t('contact.address')}</p>
               </div>
             </div>
 
@@ -71,7 +71,7 @@ const Contact = () => {
                 <select>
                   <option value="">{t('contact.form_select')}</option>
                   {SITE_DATA.services.map(s => (
-                    <option key={s.id} value={s.id}>{s.title}</option>
+                    <option key={s.id} value={s.id}>{t(`services.items.${s.id}.title`)}</option>
                   ))}
                 </select>
               </div>

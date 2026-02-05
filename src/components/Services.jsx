@@ -37,6 +37,18 @@ const serviceIcons = {
 const Services = () => {
   const { t } = useTranslation();
 
+  // Fetch lists as objects/arrays
+  const sectors = t('services.sectors_list', { returnObjects: true }) || [];
+
+  // Merge structural data (icons) with i18n data
+  const services = SITE_DATA.services.map(s => {
+    const i18nData = t(`services.items.${s.id}`, { returnObjects: true });
+    return {
+      ...s,
+      ...i18nData // title, features array
+    };
+  });
+
   return (
     <section id="services" className="section-padding services-section">
       <div className="container">
@@ -47,12 +59,12 @@ const Services = () => {
         </div>
 
         <div className="services-grid">
-          {SITE_DATA.services.map((service, index) => (
+          {services.map((service, index) => (
             <div key={service.id} className="service-card" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="card-icon">{serviceIcons[service.id]}</div>
-              <h3 className="card-title">{t(`services.${service.id}`)}</h3>
+              <h3 className="card-title">{service.title}</h3>
               <ul className="card-features">
-                {service.features.map((feature, i) => (
+                {service.features && service.features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
               </ul>
@@ -72,7 +84,7 @@ const Services = () => {
             <h2 className="section-title">{t('services.sectors_title')}</h2>
           </div>
           <div className="sectors-grid">
-            {SITE_DATA.sectors.map((sector, i) => (
+            {sectors.map((sector, i) => (
               <div key={i} className="sector-card">{sector}</div>
             ))}
           </div>

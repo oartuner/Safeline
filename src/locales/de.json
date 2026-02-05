@@ -2,76 +2,154 @@
     "nav": {
         "home": "STARTSEITE",
         "about": "ÜBER UNS",
-        "services": "LEISTUNGEN",
+        "services": "DIENSTLEISTUNGEN",
         "contact": "KONTAKT",
-        "quote": "ANGEBOT"
+        "quote": "ANGEBOT ANFORDERN"
     },
     "hero": {
-        "badge": "ÜBER 20 JAHRE ERFAHRUNG",
-        "title1": "Sicherer Weg,",
-        "title2": "Grenzenlose Lösungen.",
-        "description": "Als Safe Line Logistics bringen wir Geschwindigkeit, Sicherheit und Innovation in Ihren globalen Handel mit integrierten Logistiklösungen in der See-, Straßen-, Luft- und Schienenverkehr.",
-        "cta1": "UNSERE LEISTUNGEN",
-        "cta2": "ANGEBOT ANFORDERN",
+        "badge": "20+ JAHRE ERFAHRUNG",
+        "title1": "Sichere Linie,",
+        "title2": "Unbegrenzte Lösungen.",
+        "description": "Als Safe Line Logistics verleihen wir Ihrem globalen Handel Geschwindigkeit, Sicherheit und Innovation mit integrierten Logistiklösungen im See-, Straßen-, Luft- und Schienenverkehr.",
+        "cta1": "UNSERE DIENSTLEISTUNGEN",
+        "cta2": "ANGEBOT ERHALTEN",
         "stat1": "Agenturnetzwerk",
         "stat2": "Schlüsselsektoren",
-        "stat3": "Transportmodi"
+        "stat3": "Transportarten"
     },
     "about": {
         "tag": "ÜBER UNS",
         "title": "Ein vertrauenswürdiger Name in der Logistik",
+        "description": "SAFE LINE LOGISTICS bietet mit seinem Fachpersonal und mehr als 20 Jahren Erfahrung integrierte Logistikdienstleistungen für die führenden Unternehmen der Branche durch alternative und innovative Lösungen für Kundenbedürfnisse.",
         "mission_title": "MISSION",
+        "mission_desc": "Unseren Kunden innovative und nachhaltige Mehrwertdienste durch integrierte Logistiklösungen zu bieten.",
         "vision_title": "VISION",
+        "vision_desc": "Eine führende Marke zu sein, die kontinuierliches Wachstum aufrechterhält und Marktstandards durch innovative und lösungsorientierte Ansätze verbessert.",
         "values_title": "UNSERE WERTE",
+        "values": [
+            "Kundenorientierung",
+            "Teamgeist",
+            "Nachhaltigkeit",
+            "Ergebnisorientierung",
+            "Integrität und Transparenz",
+            "Zuverlässigkeit",
+            "Respekt",
+            "Ethische Werte",
+            "Wandel und Entwicklung"
+        ],
         "quality_title": "QUALITÄTSPOLITIK",
-        "satisfaction_title": "KUNDENZUFRIEDENHEIT"
+        "quality_desc": "Kundenzufriedenheit: Wir verfolgen einen kundenorientierten Ansatz und halten die Kundenzufriedenheit auf höchstem Niveau.",
+        "satisfaction_title": "KUNDENZUFRIEDENHEIT",
+        "satisfaction_desc": "Transparenter und qualitativer Service: Wir bieten unseren Kunden offenen, transparenten, zuverlässigen und hochwertigen Service."
     },
     "services": {
-        "tag": "UNSERE LEISTUNGEN",
+        "tag": "DIENSTLEISTUNGEN",
         "title": "Integrierte Logistiklösungen",
-        "subtitle": "Innovative und nachhaltige Transportdienstleistungen, die Ihre globale Lieferkette optimieren.",
-        "cta": "Angebot",
+        "subtitle": "Innovative und nachhaltige Transportdienstleistungen zur Optimierung Ihrer globalen Lieferkette.",
+        "cta": "Angebot Anfordern",
         "sectors_tag": "SEKTOREN",
         "sectors_title": "Unsere Expertise",
-        "sea": "SEEFRACHT",
-        "land": "LANDFRACHT",
-        "air": "LUFTFRACHT",
-        "rail": "SCHIENENFRACHT",
-        "project": "PROJEKTLOGISTIK"
+        "sectors_list": [
+            "ELEKTRONIK",
+            "LEBENSMITTEL",
+            "TEXTIL",
+            "AUTOMOBIL",
+            "STAHL",
+            "ENERGIE",
+            "MÖBEL",
+            "CHEMIE"
+        ],
+        "items": {
+            "sea": {
+                "title": "SEEFRACHT",
+                "features": [
+                    "FCL und LCL Verladung",
+                    "Spezialausrüstung",
+                    "Schiffscharterung",
+                    "Schwer- und Übermaßtransporte",
+                    "Tür-zu-Tür-Lieferung",
+                    "Intermodal und Multimodal",
+                    "Cross-Trade-Verkehre",
+                    "Wöchentliche Liniendienste"
+                ]
+            },
+            "land": {
+                "title": "LANDVERKEHR",
+                "features": [
+                    "FTL (Komplettladung)",
+                    "LTL (Teilladung)",
+                    "FTL Express Service",
+                    "Super Express Minivan",
+                    "Schwertransporte",
+                    "Transitverkehre"
+                ]
+            },
+            "air": {
+                "title": "LUFTFRACHT",
+                "features": [
+                    "Allgemeine Fracht",
+                    "Charterflug-Service",
+                    "Hand Carry Service",
+                    "DGR (Gefahrgut) Transporte",
+                    "Kapazitätsgarantie",
+                    "Tür-zu-Tür-Transport"
+                ]
+            },
+            "rail": {
+                "title": "SCHIENENVERKEHR",
+                "features": [
+                    "Container- und Waggontransport",
+                    "Mehrwertdienste",
+                    "Terminal-Dienstleistungen",
+                    "Tür-zu-Tür-Service"
+                ]
+            },
+            "project": {
+                "title": "PROJEKTLOGISTIK",
+                "features": [
+                    "Beratung und Routenplanung",
+                    "HeavyLift und Übermaß",
+                    "Voll-/Teilcharterung",
+                    "Hafenabwicklung",
+                    "Begleitfahrzeuge",
+                    "Schlüsselfertige Projekte"
+                ]
+            }
+        }
     },
     "contact": {
         "tag": "KONTAKT",
-        "title": "Kontaktieren Sie uns",
+        "title": "Kontaktieren Sie Uns",
         "subtitle": "Fordern Sie ein Angebot für Ihre Logistikbedürfnisse an.",
-        "main_office": "Hauptbüro",
-        "kz_office": "Kasachstan Büro",
+        "main_office": "Hauptsitz",
+        "kz_office": "Büro Kasachstan",
         "phone": "Telefon",
         "email": "E-Mail",
-        "form_name": "VOLLSTÄNDIGER NAME",
+        "form_name": "VORNAME NACHNAME",
         "form_email": "E-MAIL",
         "form_phone": "TELEFON",
-        "form_service": "SERVICEART",
+        "form_service": "DIENSTLEISTUNGSART",
         "form_message": "IHRE NACHRICHT",
-        "form_select": "Auswählen...",
-        "form_submit": "ANGEBOTSANFRAGE SENDEN"
+        "form_select": "Bitte wählen...",
+        "form_submit": "ANGEBOT ANFORDERN",
+        "address": "Enka Binası, Esentepe Mahallesi, Büyükdere Caddesi No:108 K:9",
+        "phone_val": "+90 212 282 00 45",
+        "fax_val": "+90 212 272 30 20",
+        "kz_val": "+7 747 120 87 89",
+        "email_val": "info@safelinelog.com"
     },
     "footer": {
-        "description": "Der vertrauenswürdige Name in der globalen Logistik. Wir bringen Ihr Unternehmen mit über 20 Jahren Erfahrung und innovativen Lösungen in die Welt.",
-        "services": "Leistungen",
+        "description": "Der vertrauenswürdige Name in der globalen Logistik. Mit über 20 Jahren Erfahrung tragen wir Ihr Geschäft in die Welt.",
+        "services": "Dienstleistungen",
         "corporate": "Unternehmen",
-        "newsletter_title": "Newsletter abonnieren",
-        "newsletter_desc": "Abonnieren Sie unsere Mailingliste für Branchenupdates und Neuigkeiten.",
+        "newsletter_title": "Newsletter Abonnieren",
+        "newsletter_desc": "Abonnieren Sie unseren Newsletter für Updates.",
         "newsletter_placeholder": "Ihre E-Mail-Adresse",
         "copyright": "Alle Rechte vorbehalten.",
         "privacy": "Datenschutz",
         "cookies": "Cookie-Richtlinie",
         "terms": "Nutzungsbedingungen",
-        "sea": "Seefracht",
-        "land": "Landfracht",
-        "air": "Luftfracht",
-        "rail": "Schienenfracht",
-        "project": "Projektlogistik",
-        "about_us": "Über uns",
+        "about_us": "Über Uns",
         "mission_vision": "Mission & Vision",
         "quality_policy": "Qualitätspolitik"
     }

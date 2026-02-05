@@ -5,6 +5,9 @@ import { SITE_DATA } from '../data/siteData';
 const About = () => {
   const { t } = useTranslation();
 
+  // Get arrays/objects from i18n
+  const values = t('about.values', { returnObjects: true }) || [];
+
   return (
     <section id="about" className="section-padding">
       <div className="container">
@@ -29,25 +32,25 @@ const About = () => {
           <div className="about-content">
             <span className="section-tag">{t('about.tag')}</span>
             <h2 className="section-title">{t('about.title')}</h2>
-            <p className="lead">{SITE_DATA.about.description}</p>
+            <p className="lead">{t('about.description')}</p>
 
             <div className="mv-cards">
               <div className="mv-card">
                 <span className="mv-icon">🎯</span>
                 <h4>{t('about.mission_title')}</h4>
-                <p>{SITE_DATA.about.mission}</p>
+                <p>{t('about.mission_desc')}</p>
               </div>
               <div className="mv-card">
                 <span className="mv-icon">🚀</span>
                 <h4>{t('about.vision_title')}</h4>
-                <p>{SITE_DATA.about.vision}</p>
+                <p>{t('about.vision_desc')}</p>
               </div>
             </div>
 
             <div className="values-section">
               <h4>{t('about.values_title')}</h4>
               <div className="values-grid">
-                {SITE_DATA.about.values.map((val, i) => (
+                {values.map((val, i) => (
                   <span key={i} className="value-tag">{val}</span>
                 ))}
               </div>
@@ -59,12 +62,12 @@ const About = () => {
           <div className="policy-card">
             <span className="policy-icon">✅</span>
             <h3>{t('about.quality_title')}</h3>
-            <p>{SITE_DATA.policies.quality}</p>
+            <p>{t('about.quality_desc')}</p>
           </div>
           <div className="policy-card">
             <span className="policy-icon">🤝</span>
             <h3>{t('about.satisfaction_title')}</h3>
-            <p>{SITE_DATA.policies.satisfaction}</p>
+            <p>{t('about.satisfaction_desc')}</p>
           </div>
         </div>
       </div>
