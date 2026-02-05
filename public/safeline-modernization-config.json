@@ -1,0 +1,947 @@
+{
+  "project": {
+    "name": "SafeLine",
+    "version": "2.0.0",
+    "description": "Modern Security System Website - 2025-2026 Redesign",
+    "theme": "light",
+    "targetAudience": "Enterprise & SMB Security Solutions"
+  },
+  
+  "designSystem": {
+    "colorPalette": {
+      "theme": "Modern Minimal Light",
+      "colors": {
+        "primary": {
+          "main": "#1E40AF",
+          "light": "#3B82F6",
+          "dark": "#1E3A8A",
+          "gradient": "linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%)"
+        },
+        "accent": {
+          "main": "#FF6B6B",
+          "light": "#FF8787",
+          "dark": "#EE5A52",
+          "gradient": "linear-gradient(135deg, #FF6B6B 0%, #FF8787 100%)"
+        },
+        "neutral": {
+          "white": "#FFFFFF",
+          "lightest": "#F9FAFB",
+          "light": "#F3F4F6",
+          "medium": "#E5E7EB",
+          "dark": "#6B7280",
+          "darkest": "#1F2937"
+        },
+        "semantic": {
+          "success": "#10B981",
+          "warning": "#F59E0B",
+          "error": "#EF4444",
+          "info": "#3B82F6"
+        },
+        "glassmorphism": {
+          "background": "rgba(255, 255, 255, 0.7)",
+          "border": "rgba(255, 255, 255, 0.3)",
+          "shadow": "0 8px 32px 0 rgba(31, 38, 135, 0.15)"
+        }
+      }
+    },
+    
+    "typography": {
+      "fontFamilies": {
+        "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "heading": "Satoshi, Inter, sans-serif",
+        "mono": "'JetBrains Mono', 'Fira Code', monospace"
+      },
+      "fontSizes": {
+        "hero": {
+          "desktop": "96px",
+          "tablet": "72px",
+          "mobile": "48px"
+        },
+        "h1": {
+          "desktop": "64px",
+          "tablet": "48px",
+          "mobile": "36px"
+        },
+        "h2": {
+          "desktop": "48px",
+          "tablet": "36px",
+          "mobile": "28px"
+        },
+        "h3": {
+          "desktop": "32px",
+          "tablet": "28px",
+          "mobile": "24px"
+        },
+        "body": {
+          "large": "20px",
+          "regular": "16px",
+          "small": "14px"
+        }
+      },
+      "fontWeights": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "extrabold": 800
+      },
+      "lineHeights": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.75
+      }
+    },
+    
+    "spacing": {
+      "scale": "8px",
+      "sections": {
+        "small": "64px",
+        "medium": "96px",
+        "large": "128px"
+      },
+      "container": {
+        "maxWidth": "1280px",
+        "padding": {
+          "desktop": "80px",
+          "tablet": "40px",
+          "mobile": "20px"
+        }
+      }
+    },
+    
+    "borderRadius": {
+      "small": "8px",
+      "medium": "16px",
+      "large": "24px",
+      "xlarge": "32px",
+      "full": "9999px"
+    },
+    
+    "shadows": {
+      "small": "0 2px 8px rgba(0, 0, 0, 0.04)",
+      "medium": "0 4px 16px rgba(0, 0, 0, 0.08)",
+      "large": "0 8px 32px rgba(0, 0, 0, 0.12)",
+      "glow": "0 0 40px rgba(30, 64, 175, 0.3)",
+      "glowAccent": "0 0 40px rgba(255, 107, 107, 0.3)"
+    }
+  },
+  
+  "layout": {
+    "navbar": {
+      "type": "glassmorphism",
+      "position": "sticky",
+      "height": "80px",
+      "blur": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.8)",
+      "borderBottom": "1px solid rgba(255, 255, 255, 0.3)",
+      "shadow": "0 4px 24px rgba(0, 0, 0, 0.06)",
+      "logoSize": "40px",
+      "features": {
+        "smoothScroll": true,
+        "hideOnScrollDown": false,
+        "showProgressBar": true,
+        "darkModeToggle": true
+      },
+      "menuItems": [
+        { "label": "Home", "href": "#home", "icon": "home" },
+        { "label": "Features", "href": "#features", "icon": "shield" },
+        { "label": "Dashboard", "href": "#dashboard", "icon": "layout" },
+        { "label": "Pricing", "href": "#pricing", "icon": "dollar" },
+        { "label": "Contact", "href": "#contact", "icon": "message" }
+      ],
+      "cta": {
+        "text": "Start Free Trial",
+        "style": "gradient",
+        "animation": "pulse"
+      }
+    },
+    
+    "grid": {
+      "type": "bento",
+      "columns": 12,
+      "gap": "24px",
+      "responsive": true
+    }
+  },
+  
+  "sections": {
+    "hero": {
+      "enabled": true,
+      "layout": "asymmetric",
+      "height": "100vh",
+      "background": {
+        "type": "animated-gradient",
+        "colors": ["#F9FAFB", "#EFF6FF", "#FEFCE8"],
+        "animation": {
+          "duration": "15s",
+          "easing": "ease-in-out"
+        },
+        "overlay": {
+          "particles": true,
+          "particleCount": 80,
+          "particleColor": "#1E40AF",
+          "particleOpacity": 0.1,
+          "connectionLines": true
+        }
+      },
+      "content": {
+        "title": {
+          "text": "Next-Gen Security System",
+          "animation": "fadeInUp",
+          "typingEffect": true,
+          "gradient": true,
+          "gradientColors": ["#1E40AF", "#FF6B6B"]
+        },
+        "subtitle": {
+          "text": "AI-Powered Protection for Modern Businesses",
+          "animation": "fadeInUp",
+          "delay": "0.2s"
+        },
+        "description": {
+          "text": "Monitor, detect, and respond to security threats in real-time with our intelligent platform.",
+          "animation": "fadeInUp",
+          "delay": "0.4s"
+        },
+        "cta": {
+          "primary": {
+            "text": "Get Started Free",
+            "style": "gradient-animated",
+            "icon": "arrow-right",
+            "animation": "scale-pulse"
+          },
+          "secondary": {
+            "text": "Watch Demo",
+            "style": "outline",
+            "icon": "play",
+            "videoModal": true
+          }
+        }
+      },
+      "visual": {
+        "type": "3d-interactive",
+        "model": "shield",
+        "library": "three.js",
+        "animation": {
+          "rotate": true,
+          "float": true,
+          "mouseTrack": true
+        },
+        "fallback": {
+          "type": "animated-illustration",
+          "format": "lottie"
+        }
+      },
+      "scrollIndicator": {
+        "enabled": true,
+        "type": "animated-mouse",
+        "position": "bottom-center"
+      }
+    },
+    
+    "features": {
+      "enabled": true,
+      "title": "Powerful Features",
+      "subtitle": "Everything you need to secure your business",
+      "layout": "bento-grid",
+      "animation": "scroll-reveal",
+      "cards": [
+        {
+          "id": "realtime-monitoring",
+          "title": "Real-time Monitoring",
+          "description": "24/7 surveillance with instant alerts",
+          "icon": "activity",
+          "iconAnimation": "lottie",
+          "gradient": ["#1E40AF", "#3B82F6"],
+          "size": "large",
+          "features": {
+            "hover3D": true,
+            "expandable": true,
+            "numberCounter": {
+              "value": 99.9,
+              "suffix": "%",
+              "label": "Uptime"
+            }
+          }
+        },
+        {
+          "id": "ai-detection",
+          "title": "AI Threat Detection",
+          "description": "Machine learning powered anomaly detection",
+          "icon": "brain",
+          "iconAnimation": "lottie",
+          "gradient": ["#FF6B6B", "#FF8787"],
+          "size": "medium",
+          "features": {
+            "hover3D": true,
+            "expandable": true
+          }
+        },
+        {
+          "id": "cloud-storage",
+          "title": "Cloud Storage",
+          "description": "Secure encrypted cloud backup",
+          "icon": "cloud",
+          "iconAnimation": "lottie",
+          "gradient": ["#10B981", "#34D399"],
+          "size": "medium",
+          "features": {
+            "hover3D": true,
+            "expandable": true
+          }
+        },
+        {
+          "id": "mobile-access",
+          "title": "Mobile Access",
+          "description": "Control from anywhere, anytime",
+          "icon": "smartphone",
+          "iconAnimation": "lottie",
+          "gradient": ["#F59E0B", "#FBBF24"],
+          "size": "small",
+          "features": {
+            "hover3D": true,
+            "expandable": true
+          }
+        },
+        {
+          "id": "advanced-analytics",
+          "title": "Advanced Analytics",
+          "description": "Detailed insights and reporting",
+          "icon": "bar-chart",
+          "iconAnimation": "lottie",
+          "gradient": ["#8B5CF6", "#A78BFA"],
+          "size": "small",
+          "features": {
+            "hover3D": true,
+            "expandable": true
+          }
+        },
+        {
+          "id": "integration",
+          "title": "Easy Integration",
+          "description": "Works with your existing systems",
+          "icon": "zap",
+          "iconAnimation": "lottie",
+          "gradient": ["#EC4899", "#F472B6"],
+          "size": "medium",
+          "features": {
+            "hover3D": true,
+            "expandable": true
+          }
+        }
+      ],
+      "cardEffects": {
+        "hover": {
+          "scale": 1.02,
+          "shadow": "large",
+          "glow": true,
+          "tilt3D": {
+            "enabled": true,
+            "maxTilt": 10
+          }
+        },
+        "border": {
+          "type": "gradient",
+          "width": "2px",
+          "animated": true
+        }
+      }
+    },
+    
+    "dashboard": {
+      "enabled": true,
+      "title": "Intuitive Dashboard",
+      "subtitle": "Manage everything from one powerful interface",
+      "layout": "interactive-preview",
+      "background": {
+        "type": "gradient-mesh",
+        "colors": ["#EFF6FF", "#FEF3C7", "#FCE7F3"]
+      },
+      "preview": {
+        "type": "interactive-mockup",
+        "devices": ["desktop", "tablet", "mobile"],
+        "activeDevice": "desktop",
+        "deviceSwitcher": true,
+        "features": {
+          "clickable": true,
+          "animatedCharts": true,
+          "liveData": true,
+          "beforeAfterSlider": false
+        },
+        "animations": {
+          "entrance": "slideInUp",
+          "charts": {
+            "type": "progressive",
+            "duration": "1.5s"
+          },
+          "notifications": {
+            "type": "popup",
+            "interval": "3s"
+          }
+        }
+      },
+      "screenshots": {
+        "main": "/images/dashboard-main.png",
+        "tablet": "/images/dashboard-tablet.png",
+        "mobile": "/images/dashboard-mobile.png"
+      }
+    },
+    
+    "stats": {
+      "enabled": true,
+      "background": {
+        "type": "solid",
+        "color": "#F9FAFB"
+      },
+      "layout": "horizontal-scroll",
+      "items": [
+        {
+          "value": 10000,
+          "suffix": "+",
+          "label": "Active Users",
+          "icon": "users",
+          "animation": "countUp",
+          "color": "#1E40AF"
+        },
+        {
+          "value": 99.9,
+          "suffix": "%",
+          "label": "Uptime",
+          "icon": "trending-up",
+          "animation": "countUp",
+          "color": "#10B981"
+        },
+        {
+          "value": 24,
+          "suffix": "/7",
+          "label": "Support",
+          "icon": "headphones",
+          "animation": "countUp",
+          "color": "#F59E0B"
+        },
+        {
+          "value": 500,
+          "suffix": "ms",
+          "label": "Response Time",
+          "icon": "zap",
+          "animation": "countUp",
+          "color": "#FF6B6B"
+        }
+      ]
+    },
+    
+    "testimonials": {
+      "enabled": true,
+      "title": "Trusted by Industry Leaders",
+      "layout": "infinite-marquee",
+      "speed": "slow",
+      "direction": "left",
+      "items": [
+        {
+          "type": "text",
+          "author": "John Smith",
+          "role": "CTO, TechCorp",
+          "avatar": "/images/avatars/john.jpg",
+          "rating": 5,
+          "text": "SafeLine transformed our security infrastructure. Best decision we made!",
+          "company": {
+            "name": "TechCorp",
+            "logo": "/images/logos/techcorp.svg"
+          }
+        },
+        {
+          "type": "video",
+          "author": "Sarah Johnson",
+          "role": "Security Director",
+          "thumbnail": "/images/testimonials/sarah-thumb.jpg",
+          "videoUrl": "/videos/testimonial-sarah.mp4",
+          "duration": "45s"
+        }
+      ],
+      "trustBadges": {
+        "enabled": true,
+        "layout": "marquee",
+        "logos": [
+          "/images/badges/google-cloud.svg",
+          "/images/badges/aws.svg",
+          "/images/badges/microsoft.svg",
+          "/images/badges/iso27001.svg"
+        ]
+      }
+    },
+    
+    "pricing": {
+      "enabled": true,
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your needs",
+      "billingToggle": {
+        "enabled": true,
+        "options": ["monthly", "yearly"],
+        "discount": {
+          "yearly": 20,
+          "label": "Save 20%"
+        }
+      },
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Perfect for small businesses",
+          "price": {
+            "monthly": 49,
+            "yearly": 470
+          },
+          "popular": false,
+          "features": [
+            "Up to 5 cameras",
+            "30 days storage",
+            "Email support",
+            "Mobile app access",
+            "Basic analytics"
+          ],
+          "cta": {
+            "text": "Start Free Trial",
+            "style": "outline"
+          }
+        },
+        {
+          "name": "Professional",
+          "description": "For growing businesses",
+          "price": {
+            "monthly": 99,
+            "yearly": 950
+          },
+          "popular": true,
+          "badge": "Most Popular",
+          "features": [
+            "Up to 20 cameras",
+            "90 days storage",
+            "Priority support",
+            "Advanced AI detection",
+            "Custom integrations",
+            "Team collaboration"
+          ],
+          "cta": {
+            "text": "Start Free Trial",
+            "style": "gradient"
+          }
+        },
+        {
+          "name": "Enterprise",
+          "description": "For large organizations",
+          "price": {
+            "custom": true,
+            "label": "Custom"
+          },
+          "popular": false,
+          "features": [
+            "Unlimited cameras",
+            "Unlimited storage",
+            "24/7 dedicated support",
+            "Custom AI models",
+            "On-premise deployment",
+            "SLA guarantee",
+            "Security audit"
+          ],
+          "cta": {
+            "text": "Contact Sales",
+            "style": "outline"
+          }
+        }
+      ],
+      "cardEffects": {
+        "hover": {
+          "scale": 1.05,
+          "shadow": "glow"
+        }
+      }
+    },
+    
+    "cta": {
+      "enabled": true,
+      "type": "full-width",
+      "background": {
+        "type": "gradient-animated",
+        "colors": ["#1E40AF", "#3B82F6", "#FF6B6B"],
+        "animation": "wave"
+      },
+      "content": {
+        "title": "Ready to Secure Your Business?",
+        "description": "Start your free 14-day trial. No credit card required.",
+        "form": {
+          "type": "multi-step",
+          "steps": [
+            {
+              "title": "Your Information",
+              "fields": [
+                { "name": "fullName", "type": "text", "label": "Full Name", "required": true },
+                { "name": "email", "type": "email", "label": "Email", "required": true },
+                { "name": "company", "type": "text", "label": "Company", "required": false }
+              ]
+            },
+            {
+              "title": "Choose Your Plan",
+              "fields": [
+                { "name": "plan", "type": "radio", "options": ["Starter", "Professional", "Enterprise"] }
+              ]
+            }
+          ],
+          "submitButton": {
+            "text": "Start Free Trial",
+            "style": "solid-white",
+            "animation": "pulse"
+          }
+        },
+        "alternative": {
+          "text": "or",
+          "calendly": {
+            "enabled": true,
+            "text": "Schedule a Demo",
+            "url": "https://calendly.com/safeline/demo"
+          }
+        }
+      },
+      "sticky": {
+        "enabled": true,
+        "showAfterScroll": "50%",
+        "position": "bottom",
+        "compact": true
+      }
+    },
+    
+    "footer": {
+      "enabled": true,
+      "background": "#1F2937",
+      "textColor": "#F9FAFB",
+      "layout": "multi-column",
+      "columns": [
+        {
+          "title": "Product",
+          "links": [
+            { "text": "Features", "href": "#features" },
+            { "text": "Pricing", "href": "#pricing" },
+            { "text": "Security", "href": "/security" },
+            { "text": "Integrations", "href": "/integrations" }
+          ]
+        },
+        {
+          "title": "Company",
+          "links": [
+            { "text": "About", "href": "/about" },
+            { "text": "Blog", "href": "/blog" },
+            { "text": "Careers", "href": "/careers" },
+            { "text": "Press", "href": "/press" }
+          ]
+        },
+        {
+          "title": "Resources",
+          "links": [
+            { "text": "Documentation", "href": "/docs" },
+            { "text": "Help Center", "href": "/help" },
+            { "text": "API", "href": "/api" },
+            { "text": "Status", "href": "https://status.safeline.com" }
+          ]
+        },
+        {
+          "title": "Legal",
+          "links": [
+            { "text": "Privacy", "href": "/privacy" },
+            { "text": "Terms", "href": "/terms" },
+            { "text": "Cookies", "href": "/cookies" }
+          ]
+        }
+      ],
+      "social": {
+        "enabled": true,
+        "platforms": [
+          { "name": "twitter", "url": "https://twitter.com/safeline", "icon": "twitter" },
+          { "name": "linkedin", "url": "https://linkedin.com/company/safeline", "icon": "linkedin" },
+          { "name": "github", "url": "https://github.com/safeline", "icon": "github" }
+        ]
+      },
+      "newsletter": {
+        "enabled": true,
+        "title": "Stay Updated",
+        "placeholder": "Enter your email",
+        "buttonText": "Subscribe"
+      }
+    }
+  },
+  
+  "animations": {
+    "global": {
+      "duration": "0.6s",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "stagger": "0.1s"
+    },
+    "scroll": {
+      "type": "gsap-scrolltrigger",
+      "smoothScroll": true,
+      "snapScroll": false,
+      "animations": {
+        "fadeIn": {
+          "from": { "opacity": 0, "y": 40 },
+          "to": { "opacity": 1, "y": 0 }
+        },
+        "slideInLeft": {
+          "from": { "opacity": 0, "x": -60 },
+          "to": { "opacity": 1, "x": 0 }
+        },
+        "slideInRight": {
+          "from": { "opacity": 0, "x": 60 },
+          "to": { "opacity": 1, "x": 0 }
+        },
+        "scaleIn": {
+          "from": { "opacity": 0, "scale": 0.8 },
+          "to": { "opacity": 1, "scale": 1 }
+        }
+      }
+    },
+    "hover": {
+      "duration": "0.3s",
+      "easing": "ease-out"
+    },
+    "page": {
+      "transition": "fade",
+      "duration": "0.4s"
+    }
+  },
+  
+  "interactions": {
+    "cursor": {
+      "type": "magnetic",
+      "enabled": true,
+      "targets": ["button", "a", ".card"],
+      "size": "16px",
+      "trail": {
+        "enabled": false,
+        "length": 10
+      }
+    },
+    "particles": {
+      "enabled": true,
+      "library": "particles.js",
+      "config": {
+        "number": 80,
+        "color": "#1E40AF",
+        "shape": "circle",
+        "opacity": 0.1,
+        "size": 3,
+        "lineLinked": true,
+        "move": {
+          "speed": 1,
+          "random": true
+        }
+      }
+    },
+    "soundEffects": {
+      "enabled": false,
+      "muted": true,
+      "events": {
+        "hover": "/sounds/hover.mp3",
+        "click": "/sounds/click.mp3"
+      }
+    }
+  },
+  
+  "performance": {
+    "lazyLoading": {
+      "images": true,
+      "iframes": true,
+      "threshold": "200px"
+    },
+    "imageOptimization": {
+      "progressive": true,
+      "blurPlaceholder": true,
+      "webp": true,
+      "avif": true,
+      "sizes": {
+        "thumbnail": 300,
+        "medium": 768,
+        "large": 1920,
+        "xlarge": 2560
+      }
+    },
+    "codeOptimization": {
+      "minification": true,
+      "compression": "gzip",
+      "splitChunks": true,
+      "treeshaking": true
+    },
+    "loadingStates": {
+      "skeleton": true,
+      "spinner": false,
+      "progressBar": true
+    }
+  },
+  
+  "accessibility": {
+    "wcag": "AA",
+    "features": {
+      "keyboardNavigation": true,
+      "screenReader": true,
+      "focusVisible": true,
+      "skipLinks": true,
+      "ariaLabels": true,
+      "colorContrast": true,
+      "reducedMotion": true
+    },
+    "colorContrast": {
+      "minimum": 4.5,
+      "large": 3
+    }
+  },
+  
+  "seo": {
+    "meta": {
+      "title": "SafeLine - Next-Gen Security System | AI-Powered Protection",
+      "description": "Enterprise-grade security system with AI-powered threat detection, real-time monitoring, and cloud storage. Protect your business 24/7.",
+      "keywords": "security system, AI security, threat detection, surveillance, cloud storage",
+      "ogImage": "/images/og-image.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "structuredData": true,
+    "sitemap": true,
+    "robotsTxt": true
+  },
+  
+  "integrations": {
+    "analytics": {
+      "google": {
+        "enabled": true,
+        "trackingId": "GA-XXXXXXXXX"
+      },
+      "mixpanel": {
+        "enabled": false
+      }
+    },
+    "chatbot": {
+      "enabled": true,
+      "type": "ai-powered",
+      "position": "bottom-right",
+      "avatar": {
+        "type": "animated",
+        "style": "3d"
+      },
+      "greeting": "Hi! How can I help you secure your business?",
+      "features": {
+        "typing": true,
+        "soundNotification": false,
+        "minimizable": true
+      }
+    },
+    "calendly": {
+      "enabled": true,
+      "url": "https://calendly.com/safeline/demo"
+    }
+  },
+  
+  "multiLanguage": {
+    "enabled": false,
+    "defaultLanguage": "en",
+    "languages": ["en", "tr", "es", "de", "fr"],
+    "switcher": {
+      "position": "navbar",
+      "type": "dropdown"
+    }
+  },
+  
+  "darkMode": {
+    "enabled": true,
+    "default": "light",
+    "toggle": {
+      "type": "animated-switch",
+      "position": "navbar",
+      "icon": {
+        "light": "sun",
+        "dark": "moon"
+      }
+    },
+    "transition": {
+      "duration": "0.3s",
+      "easing": "ease-in-out"
+    },
+    "colors": {
+      "background": "#0F172A",
+      "surface": "#1E293B",
+      "text": "#F1F5F9",
+      "primary": "#60A5FA",
+      "accent": "#FB7185"
+    }
+  },
+  
+  "technicalStack": {
+    "framework": "React / Next.js",
+    "styling": "Tailwind CSS",
+    "animations": [
+      "Framer Motion",
+      "GSAP",
+      "Lottie",
+      "Three.js"
+    ],
+    "uiComponents": [
+      "shadcn/ui",
+      "Radix UI",
+      "Headless UI"
+    ],
+    "icons": "Lucide Icons",
+    "fonts": [
+      "Inter (Google Fonts)",
+      "Satoshi (Local)"
+    ],
+    "dependencies": {
+      "required": [
+        "react",
+        "next",
+        "tailwindcss",
+        "framer-motion",
+        "gsap",
+        "lottie-react",
+        "three",
+        "@react-three/fiber",
+        "@react-three/drei"
+      ],
+      "optional": [
+        "particles.js",
+        "react-scroll",
+        "react-countup",
+        "swiper",
+        "react-hot-toast"
+      ]
+    }
+  },
+  
+  "deployment": {
+    "platform": "Vercel",
+    "domain": "safeline-gamma.vercel.app",
+    "customDomain": "safeline.com",
+    "ssl": true,
+    "cdn": true,
+    "environment": {
+      "production": {
+        "url": "https://safeline.com"
+      },
+      "staging": {
+        "url": "https://staging.safeline.com"
+      },
+      "development": {
+        "url": "http://localhost:3000"
+      }
+    }
+  },
+  
+  "easterEggs": {
+    "enabled": true,
+    "items": [
+      {
+        "trigger": "konami-code",
+        "action": "confetti",
+        "message": "You found the secret! 🎉"
+      },
+      {
+        "trigger": "triple-click-logo",
+        "action": "theme-disco",
+        "duration": "5s"
+      }
+    ]
+  }
+}

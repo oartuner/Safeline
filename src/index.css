@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap');
 
+@import "tailwindcss";
+
 :root {
   /* New Logo Palette */
   --primary: #233778;
@@ -48,11 +50,7 @@
   --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Resets handled by Tailwind base */
 
 html {
   scroll-behavior: smooth;

@@ -1,192 +1,240 @@
-import React from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { ArrowRight, Play, CheckCircle2 } from 'lucide-react';
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const [init, setInit] = useState(false);
+
+  // Initialize particles
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
+  const options = useMemo(
+    () => ({
+      background: {
+        color: {
+          value: "transparent",
+        },
+      },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: true,
+            mode: "push",
+          },
+          onHover: {
+            enable: true,
+            mode: "grab",
+          },
+        },
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          grab: {
+            distance: 140,
+            links: {
+              opacity: 0.5
+            }
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#2d87c2", // Secondary color
+        },
+        links: {
+          color: "#233778", // Primary color
+          distance: 150,
+          enable: true,
+          opacity: 0.2,
+          width: 1,
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: {
+            default: "bounce",
+          },
+          random: false,
+          speed: 1,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+          },
+          value: 80,
+        },
+        opacity: {
+          value: 0.3,
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          value: { min: 1, max: 3 },
+        },
+      },
+      detectRetina: true,
+    }),
+    [],
+  );
 
   return (
-    <section id="home" className="hero">
-      <div className="hero-bg">
-        <div className="shape shape-1"></div>
-        <div className="shape shape-2"></div>
-        <div className="shape shape-3"></div>
-      </div>
+    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-bg-light via-white to-bg-alt">
 
-      <div className="container hero-content">
-        <span className="hero-badge animate-fade-in">🌍 {t('hero.badge')}</span>
-        <h1 className="hero-title animate-fade-in-delay-1">
-          <span className="line-1">{t('hero.title1')}</span>
-          <span className="line-2">{t('hero.title2')}</span>
-        </h1>
-        <p className="hero-description animate-fade-in-delay-2">
-          {t('hero.description')}
-        </p>
-        <div className="hero-btns animate-fade-in-delay-3">
-          <a href="#services" className="btn-primary">
-            <span>{t('hero.cta1')}</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
-          <a href="#contact" className="btn-secondary">
-            <span>{t('hero.cta2')}</span>
-          </a>
+      {/* Particles Background */}
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+          className="absolute inset-0 z-0 pointer-events-none"
+        />
+      )}
+
+      <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+
+        {/* Text Content */}
+        <div className="max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-bold tracking-wide mb-6 border border-secondary/20">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+              </span>
+              {t('hero.badge')}
+            </span>
+          </motion.div>
+
+          <motion.h1
+            className="text-5xl lg:text-7xl font-bold mb-6 leading-tight text-primary"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <span className="block">{t('hero.title1')}</span>
+            <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+              {t('hero.title2')}
+            </span>
+          </motion.h1>
+
+          <motion.p
+            className="text-xl text-text-muted mb-8 leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            {t('hero.description')}
+          </motion.p>
+
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <a href="#services" className="group px-8 py-4 bg-gradient-to-r from-primary to-primary-light text-white rounded-full font-semibold shadow-lg shadow-primary/30 flex items-center justify-center gap-2 hover:scale-105 transition-transform">
+              <span>{t('hero.cta1')}</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+
+            <a href="#contact" className="px-8 py-4 bg-white border-2 border-border-light text-primary rounded-full font-semibold flex items-center justify-center gap-2 hover:border-secondary hover:text-secondary transition-colors hover:bg-secondary/5">
+              <span>{t('hero.cta2')}</span>
+            </a>
+          </motion.div>
+
+          {/* Stats */}
+          <motion.div
+            className="mt-12 flex items-center gap-8 pt-8 border-t border-border-light"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+          >
+            <div>
+              <p className="text-3xl font-extrabold text-primary font-heading">150+</p>
+              <p className="text-sm text-text-muted font-medium">{t('hero.stat1')}</p>
+            </div>
+            <div className="w-px h-12 bg-border-light"></div>
+            <div>
+              <p className="text-3xl font-extrabold text-secondary font-heading">20+</p>
+              <p className="text-sm text-text-muted font-medium">{t('hero.stat2')}</p>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="hero-stats">
-          <div className="stat-item">
-            <span className="stat-number">150+</span>
-            <span className="stat-label">{t('hero.stat1')}</span>
+        {/* 3D/Visual Placeholder */}
+        <motion.div
+          className="relative hidden lg:block"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <div className="relative w-full aspect-square max-w-[600px] mx-auto">
+            {/* Animated Blob Background */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-secondary/20 to-primary/20 rounded-full blur-3xl animate-pulse"></div>
+
+            {/* Interactive Card Stack */}
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+              className="relative z-10"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
+                alt="Modern Logistics"
+                className="rounded-3xl shadow-2xl border-4 border-white w-full object-cover h-[500px]"
+              />
+
+              {/* Floating Elements */}
+              <div className="absolute -right-8 top-20 bg-white p-4 rounded-2xl shadow-xl border border-border-light animate-float">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <CheckCircle2 size={20} />
+                  </div>
+                  <div>
+                    <p className="text-xs text-text-muted">Status</p>
+                    <p className="text-sm font-bold text-primary">Delivered</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute -left-8 bottom-32 bg-white/90 backdrop-blur p-5 rounded-2xl shadow-xl border border-border-light" style={{ animationDelay: '2s' }}>
+                <div className="flex gap-4">
+                  <div className="text-center">
+                    <p className="text-xs text-text-muted">Global</p>
+                    <p className="text-lg font-bold text-secondary">98%</p>
+                  </div>
+                  <div className="w-px h-8 bg-border-light"></div>
+                  <div className="text-center">
+                    <p className="text-xs text-text-muted">Local</p>
+                    <p className="text-lg font-bold text-primary">100%</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
-          <div className="stat-divider"></div>
-          <div className="stat-item">
-            <span className="stat-number">8</span>
-            <span className="stat-label">{t('hero.stat2')}</span>
-          </div>
-          <div className="stat-divider"></div>
-          <div className="stat-item">
-            <span className="stat-number">5</span>
-            <span className="stat-label">{t('hero.stat3')}</span>
-          </div>
-        </div>
+        </motion.div>
       </div>
-
-      <style jsx="true">{`
-        .hero {
-          min-height: 100vh;
-          display: flex;
-          align-items: center;
-          position: relative;
-          padding: 8rem 0 4rem;
-          background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-alt) 100%);
-          overflow: hidden;
-        }
-
-        .hero-bg {
-          position: absolute;
-          inset: 0;
-          pointer-events: none;
-          overflow: hidden;
-        }
-
-        .shape {
-          position: absolute;
-          border-radius: 50%;
-          opacity: 0.5;
-        }
-
-        .shape-1 {
-          width: 500px; height: 500px;
-          background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
-          top: -15%; right: -10%;
-        }
-
-        .shape-2 {
-          width: 300px; height: 300px;
-          background: radial-gradient(circle, rgba(30, 58, 95, 0.1) 0%, transparent 70%);
-          bottom: 10%; left: -5%;
-        }
-
-        .shape-3 {
-          width: 200px; height: 200px;
-          background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
-          top: 40%; left: 30%;
-        }
-
-        .hero-content {
-          position: relative;
-          z-index: 2;
-          max-width: 800px;
-        }
-
-        .hero-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          background: rgba(13, 148, 136, 0.1);
-          border: 1px solid rgba(13, 148, 136, 0.2);
-          color: var(--secondary);
-          padding: 0.6rem 1.2rem;
-          border-radius: 50px;
-          font-size: 0.75rem;
-          font-weight: 700;
-          letter-spacing: 1.5px;
-          margin-bottom: 1.5rem;
-        }
-
-        .hero-title {
-          font-size: clamp(2.5rem, 6vw, 4rem);
-          font-weight: 800;
-          line-height: 1.1;
-          margin-bottom: 1.5rem;
-        }
-
-        .line-1 {
-          display: block;
-          color: var(--primary);
-        }
-
-        .line-2 {
-          display: block;
-          color: var(--secondary);
-        }
-
-        .hero-description {
-          font-size: 1.15rem;
-          color: var(--text-muted);
-          max-width: 600px;
-          margin-bottom: 2.5rem;
-          line-height: 1.8;
-        }
-
-        .hero-btns {
-          display: flex;
-          gap: 1rem;
-          flex-wrap: wrap;
-          margin-bottom: 4rem;
-        }
-
-        .hero-stats {
-          display: inline-flex;
-          align-items: center;
-          gap: 2.5rem;
-          background: white;
-          border: 1px solid var(--border-light);
-          border-radius: 16px;
-          padding: 1.5rem 2.5rem;
-          box-shadow: var(--shadow);
-        }
-
-        .stat-item { text-align: center; }
-
-        .stat-number {
-          display: block;
-          font-family: 'Outfit', sans-serif;
-          font-size: 2rem;
-          font-weight: 800;
-          color: var(--secondary);
-          line-height: 1;
-        }
-
-        .stat-label {
-          font-size: 0.8rem;
-          color: var(--text-muted);
-          margin-top: 0.4rem;
-          display: block;
-        }
-
-        .stat-divider {
-          width: 1px; height: 40px;
-          background: var(--border-light);
-        }
-
-        @media (max-width: 768px) {
-          .hero { padding-top: 7rem; }
-          .hero-btns { flex-direction: column; }
-          .hero-stats { flex-direction: column; gap: 1.5rem; padding: 1.5rem; }
-          .stat-divider { width: 50px; height: 1px; }
-        }
-      `}</style>
     </section>
   );
 };
