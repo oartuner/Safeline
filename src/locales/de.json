@@ -1,0 +1,78 @@
+{
+    "nav": {
+        "home": "STARTSEITE",
+        "about": "ÜBER UNS",
+        "services": "LEISTUNGEN",
+        "contact": "KONTAKT",
+        "quote": "ANGEBOT"
+    },
+    "hero": {
+        "badge": "ÜBER 20 JAHRE ERFAHRUNG",
+        "title1": "Sicherer Weg,",
+        "title2": "Grenzenlose Lösungen.",
+        "description": "Als Safe Line Logistics bringen wir Geschwindigkeit, Sicherheit und Innovation in Ihren globalen Handel mit integrierten Logistiklösungen in der See-, Straßen-, Luft- und Schienenverkehr.",
+        "cta1": "UNSERE LEISTUNGEN",
+        "cta2": "ANGEBOT ANFORDERN",
+        "stat1": "Agenturnetzwerk",
+        "stat2": "Schlüsselsektoren",
+        "stat3": "Transportmodi"
+    },
+    "about": {
+        "tag": "ÜBER UNS",
+        "title": "Ein vertrauenswürdiger Name in der Logistik",
+        "mission_title": "MISSION",
+        "vision_title": "VISION",
+        "values_title": "UNSERE WERTE",
+        "quality_title": "QUALITÄTSPOLITIK",
+        "satisfaction_title": "KUNDENZUFRIEDENHEIT"
+    },
+    "services": {
+        "tag": "UNSERE LEISTUNGEN",
+        "title": "Integrierte Logistiklösungen",
+        "subtitle": "Innovative und nachhaltige Transportdienstleistungen, die Ihre globale Lieferkette optimieren.",
+        "cta": "Angebot",
+        "sectors_tag": "SEKTOREN",
+        "sectors_title": "Unsere Expertise",
+        "sea": "SEEFRACHT",
+        "land": "LANDFRACHT",
+        "air": "LUFTFRACHT",
+        "rail": "SCHIENENFRACHT",
+        "project": "PROJEKTLOGISTIK"
+    },
+    "contact": {
+        "tag": "KONTAKT",
+        "title": "Kontaktieren Sie uns",
+        "subtitle": "Fordern Sie ein Angebot für Ihre Logistikbedürfnisse an.",
+        "main_office": "Hauptbüro",
+        "kz_office": "Kasachstan Büro",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "form_name": "VOLLSTÄNDIGER NAME",
+        "form_email": "E-MAIL",
+        "form_phone": "TELEFON",
+        "form_service": "SERVICEART",
+        "form_message": "IHRE NACHRICHT",
+        "form_select": "Auswählen...",
+        "form_submit": "ANGEBOTSANFRAGE SENDEN"
+    },
+    "footer": {
+        "description": "Der vertrauenswürdige Name in der globalen Logistik. Wir bringen Ihr Unternehmen mit über 20 Jahren Erfahrung und innovativen Lösungen in die Welt.",
+        "services": "Leistungen",
+        "corporate": "Unternehmen",
+        "newsletter_title": "Newsletter abonnieren",
+        "newsletter_desc": "Abonnieren Sie unsere Mailingliste für Branchenupdates und Neuigkeiten.",
+        "newsletter_placeholder": "Ihre E-Mail-Adresse",
+        "copyright": "Alle Rechte vorbehalten.",
+        "privacy": "Datenschutz",
+        "cookies": "Cookie-Richtlinie",
+        "terms": "Nutzungsbedingungen",
+        "sea": "Seefracht",
+        "land": "Landfracht",
+        "air": "Luftfracht",
+        "rail": "Schienenfracht",
+        "project": "Projektlogistik",
+        "about_us": "Über uns",
+        "mission_vision": "Mission & Vision",
+        "quality_policy": "Qualitätspolitik"
+    }
+}

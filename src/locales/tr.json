@@ -1,0 +1,78 @@
+{
+    "nav": {
+        "home": "ANA SAYFA",
+        "about": "HAKKIMIZDA",
+        "services": "HİZMETLER",
+        "contact": "İLETİŞİM",
+        "quote": "TEKLİF AL"
+    },
+    "hero": {
+        "badge": "20+ YILLIK DENEYİM",
+        "title1": "Güvenli Hat,",
+        "title2": "Sınırsız Çözüm.",
+        "description": "Safe Line Lojistik olarak; denizyolu, karayolu, havayolu ve demir yolu taşımacılığında entegre lojistik çözümlerle küresel ticaretinize hız, güvenlik ve yenilikçilik katıyoruz.",
+        "cta1": "HİZMETLERİMİZ",
+        "cta2": "TEKLİF ALIN",
+        "stat1": "Acente Ağı",
+        "stat2": "Kritik Sektör",
+        "stat3": "Ulaşım Modu"
+    },
+    "about": {
+        "tag": "HAKKIMIZDA",
+        "title": "Lojistikte Güvenilir İsim",
+        "mission_title": "MİSYON",
+        "vision_title": "VİZYON",
+        "values_title": "DEĞERLERİMİZ",
+        "quality_title": "KALİTE POLİTİKASI",
+        "satisfaction_title": "MÜŞTERİ MEMNUNİYETİ"
+    },
+    "services": {
+        "tag": "HİZMETLERİMİZ",
+        "title": "Entegre Lojistik Çözümler",
+        "subtitle": "Küresel tedarik zincirinizi optimize eden, yenilikçi ve sürdürülebilir taşımacılık hizmetleri.",
+        "cta": "Teklif Al",
+        "sectors_tag": "SEKTÖRLER",
+        "sectors_title": "Uzmanlık Alanlarımız",
+        "sea": "DENİZ YOLU",
+        "land": "KARA YOLU",
+        "air": "HAVA YOLU",
+        "rail": "DEMİR YOLU",
+        "project": "PROJE LOJİSTİĞİ"
+    },
+    "contact": {
+        "tag": "İLETİŞİM",
+        "title": "Bizimle İletişime Geçin",
+        "subtitle": "Lojistik ihtiyaçlarınız için hemen teklif alın.",
+        "main_office": "Merkez Ofis",
+        "kz_office": "Kazakistan Ofisi",
+        "phone": "Telefon",
+        "email": "E-posta",
+        "form_name": "AD SOYAD",
+        "form_email": "E-POSTA",
+        "form_phone": "TELEFON",
+        "form_service": "HİZMET TİPİ",
+        "form_message": "MESAJINIZ",
+        "form_select": "Seçiniz...",
+        "form_submit": "TEKLİF TALEBİ GÖNDER"
+    },
+    "footer": {
+        "description": "Küresel lojistiğin güvenilir ismi. 20+ yıllık tecrübemiz ve yenilikçi çözümlerimizle işinizi dünyaya taşıyoruz.",
+        "services": "Hizmetler",
+        "corporate": "Kurumsal",
+        "newsletter_title": "Bültene Abone Ol",
+        "newsletter_desc": "Sektörel güncellemeler ve haberler için e-posta listemize katılın.",
+        "newsletter_placeholder": "E-posta adresiniz",
+        "copyright": "Tüm Hakları Saklıdır.",
+        "privacy": "KVKK",
+        "cookies": "Çerez Politikası",
+        "terms": "Kullanım Koşulları",
+        "sea": "Denizyolu",
+        "land": "Karayolu",
+        "air": "Havayolu",
+        "rail": "Demiryolu",
+        "project": "Proje Lojistiği",
+        "about_us": "Hakkımızda",
+        "mission_vision": "Misyon & Vizyon",
+        "quality_policy": "Kalite Politikası"
+    }
+}

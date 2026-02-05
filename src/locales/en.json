@@ -1,0 +1,78 @@
+{
+    "nav": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "services": "SERVICES",
+        "contact": "CONTACT",
+        "quote": "GET QUOTE"
+    },
+    "hero": {
+        "badge": "20+ YEARS OF EXPERIENCE",
+        "title1": "Safe Route,",
+        "title2": "Unlimited Solutions.",
+        "description": "As Safe Line Logistics, we add speed, security and innovation to your global trade with integrated logistics solutions in sea, road, air and rail transportation.",
+        "cta1": "OUR SERVICES",
+        "cta2": "GET A QUOTE",
+        "stat1": "Agency Network",
+        "stat2": "Key Sectors",
+        "stat3": "Transport Modes"
+    },
+    "about": {
+        "tag": "ABOUT US",
+        "title": "A Trusted Name in Logistics",
+        "mission_title": "MISSION",
+        "vision_title": "VISION",
+        "values_title": "OUR VALUES",
+        "quality_title": "QUALITY POLICY",
+        "satisfaction_title": "CUSTOMER SATISFACTION"
+    },
+    "services": {
+        "tag": "OUR SERVICES",
+        "title": "Integrated Logistics Solutions",
+        "subtitle": "Innovative and sustainable transportation services that optimize your global supply chain.",
+        "cta": "Get Quote",
+        "sectors_tag": "SECTORS",
+        "sectors_title": "Our Expertise",
+        "sea": "SEA FREIGHT",
+        "land": "LAND FREIGHT",
+        "air": "AIR FREIGHT",
+        "rail": "RAIL FREIGHT",
+        "project": "PROJECT LOGISTICS"
+    },
+    "contact": {
+        "tag": "CONTACT",
+        "title": "Get in Touch",
+        "subtitle": "Get a quote for your logistics needs.",
+        "main_office": "Main Office",
+        "kz_office": "Kazakhstan Office",
+        "phone": "Phone",
+        "email": "Email",
+        "form_name": "FULL NAME",
+        "form_email": "EMAIL",
+        "form_phone": "PHONE",
+        "form_service": "SERVICE TYPE",
+        "form_message": "YOUR MESSAGE",
+        "form_select": "Select...",
+        "form_submit": "SEND QUOTE REQUEST"
+    },
+    "footer": {
+        "description": "The trusted name in global logistics. We carry your business to the world with 20+ years of experience and innovative solutions.",
+        "services": "Services",
+        "corporate": "Corporate",
+        "newsletter_title": "Subscribe to Newsletter",
+        "newsletter_desc": "Join our mailing list for industry updates and news.",
+        "newsletter_placeholder": "Your email address",
+        "copyright": "All Rights Reserved.",
+        "privacy": "Privacy Policy",
+        "cookies": "Cookie Policy",
+        "terms": "Terms of Use",
+        "sea": "Sea Freight",
+        "land": "Land Freight",
+        "air": "Air Freight",
+        "rail": "Rail Freight",
+        "project": "Project Logistics",
+        "about_us": "About Us",
+        "mission_vision": "Mission & Vision",
+        "quality_policy": "Quality Policy"
+    }
+}
