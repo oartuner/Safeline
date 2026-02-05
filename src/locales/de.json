@@ -10,17 +10,21 @@
         "badge": "20+ JAHRE ERFAHRUNG",
         "title1": "Sichere Linie,",
         "title2": "Unbegrenzte Lösungen.",
-        "description": "Als Safe Line Logistics verleihen wir Ihrem globalen Handel Geschwindigkeit, Sicherheit und Innovation mit integrierten Logistiklösungen im See-, Straßen-, Luft- und Schienenverkehr.",
+        "description": "Als Safeline Logistics verleihen wir Ihrem globalen Handel Geschwindigkeit, Sicherheit und Innovation mit integrierten Logistiklösungen im See-, Straßen-, Luft- und Schienenverkehr.",
         "cta1": "UNSERE DIENSTLEISTUNGEN",
         "cta2": "ANGEBOT ERHALTEN",
         "stat1": "Agenturnetzwerk",
         "stat2": "Schlüsselsektoren",
-        "stat3": "Transportarten"
+        "stat3": "Transportarten",
+        "experience_badge": "JAHRE",
+        "experience_text": "ERFAHRUNG",
+        "active_agents": "Agenten",
+        "global_network": "Globales Netz"
     },
     "about": {
         "tag": "ÜBER UNS",
         "title": "Ein vertrauenswürdiger Name in der Logistik",
-        "description": "SAFE LINE LOGISTICS bietet mit seinem Fachpersonal und mehr als 20 Jahren Erfahrung integrierte Logistikdienstleistungen für die führenden Unternehmen der Branche durch alternative und innovative Lösungen für Kundenbedürfnisse.",
+        "description": "Safeline Logistics bietet mit seinem Fachpersonal und mehr als 20 Jahren Erfahrung integrierte Logistikdienstleistungen für die führenden Unternehmen der Branche durch alternative und innovative Lösungen für Kundenbedürfnisse.",
         "mission_title": "MISSION",
         "mission_desc": "Unseren Kunden innovative und nachhaltige Mehrwertdienste durch integrierte Logistiklösungen zu bieten.",
         "vision_title": "VISION",
@@ -53,6 +57,24 @@
         "satisfaction_title": "KUNDENZUFRIEDENHEIT",
         "satisfaction_desc": "Transparenter und qualitativer Service: Wir bieten unseren Kunden offenen, transparenten, zuverlässigen und hochwertigen Service."
     },
+    "certifications": {
+        "tag": "ZERTIFIKATE & MITGLIEDSCHAFTEN",
+        "title": "Qualität & Zuverlässigkeit",
+        "subtitle": "Unsere Zertifizierungen gewährleisten internationale Servicequalität und Zuverlässigkeit.",
+        "certificates": "Zertifikate",
+        "memberships": "Mitgliedschaften",
+        "iso_desc": "Qualitätsmanagementsystem",
+        "auth_cert": "Genehmigungszertifikat",
+        "ministry": "Verkehrsministerium",
+        "auth_desc": "Offizielle Transportgenehmigung",
+        "trademark": "Markenregistrierung",
+        "trademark_desc": "Eingetragene Marke",
+        "utikad_desc": "Internationaler Transport- und Logistikverband",
+        "fiata_desc": "Internationale Föderation der Spediteure",
+        "tim_desc": "Türkische Exporteursversammlung",
+        "jctrans_desc": "GCP-Mitgliedschaftszertifikat",
+        "olo_desc": "Orange Logistik Organisation"
+    },
     "services": {
         "tag": "DIENSTLEISTUNGEN",
         "title": "Integrierte Logistiklösungen",
@@ -74,6 +96,7 @@
             "sea": {
                 "title": "SEEFRACHT",
                 "features": [
+                    "Platzgarantierte Verträge mit SSLines",
                     "FCL und LCL Verladung",
                     "Spezialausrüstung",
                     "Schiffscharterung",
@@ -98,6 +121,7 @@
             "air": {
                 "title": "LUFTFRACHT",
                 "features": [
+                    "Cross- und Transit-Transporte",
                     "Allgemeine Fracht",
                     "Charterflug-Service",
                     "Hand Carry Service",
@@ -109,6 +133,8 @@
             "rail": {
                 "title": "SCHIENENVERKEHR",
                 "features": [
+                    "Cross- und Transitversand",
+                    "Projekttransport",
                     "Container- und Waggontransport",
                     "Mehrwertdienste",
                     "Terminal-Dienstleistungen",
@@ -118,6 +144,9 @@
             "project": {
                 "title": "PROJEKTLOGISTIK",
                 "features": [
+                    "Routenbesichtigung und Genehmigung",
+                    "Bereitstellung geeigneter Umschlaggeräte",
+                    "Mehrwertdienste",
                     "Beratung und Routenplanung",
                     "HeavyLift und Übermaß",
                     "Voll-/Teilcharterung",

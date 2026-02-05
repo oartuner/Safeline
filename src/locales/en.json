@@ -10,21 +10,25 @@
         "badge": "20+ YEARS OF EXPERIENCE",
         "title1": "Safe Line,",
         "title2": "Unlimited Solutions.",
-        "description": "As Safe Line Logistics, we add speed, security and innovation to your global trade with integrated logistics solutions in sea, road, air and rail transportation.",
+        "description": "As Safeline Logistics, we add speed, security and innovation to your global trade with integrated logistics solutions in sea, road, air and rail transportation.",
         "cta1": "OUR SERVICES",
         "cta2": "GET A QUOTE",
         "stat1": "Agency Network",
         "stat2": "Key Sectors",
-        "stat3": "Transport Modes"
+        "stat3": "Transport Modes",
+        "experience_badge": "YEARS",
+        "experience_text": "EXPERIENCE",
+        "active_agents": "Agents",
+        "global_network": "Global Network"
     },
     "about": {
         "tag": "ABOUT US",
         "title": "A Trusted Name in Logistics",
-        "description": "SAFE LINE LOGISTICS, with its expert staff with more than 20 years of experience, provides integrated logistics services to the leading companies of the sector by creating alternative and innovative solutions regarding customer needs.",
+        "description": "Safeline Logistics, with its expert staff with more than 20 years of experience, provides integrated logistics services to the leading companies of the sector by creating alternative and innovative solutions regarding customer needs.",
         "mission_title": "MISSION",
         "mission_desc": "To provide innovative and sustainable value-added services to its customers by offering integrated logistics solutions.",
         "vision_title": "VISION",
-        "vision_desc": "To be a leading brand that maintains continuous growth and improves market standards by innovative and solution-oriented approaches.",
+        "vision_desc": "To be a leading brand that maintains continuous growth and improves industry standards by innovative and solution-oriented approaches.",
         "values_title": "OUR VALUES",
         "values": [
             "Customer Orientation",
@@ -37,6 +41,7 @@
             "Ethical Values",
             "Change and Development"
         ],
+        "quality_policy": "Quality Policy",
         "values_desc": [
             "We aim to fully understand and meet customer needs by adopting a customer-focused approach in all pre- and post-sales processes.",
             "We provide training opportunities for our employees to improve their capabilities, value their ideas, and encourage participation to build a strong team spirit.",
@@ -46,12 +51,30 @@
             "We provide confidence to our customers by ensuring full compliance with quality standards and legal regulations, standing firmly behind our promises.",
             "We are sensitive to society and the environment; we strive to minimize environmental impacts and create social value in all our business processes.",
             "We adopt the highest ethical standards in our business activities and never compromise on the principles of honesty and reliability.",
-            "We continue to grow by evaluating opportunities for continuous improvement and development through innovative approaches that raise market standards."
+            "We continue to grow by evaluating opportunities for continuous improvement and development through innovative approaches that raise industry standards."
         ],
         "quality_title": "QUALITY POLICY",
         "quality_desc": "Customer Satisfaction: We adopt a customer-focused approach and keep customer satisfaction at the highest level. We strive to understand customer needs, meet their expectations and add value to them.",
         "satisfaction_title": "CUSTOMER SATISFACTION",
         "satisfaction_desc": "Transparent and Quality Service: We provide our customers with open, transparent, reliable and high quality service in accordance with their needs and expectations."
+    },
+    "certifications": {
+        "tag": "CERTIFICATES & MEMBERSHIPS",
+        "title": "Quality & Reliability",
+        "subtitle": "Our certifications ensuring international service quality and reliability.",
+        "certificates": "Certificates",
+        "memberships": "Memberships",
+        "iso_desc": "Quality Management System",
+        "auth_cert": "Authorization Certificate",
+        "ministry": "Ministry of Transport",
+        "auth_desc": "Official Transport Authorization",
+        "trademark": "Trademark Registration",
+        "trademark_desc": "Registered Trademark",
+        "utikad_desc": "International Transport & Logistics Association",
+        "fiata_desc": "International Federation of Freight Forwarders",
+        "tim_desc": "Turkish Exporters Assembly",
+        "jctrans_desc": "GCP Membership Certificate",
+        "olo_desc": "Orange Logistics Organization"
     },
     "services": {
         "tag": "OUR SERVICES",
@@ -74,6 +97,7 @@
             "sea": {
                 "title": "SEA FREIGHT",
                 "features": [
+                    "Space Guaranteed Contracts with SSLines",
                     "FCL and LCL Loading",
                     "Special Equipment Loading",
                     "Vessel Chartering",
@@ -98,6 +122,7 @@
             "air": {
                 "title": "AIR FREIGHT",
                 "features": [
+                    "Cross and Transit Transportation",
                     "General Cargo Transportation",
                     "Charter Flight Service",
                     "Hand Carry Service",
@@ -109,6 +134,8 @@
             "rail": {
                 "title": "RAIL FREIGHT",
                 "features": [
+                    "Cross and Transit Shipment",
+                    "Project Transportation",
                     "Container and Conventional Wagon Transportation",
                     "Value Added Services",
                     "Terminal Handling Services",
@@ -118,12 +145,26 @@
             "project": {
                 "title": "PROJECT LOGISTICS",
                 "features": [
+                    "Route Survey and Authorization",
+                    "Supply of Suitable Handling Equipment",
+                    "Value Added Services",
                     "Consulting and Route Planning",
                     "HeavyLift and Out of Gauge Cargoes",
                     "Full/Part Chartering of Project Vessels",
                     "Port Handling Services",
                     "Escort Vehicle Arrangement",
                     "Turnkey Project Solutions"
+                ]
+            },
+            "warehouse": {
+                "title": "WAREHOUSING & CUSTOMS",
+                "features": [
+                    "24/7 Security and Surveillance",
+                    "Modern Inventory Management",
+                    "Order Picking and Packaging",
+                    "Professional Customs Support",
+                    "Value-Added Warehousing Services",
+                    "Secure and Modern Facilities"
                 ]
             }
         }

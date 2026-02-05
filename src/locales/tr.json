@@ -10,21 +10,25 @@
         "badge": "20+ YILLIK DENEYİM",
         "title1": "Güvenli Hat,",
         "title2": "Sınırsız Çözüm.",
-        "description": "Safe Line Lojistik olarak; denizyolu, karayolu, havayolu ve demir yolu taşımacılığında entegre lojistik çözümlerle küresel ticaretinize hız, güvenlik ve yenilikçilik katıyoruz.",
+        "description": "Safeline Logistics olarak; denizyolu, karayolu, havayolu ve demir yolu taşımacılığında entegre lojistik çözümlerle küresel ticaretinize hız, güvenlik ve yenilikçilik katıyoruz.",
         "cta1": "HİZMETLERİMİZ",
         "cta2": "TEKLİF ALIN",
         "stat1": "Acente Ağı",
-        "stat2": "Kritik Sektör",
-        "stat3": "Ulaşım Modu"
+        "stat2": "Hizmet Verilen Sektör",
+        "stat3": "Ulaşım Modu",
+        "experience_badge": "YIL",
+        "experience_text": "DENEYİM",
+        "active_agents": "Acente",
+        "global_network": "Global Ağ"
     },
     "about": {
         "tag": "HAKKIMIZDA",
         "title": "Lojistikte Güvenilir İsim",
-        "description": "SAFE LINE LOJİSTİK, 20 yılı aşkın tecrübesi ve uzman kadrosuyla, müşteri ihtiyaçlarına yönelik alternatif ve yenilikçi çözümler üreterek sektörün önde gelen firmalarına entegre lojistik hizmetleri sunmaktadır.",
+        "description": "Safeline Logistics, 20 yılı aşkın tecrübesi ve uzman kadrosuyla, müşteri ihtiyaçlarına yönelik alternatif ve yenilikçi çözümler üreterek sektörün önde gelen firmalarına entegre lojistik hizmetleri sunmaktadır.",
         "mission_title": "MİSYON",
         "mission_desc": "Entegre lojistik çözümleri sunarak müşterilerine yenilikçi ve sürdürülebilir katma değer sağlamak.",
         "vision_title": "VİZYON",
-        "vision_desc": "Yenilikçi ve çözüm odaklı yaklaşımlarla pazar standartlarını geliştiren ve sürekli büyüyen lider bir marka olmak.",
+        "vision_desc": "Yenilikçi ve çözüm odaklı yaklaşımlarla sektör standartlarını geliştiren ve sürekli büyüyen lider bir marka olmak.",
         "values_title": "DEĞERLERİMİZ",
         "values": [
             "Müşteri Odaklılık",
@@ -46,12 +50,30 @@
             "Yasal düzenlemelere ve kalite standartlarına tam uyum sağlayarak, müşterilerimize verdiğimiz sözlerin arkasında duruyor ve güven veriyoruz.",
             "Topluma ve çevreye duyarlıyız; iş süreçlerimizde çevresel etkileri en aza indirmek ve toplumsal fayda sağlamak için çalışıyoruz.",
             "Ticari faaliyetlerimizde en yüksek etik standartları benimsiyor, dürüstlük ve güvenilirlik ilkelerinden asla taviz vermiyoruz.",
-            "Pazar standartlarını geliştiren yenilikçi yaklaşımlarla, sürekli iyileştirme ve gelişim fırsatlarını değerlendirerek büyümeye devam ediyoruz."
+            "Sektör standartlarını geliştiren yenilikçi yaklaşımlarla, sürekli iyileştirme ve gelişim fırsatlarını değerlendirerek büyümeye devam ediyoruz."
         ],
         "quality_title": "KALİTE POLİTİKASI",
         "quality_desc": "Müşteri Memnuniyeti: Müşteri odaklı bir yaklaşım benimsiyor ve müşteri memnuniyetini en üst düzeyde tutuyoruz. Müşteri ihtiyaçlarını anlamak, beklentilerini karşılamak ve onlara değer katmak için çalışıyoruz.",
         "satisfaction_title": "MÜŞTERİ MEMNUNİYETİ",
         "satisfaction_desc": "Şeffaf ve Kaliteli Hizmet: Müşterilerimize ihtiyaç ve beklentileri doğrultusunda açık, şeffaf, güvenilir ve kaliteli hizmet sunuyoruz."
+    },
+    "certifications": {
+        "tag": "SERTİFİKALAR & ÜYELİKLER",
+        "title": "Kalite ve Güvenilirlik",
+        "subtitle": "Uluslararası standartlarda hizmet kalitesi ve güvenilirliği belgelerimiz.",
+        "certificates": "Sertifikalar",
+        "memberships": "Üyelikler",
+        "iso_desc": "Kalite Yönetim Sistemi",
+        "auth_cert": "Yetki Belgesi",
+        "ministry": "T.C. Ulaştırma Bakanlığı",
+        "auth_desc": "Resmi Taşımacılık Yetki Belgesi",
+        "trademark": "Marka Tescil",
+        "trademark_desc": "Tescilli Ticari Marka",
+        "utikad_desc": "Uluslararası Taşımacılık ve Lojistik Derneği",
+        "fiata_desc": "Uluslararası Taşımacılık Federasyonu",
+        "tim_desc": "Türkiye İhracatçılar Meclisi",
+        "jctrans_desc": "GCP Üyelik Sertifikası",
+        "olo_desc": "Orange Lojistik Organizasyonu"
     },
     "services": {
         "tag": "HİZMETLERİMİZ",
@@ -74,6 +96,7 @@
             "sea": {
                 "title": "DENİZ YOLU",
                 "features": [
+                    "SSLines ile Yer Garantili Kontratlar",
                     "FCL ve LCL Yükleme",
                     "Özel Ekipman Yüklemesi",
                     "Gemi Kiralama (Chartering)",
@@ -98,6 +121,7 @@
             "air": {
                 "title": "HAVA YOLU",
                 "features": [
+                    "Çapraz ve Transit Taşımalar",
                     "Genel Kargo Taşımacılığı",
                     "Charter Uçuş Hizmeti",
                     "Hand Carry (Elden Teslim)",
@@ -109,6 +133,8 @@
             "rail": {
                 "title": "DEMİR YOLU",
                 "features": [
+                    "Çapraz ve Transit Sevkiyat",
+                    "Proje Taşımacılığı",
                     "Konteyner ve Konvansiyonel Vagon",
                     "Katma Değerli Hizmetler",
                     "Terminal Elleçleme Hizmetleri",
@@ -118,12 +144,26 @@
             "project": {
                 "title": "PROJE LOJİSTİĞİ",
                 "features": [
+                    "Yol Etüdü ve İzinlerin Alınması",
+                    "Uygun Elleçleme Ekipman Temini",
+                    "Katma Değerli Hizmetler",
                     "Danışmanlık ve Rota Planlama",
                     "HeavyLift ve Gabari Dışı Yükler",
                     "Proje Gemisi Kiralama (Full/Part)",
                     "Liman Elleçleme Hizmetleri",
                     "Eskort Araç Temini",
                     "Anahtar Teslim Proje Çözümleri"
+                ]
+            },
+            "warehouse": {
+                "title": "DEPOLAMA & GÜMRÜK",
+                "features": [
+                    "7/24 Güvenlik ve Gözetim",
+                    "Modern Envanter Yönetimi",
+                    "Sipariş Hazırlama ve Paketleme",
+                    "Profesyonel Gümrükleme Desteği",
+                    "Katma Değerli Depolama Hizmetleri",
+                    "Güvenli ve Modern Tesisler"
                 ]
             }
         }

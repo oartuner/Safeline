@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Diamond } from 'lucide-react';
 import { SITE_DATA } from '../data/siteData';
 import Modal from './Modal';
 
@@ -11,10 +12,25 @@ const About = () => {
   const values = t('about.values', { returnObjects: true }) || [];
   const valuesDesc = t('about.values_desc', { returnObjects: true }) || [];
 
+  // Images for each value (indices must match 'values' array)
+  // All images are formal, corporate settings with professionals in business attire
+  const valueImages = [
+    'https://images.unsplash.com/photo-1560439514-4e9645039924?auto=format&fit=crop&q=80', // Müşteri Odaklılık: Profesyonel iş toplantısı
+    'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80', // Takım Ruhu: Ofiste takım çalışması
+    'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80', // Sürdürülebilirlik: Modern ofis alanı
+    'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80', // Sonuç Odaklılık: Dizüstü bilgisayarla analiz
+    'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80', // Dürüstlük ve Şeffaflık: Profesyonel el sıkışma
+    'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80', // Güvenilirlik: Ofiste profesyonel kadın
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80', // Çevreye Saygı: Modern cam bina (sürdürülebilir mimari)
+    'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80', // Etik Değerler: Sözleşme imzalama
+    'https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&q=80', // Değişim ve Gelişim: Strateji toplantısı
+  ];
+
   const handleValueClick = (index) => {
     setSelectedVal({
       title: values[index],
-      content: valuesDesc[index] || t('about.description') // Fallback
+      content: valuesDesc[index] || t('about.description'), // Fallback
+      image: valueImages[index] // Pass the specific image
     });
   };
 
@@ -24,17 +40,17 @@ const About = () => {
         <div className="about-grid">
           <div className="about-visual">
             <div className="image-main">
-              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80" alt="Logistics" />
+              <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" alt="Safeline Team" />
               <div className="experience-badge">
                 <span className="number">20<sup>+</sup></span>
-                <span className="text">YIL</span>
+                <span className="text">{t('hero.experience_badge')}</span>
               </div>
             </div>
             <div className="floating-card">
               <div className="fc-icon">🌍</div>
               <div className="fc-text">
-                <strong>150+ Acente</strong>
-                <span>Global Ağ</span>
+                <strong>150+ {t('hero.active_agents')}</strong>
+                <span>{t('hero.global_network')}</span>
               </div>
             </div>
           </div>
@@ -96,7 +112,8 @@ const About = () => {
         onClose={() => setSelectedVal(null)}
         title={selectedVal?.title}
         content={selectedVal?.content}
-        icon="💎"
+        image={selectedVal?.image}
+        icon={<Diamond />}
       />
 
       <style jsx="true">{`

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Activity, Brain, Globe, ShieldCheck, BarChart, Zap, ArrowRight, X } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Ship, Plane, Truck, TrainFront, Warehouse, Briefcase, ArrowRight, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Modal from './Modal';
 
@@ -11,90 +11,99 @@ const FeaturesSection = () => {
     const features = [
         {
             id: 1,
+            serviceKey: 'sea',
             title: t('services_bento.sea.title'),
             description: t('services_bento.sea.desc'),
             content: t('services_bento.sea.content'),
-            icon: Globe,
-            gradient: 'from-blue-600 to-blue-400',
-            size: 'md:col-span-2 md:row-span-2',
+            icon: Ship,
+            gradient: 'from-blue-600 to-cyan-400',
+            glowColor: 'rgba(37, 99, 235, 0.3)',
+            image: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&q=80',
         },
         {
             id: 2,
+            serviceKey: 'air',
             title: t('services_bento.air.title'),
             description: t('services_bento.air.desc'),
             content: t('services_bento.air.content'),
-            icon: Zap,
+            icon: Plane,
             gradient: 'from-amber-500 to-yellow-400',
-            size: 'md:col-span-1 md:row-span-1',
+            glowColor: 'rgba(245, 158, 11, 0.3)',
+            image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80',
         },
         {
             id: 3,
+            serviceKey: 'land',
             title: t('services_bento.land.title'),
             description: t('services_bento.land.desc'),
             content: t('services_bento.land.content'),
-            icon: Activity,
-            gradient: 'from-cyan-500 to-blue-400',
-            size: 'md:col-span-1 md:row-span-1',
+            icon: Truck,
+            gradient: 'from-cyan-500 to-teal-400',
+            glowColor: 'rgba(20, 184, 166, 0.3)',
+            image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80',
         },
         {
             id: 4,
+            serviceKey: 'rail',
             title: t('services_bento.rail.title'),
             description: t('services_bento.rail.desc'),
             content: t('services_bento.rail.content'),
-            icon: ShieldCheck,
+            icon: TrainFront,
             gradient: 'from-emerald-500 to-green-400',
-            size: 'md:col-span-1 md:row-span-1',
+            glowColor: 'rgba(16, 185, 129, 0.3)',
+            image: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&q=80',
         },
         {
             id: 5,
+            serviceKey: 'warehouse',
             title: t('services_bento.warehouse.title'),
             description: t('services_bento.warehouse.desc'),
             content: t('services_bento.warehouse.content'),
-            icon: BarChart,
+            icon: Warehouse,
             gradient: 'from-purple-500 to-violet-400',
-            size: 'md:col-span-1 md:row-span-1',
+            glowColor: 'rgba(139, 92, 246, 0.3)',
+            image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80',
         },
         {
             id: 6,
+            serviceKey: 'project',
             title: t('services_bento.project.title'),
             description: t('services_bento.project.desc'),
             content: t('services_bento.project.content'),
-            icon: Brain,
+            icon: Briefcase,
             gradient: 'from-pink-500 to-rose-400',
-            size: 'md:col-span-2 md:row-span-1',
+            glowColor: 'rgba(236, 72, 153, 0.3)',
+            image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80',
         },
     ];
 
     return (
-        <section id="features" className="py-24 bg-bg-light relative overflow-hidden">
-            {/* Background Gradients */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl"></div>
-            </div>
-
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <section id="services" className="py-20 sm:py-32 bg-white relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 {/* Section Header */}
                 <motion.div
-                    className="text-center mb-16"
+                    className="text-center mb-16 sm:mb-24"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <span className="inline-block py-1 px-3 rounded-full bg-secondary/10 text-secondary text-sm font-bold tracking-wider mb-4 border border-secondary/20">
+                    <div className="inline-flex items-center gap-2 py-2 px-6 rounded-full bg-primary/5 text-primary text-xs sm:text-sm font-bold tracking-[0.2em] mb-6 border border-primary/10">
+                        <Sparkles size={16} />
                         {t('nav.services').toUpperCase()}
-                    </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary font-heading">
-                        {t('nav.services') || 'Logistic Solutions'}
+                    </div>
+
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-primary tracking-tight">
+                        {t('nav.services') || 'Lojistik Çözümler'}
                     </h2>
-                    <p className="text-xl text-text-muted max-w-2xl mx-auto">
-                        {t('hero.description') || 'Discover our end-to-end logistics capabilities designed for efficiency and scale.'}
+
+                    <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                        {t('hero.description') || 'Küresel lojistik ihtiyaçlarınız için uçtan uca entegre çözümler.'}
                     </p>
                 </motion.div>
 
-                {/* Bento Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6 auto-rows-[minmax(180px,auto)]">
+                {/* Grid - Uniform 3 Columns */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
                         <FeatureCard
                             key={feature.id}
@@ -111,6 +120,7 @@ const FeaturesSection = () => {
                 onClose={() => setSelectedService(null)}
                 title={selectedService?.title}
                 content={selectedService?.content}
+                features={t(`services.items.${selectedService?.serviceKey}.features`, { returnObjects: true })}
                 icon={selectedService ? <selectedService.icon size={32} /> : null}
             />
         </section>
@@ -118,62 +128,53 @@ const FeaturesSection = () => {
 }
 
 function FeatureCard({ feature, index, onClick }) {
-    const cardRef = useRef(null);
     const Icon = feature.icon;
+    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <motion.div
-            ref={cardRef}
             onClick={onClick}
-            className={`${feature.size} group relative bg-white rounded-3xl border border-border-light overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            className="group relative rounded-[2rem] overflow-hidden cursor-pointer flex flex-col bg-[#F8FAFC] border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 h-full"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            whileHover={{ scale: 1.01 }}
-            onMouseMove={(e) => {
-                if (!cardRef.current) return;
-                const rect = cardRef.current.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                cardRef.current.style.setProperty('--mouse-x', `${x}px`);
-                cardRef.current.style.setProperty('--mouse-y', `${y}px`);
-            }}
         >
-            {/* Hover Gradient Overlay */}
-            <div
-                className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                style={{
-                    zIndex: 0,
-                    opacity: 0.05
-                }}
-            />
+            {/* Image section */}
+            <div className="relative overflow-hidden h-64">
+                <img
+                    src={feature.image}
+                    alt=""
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-500" />
+            </div>
 
-            {/* Mouse Glow Effect */}
-            <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-300 pointer-events-none"
-                style={{
-                    background: `radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(45, 135, 194, 0.15), transparent 40%)`,
-                    zIndex: 1
-                }}
-            />
-
-            {/* Content */}
-            <div className="relative z-10 p-8 h-full flex flex-col justify-between">
-                <div>
-                    <div className={`inline-flex p-3 rounded-2xl mb-4 bg-bg-alt group-hover:bg-white transition-colors shadow-sm`}>
-                        <Icon className="text-primary group-hover:text-secondary transition-colors" size={32} />
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2 text-text-main group-hover:text-primary transition-colors">{feature.title}</h3>
-                    <p className="text-text-muted group-hover:text-text-main/80 transition-colors">{feature.description}</p>
+            {/* Content Section - The "Bottom Space" for High Readability */}
+            <div className="p-8 flex flex-col flex-grow bg-white relative z-10 border-t border-gray-50">
+                {/* Icon Badge - Positioned to slightly overlap */}
+                <div className={`absolute -top-7 left-8 inline-flex p-4 rounded-2xl bg-gradient-to-br ${feature.gradient} shadow-xl group-hover:-translate-y-1 transition-transform duration-300`}>
+                    <Icon className="text-white" size={24} />
                 </div>
 
-                <motion.div
-                    className="mt-4 text-secondary font-medium flex items-center space-x-2 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"
-                >
-                    <span>{feature.title} Detayları</span>
-                    <ArrowRight size={16} />
-                </motion.div>
+                <div className="mt-4">
+                    <h3 className="text-2xl font-black mb-3 text-primary tracking-tight leading-tight group-hover:text-secondary transition-colors duration-300">
+                        {feature.title}
+                    </h3>
+
+                    <p className="text-gray-500 font-medium text-sm sm:text-base leading-relaxed mb-6 line-clamp-2">
+                        {feature.description}
+                    </p>
+                </div>
+
+                <div className="mt-auto flex items-center gap-3 text-secondary font-bold text-sm tracking-widest uppercase items-center">
+                    <span className="group-hover:mr-2 transition-all duration-300">İncele</span>
+                    <div className="p-2 rounded-full bg-secondary/10 group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+                        <ArrowRight size={16} />
+                    </div>
+                </div>
             </div>
         </motion.div>
     );

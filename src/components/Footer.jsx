@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="logo footer-logo">
-            <img src={logo} alt="Safe Line Lojistik" className="logo-img" />
+            <img src={logo} alt="Safeline Logistics" className="logo-img" />
           </div>
           <p className="brand-desc">{t('footer.description')}</p>
           <div className="social-links">
@@ -63,7 +63,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="container bottom-content">
-          <p>© 2026 Safe Line Lojistik. {t('footer.copyright')}</p>
+          <p>© 2026 Safeline Logistics. {t('footer.copyright')}</p>
           <div className="legal-links">
             <a href="#">{t('footer.privacy')}</a>
             <a href="#">{t('footer.cookies')}</a>

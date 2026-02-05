@@ -1,111 +1,132 @@
 import React, { useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, CheckCircle2, ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-const Modal = ({ isOpen, onClose, title, content, icon }) => {
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'unset';
-        }
-        return () => document.body.style.overflow = 'unset';
-    }, [isOpen]);
+const Modal = ({ isOpen, onClose, title, content, icon, image, features = [] }) => {
+  const { t } = useTranslation();
 
-    if (!isOpen) return null;
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => document.body.style.overflow = 'unset';
+  }, [isOpen]);
 
-    return (
-        <div className="modal-overlay" onClick={onClose}>
-            <div className="modal-content" onClick={e => e.stopPropagation()}>
-                <button className="modal-close" onClick={onClose}>&times;</button>
-                <div className="modal-header">
-                    {icon && <span className="modal-icon">{icon}</span>}
-                    <h3>{title}</h3>
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+          {/* Backdrop */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="fixed inset-0 bg-primary/50 backdrop-blur-lg"
+          />
+
+          {/* Modal Content */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            className="relative bg-white w-full max-w-2xl rounded-[2rem] shadow-2xl overflow-hidden z-10 my-8"
+            onClick={e => e.stopPropagation()}
+          >
+            {/* Close Button - Always visible */}
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 p-2.5 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl transition-all z-30 border border-gray-100"
+            >
+              <X size={20} className="text-gray-600" />
+            </button>
+
+            {/* Image Section - Full width header */}
+            {image && (
+              <div className="relative w-full h-72 sm:h-80 overflow-hidden">
+                <img
+                  src={image}
+                  alt={title}
+                  className="w-full h-full object-cover object-top"
+                />
+                {/* Subtle gradient for smooth transition */}
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white to-transparent" />
+              </div>
+            )}
+
+            {/* Content Section - Clean white background */}
+            <div className={`relative bg-white ${image ? '-mt-8 rounded-t-[2rem] relative z-10' : 'pt-16'}`}>
+              {/* Icon Badge */}
+              <div className="flex justify-center">
+                <div className={`p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-primary to-secondary text-white shadow-xl shadow-primary/30 ${image ? '-mt-8' : ''}`}>
+                  {icon ? React.cloneElement(icon, { size: 28 }) : <CheckCircle2 size={28} />}
                 </div>
-                <div className="modal-body">
-                    <p>{content}</p>
+              </div>
+
+              {/* Text Content Area */}
+              <div className="px-6 sm:px-10 pt-6 pb-8">
+                {/* Title */}
+                <h3 className="text-2xl sm:text-3xl font-black text-primary text-center leading-tight mb-6">
+                  {title}
+                </h3>
+
+                {/* Separator Line */}
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-secondary-light mx-auto rounded-full mb-6" />
+
+                {/* Body Content */}
+                <div className="space-y-5">
+                  {/* Plain text content */}
+                  {content && !features?.length && (
+                    <p className="text-gray-600 leading-relaxed text-base sm:text-lg text-center">
+                      {content}
+                    </p>
+                  )}
+
+                  {/* Feature list */}
+                  {features && features.length > 0 && (
+                    <div className="grid gap-3 max-h-[300px] overflow-y-auto pr-2">
+                      {features.map((feature, idx) => (
+                        <motion.div
+                          key={idx}
+                          initial={{ opacity: 0, x: -10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: idx * 0.04 }}
+                          className="group flex items-start gap-3 p-3 sm:p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-secondary/30 hover:bg-white hover:shadow-md transition-all duration-300"
+                        >
+                          <div className="mt-0.5 p-1 rounded-full bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-300 flex-shrink-0">
+                            <CheckCircle2 size={14} />
+                          </div>
+                          <span className="text-gray-700 font-semibold text-sm sm:text-base leading-relaxed">
+                            {feature}
+                          </span>
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
                 </div>
+
+                {/* Footer CTA */}
+                <div className="mt-8 pt-6 border-t border-gray-100">
+                  <a
+                    href="#contact"
+                    onClick={onClose}
+                    className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-primary text-white rounded-xl font-bold text-sm sm:text-base tracking-wider uppercase hover:bg-secondary transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-secondary/30 group"
+                    style={{ color: '#FFFFFF' }}
+                  >
+                    <span style={{ color: '#FFFFFF' }}>{t('hero.cta2') || 'BİZE ULAŞIN'}</span>
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" style={{ color: '#FFFFFF' }} />
+                  </a>
+                </div>
+              </div>
             </div>
-
-            <style jsx="true">{`
-        .modal-overlay {
-          position: fixed;
-          top: 0; left: 0;
-          width: 100%; height: 100vh;
-          background: rgba(0, 0, 0, 0.5);
-          backdrop-filter: blur(4px);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 2000;
-          animation: fadeIn 0.3s ease;
-        }
-
-        .modal-content {
-          background: white;
-          width: 90%; max-width: 500px;
-          padding: 2.5rem;
-          border-radius: 16px;
-          position: relative;
-          box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-          animation: slideUp 0.3s ease;
-          border-top: 4px solid var(--secondary);
-        }
-
-        .modal-close {
-          position: absolute;
-          top: 15px; right: 20px;
-          background: none;
-          border: none;
-          font-size: 2rem;
-          cursor: pointer;
-          color: var(--text-muted);
-          transition: color 0.3s;
-          line-height: 1;
-        }
-
-        .modal-close:hover { color: var(--error); }
-
-        .modal-header {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          margin-bottom: 1.5rem;
-        }
-
-        .modal-icon {
-          font-size: 2rem;
-          background: var(--bg-alt);
-          width: 50px; height: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 12px;
-          color: var(--secondary);
-        }
-
-        .modal-header h3 {
-          font-size: 1.4rem;
-          color: var(--primary);
-          font-weight: 700;
-        }
-
-        .modal-body p {
-          color: var(--text-main);
-          line-height: 1.8;
-          font-size: 1.05rem;
-        }
-
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-          from { transform: translateY(20px); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
-        }
-      `}</style>
+          </motion.div>
         </div>
-    );
+      )}
+    </AnimatePresence>
+  );
 };
 
 export default Modal;
