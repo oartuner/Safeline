@@ -57,8 +57,11 @@ const About = () => {
               </div>
             </div>
 
-            <div className="values-section">
-              <h4>{t('about.values_title')}</h4>
+            <div className="values-section mt-12 pt-8 border-t border-border-light">
+              <h4 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-secondary rounded-full"></span>
+                {t('about.values_title')}
+              </h4>
               <div className="values-grid">
                 {values.map((val, i) => (
                   <button
