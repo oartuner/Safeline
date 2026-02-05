@@ -5,7 +5,6 @@ import { Menu, X, ChevronDown, Sparkles } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const languages = [
-  { code: 'tr', label: 'TR' },
   { code: 'en', label: 'EN' },
   { code: 'de', label: 'DE' }
 ];
