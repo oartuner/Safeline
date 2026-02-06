@@ -31,7 +31,15 @@
         "mission_desc": "To provide innovative and sustainable value-added services to its customers by offering integrated logistics solutions.",
         "vision_title": "VISION",
         "vision_desc": "To be a leading brand that maintains continuous growth and improves industry standards by innovative and solution-oriented approaches.",
+        "stat_experience": "Years Experience",
+        "stat_certified": "Certified",
+        "stat_service_types": "Service Types",
         "values_title": "OUR VALUES",
+        "values_subtitle": "The principles that guide our commitment to excellence in logistics",
+        "explore_values": "Explore Our {{count}} Core Values",
+        "core_values_drawer_title": "Our Core Values",
+        "core_values_drawer_subtitle": "The foundation of everything we do",
+        "close": "Close",
         "values": [
             "Customer Orientation",
             "Team Spirit",
@@ -259,5 +267,8 @@
         "description": "We use cookies to enhance your browsing experience and analyze our traffic. By clicking \"Accept\", you agree to our use of cookies.",
         "accept": "Accept",
         "decline": "Decline"
+    },
+    "action": {
+        "explore": "Explore"
     }
 }

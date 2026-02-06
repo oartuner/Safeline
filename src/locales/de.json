@@ -29,7 +29,15 @@
         "mission_desc": "Unseren Kunden innovative und nachhaltige Mehrwertdienste durch integrierte Logistiklösungen zu bieten.",
         "vision_title": "VISION",
         "vision_desc": "Eine führende Marke zu sein, die kontinuierliches Wachstum aufrechterhält und Marktstandards durch innovative und lösungsorientierte Ansätze verbessert.",
+        "stat_experience": "Jahre Erfahrung",
+        "stat_certified": "Zertifiziert",
+        "stat_service_types": "Dienstleistungsarten",
         "values_title": "UNSERE WERTE",
+        "values_subtitle": "Die Prinzipien, die unser Engagement für Exzellenz in der Logistik leiten",
+        "explore_values": "Entdecken Sie unsere {{count}} Grundwerte",
+        "core_values_drawer_title": "Unsere Grundwerte",
+        "core_values_drawer_subtitle": "Das Fundament von allem, was wir tun",
+        "close": "Schließen",
         "values": [
             "Kundenorientierung",
             "Teamgeist",
@@ -170,6 +178,8 @@
         }
     },
     "services_bento": {
+        "title": "Unsere Dienstleistungen",
+        "subtitle": "Durchgängige integrierte Logistiklösungen für all Ihre globalen Versandanforderungen",
         "land": {
             "title": "Landverkehr",
             "desc": "Zuverlässige und schnelle Straßenlogistik.",
@@ -243,6 +253,7 @@
         "quality_policy": "Qualitätspolitik"
     },
     "trust": {
+        "trusted_by": "GLOBALE STRATEGISCHE PARTNER & TRÄGERNETZWERK",
         "iso_certified": "ISO 9001 Zertifiziert",
         "experience": "20+ Jahre Erfahrung",
         "global_network": "150+ Globale Agenten",

@@ -74,19 +74,19 @@ const About = () => {
             {/* Card 1 */}
             <div className="p-8 bg-white rounded-2xl shadow-xl shadow-gray-100 border border-gray-50 text-center hover:-translate-y-1 transition-transform duration-300">
               <span className="block text-5xl font-black text-secondary mb-3">20+</span>
-              <span className="text-xs text-gray-400 font-bold uppercase tracking-[0.2em]">Years Experience</span>
+              <span className="text-xs text-gray-400 font-bold uppercase tracking-[0.2em]">{t('about.stat_experience')}</span>
             </div>
 
             {/* Card 2 */}
             <div className="p-8 bg-white rounded-2xl shadow-xl shadow-gray-100 border border-gray-50 text-center hover:-translate-y-1 transition-transform duration-300">
               <span className="block text-5xl font-black text-secondary mb-3">ISO</span>
-              <span className="text-xs text-gray-400 font-bold uppercase tracking-[0.2em]">Certified</span>
+              <span className="text-xs text-gray-400 font-bold uppercase tracking-[0.2em]">{t('about.stat_certified')}</span>
             </div>
 
             {/* Card 3 */}
             <div className="p-8 bg-white rounded-2xl shadow-xl shadow-gray-100 border border-gray-50 text-center hover:-translate-y-1 transition-transform duration-300">
               <span className="block text-5xl font-black text-secondary mb-3">5+</span>
-              <span className="text-xs text-gray-400 font-bold uppercase tracking-[0.2em]">Service Types</span>
+              <span className="text-xs text-gray-400 font-bold uppercase tracking-[0.2em]">{t('about.stat_service_types')}</span>
             </div>
           </div>
 

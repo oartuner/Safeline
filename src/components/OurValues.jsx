@@ -32,7 +32,7 @@ const OurValues = () => {
                         {t('about.values_title') || 'OUR VALUES'}
                     </h2>
                     <p className="text-lg text-gray-500 font-medium leading-relaxed mb-8">
-                        The principles that guide our commitment to excellence in logistics
+                        {t('about.values_subtitle')}
                     </p>
 
                     {/* View All Values Button */}
@@ -43,7 +43,7 @@ const OurValues = () => {
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
-                        <span>Explore Our {(t('about.values', { returnObjects: true }) || []).length} Core Values</span>
+                        <span>{t('about.explore_values', { count: (t('about.values', { returnObjects: true }) || []).length })}</span>
                         <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
@@ -67,8 +67,8 @@ const OurValues = () => {
                         <div className="sticky top-0 bg-gradient-to-r from-primary to-secondary text-white p-6 sm:p-8 z-10 shadow-lg">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <h3 className="text-2xl sm:text-3xl font-black mb-2">Our Core Values</h3>
-                                    <p className="text-sm text-white/80">The foundation of everything we do</p>
+                                    <h3 className="text-2xl sm:text-3xl font-black mb-2">{t('about.core_values_drawer_title')}</h3>
+                                    <p className="text-sm text-white/80">{t('about.core_values_drawer_subtitle')}</p>
                                 </div>
                                 <button
                                     onClick={() => setShowDrawer(false)}
@@ -117,7 +117,7 @@ const OurValues = () => {
                                 onClick={() => setShowDrawer(false)}
                                 className="w-full py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all duration-200"
                             >
-                                Close
+                                {t('about.close')}
                             </button>
                         </div>
                     </div>
