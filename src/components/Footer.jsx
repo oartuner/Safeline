@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 
 const Footer = () => {
   const { t } = useTranslation();

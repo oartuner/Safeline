@@ -40,7 +40,7 @@ const FeaturesSection = () => {
             icon: Truck,
             gradient: 'from-cyan-500 to-teal-400',
             glowColor: 'rgba(20, 184, 166, 0.3)',
-            image: '/TIR.png',
+            image: '/TIR.webp',
         },
         {
             id: 4,
