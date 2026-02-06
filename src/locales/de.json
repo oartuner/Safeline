@@ -73,7 +73,8 @@
         "fiata_desc": "Internationale Föderation der Spediteure",
         "tim_desc": "Türkische Exporteursversammlung",
         "jctrans_desc": "GCP-Mitgliedschaftszertifikat",
-        "olo_desc": "Orange Logistik Organisation"
+        "olo_desc": "Orange Logistik Organisation",
+        "click_to_close": "Zum Schließen klicken"
     },
     "services": {
         "tag": "DIENSTLEISTUNGEN",

@@ -6,7 +6,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="section-padding contact-section">
+    <section id="contact" className="py-24 contact-section">
       <div className="container">
         <div className="contact-header">
           <span className="section-tag">{t('contact.tag')}</span>

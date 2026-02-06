@@ -61,22 +61,23 @@
         "satisfaction_desc": "Transparent and Quality Service: We provide our customers with open, transparent, reliable and high quality service in accordance with their needs and expectations."
     },
     "certifications": {
-        "tag": "CERTIFICATES & MEMBERSHIPS",
+        "tag": "CERTIFICATIONS & MEMBERSHIPS",
         "title": "Quality & Reliability",
-        "subtitle": "Our certifications ensuring international service quality and reliability.",
+        "subtitle": "Our documents proving service quality and reliability at international standards.",
         "certificates": "Certificates",
         "memberships": "Memberships",
-        "iso_desc": "Quality Management System",
         "auth_cert": "Authorization Certificate",
         "ministry": "Ministry of Transport",
         "auth_desc": "Official Transport Authorization",
         "trademark": "Trademark Registration",
         "trademark_desc": "Registered Trademark",
-        "utikad_desc": "International Transport & Logistics Association",
-        "fiata_desc": "International Federation of Freight Forwarders",
+        "iso_desc": "Quality Management System",
+        "utikad_desc": "Int. Transport & Logistics Association",
+        "fiata_desc": "Int. Federation of Freight Forwarders",
         "tim_desc": "Turkish Exporters Assembly",
         "jctrans_desc": "GCP Membership Certificate",
-        "olo_desc": "Orange Logistics Organization"
+        "olo_desc": "Orange Logistics Organization",
+        "click_to_close": "Click to close"
     },
     "services": {
         "tag": "OUR SERVICES",
@@ -258,8 +259,5 @@
         "description": "We use cookies to enhance your browsing experience and analyze our traffic. By clicking \"Accept\", you agree to our use of cookies.",
         "accept": "Accept",
         "decline": "Decline"
-    },
-    "action": {
-        "explore": "Explore"
     }
 }

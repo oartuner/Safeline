@@ -1,26 +1,30 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Shield, Clock, Globe, Headphones } from 'lucide-react';
+import { Shield, Clock, Globe, Headphones, Award } from 'lucide-react';
 
 const TrustBanner = () => {
     const { t } = useTranslation();
 
     const trustItems = [
         {
+            id: 1,
             icon: Shield,
-            text: t('trust.iso_certified') || 'ISO 9001 Sertifikalı'
+            text: t('trust.iso_certified') || 'ISO 9001 Certified'
         },
         {
-            icon: Clock,
-            text: t('trust.experience') || '20+ Yıl Tecrübe'
+            id: 2,
+            icon: Award,
+            text: t('trust.experience') || '20+ Years Experience'
         },
         {
+            id: 3,
             icon: Globe,
-            text: t('trust.global_network') || '150+ Global Ajan'
+            text: t('trust.global_network') || '150+ Global Agents'
         },
         {
-            icon: Headphones,
-            text: t('trust.support') || '7/24 Destek'
+            id: 4,
+            icon: Clock,
+            text: t('trust.support') || '24/7 Support'
         }
     ];
 

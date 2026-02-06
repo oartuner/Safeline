@@ -116,7 +116,7 @@ const Modal = ({ isOpen, onClose, title, content, icon, image, features = [] }) 
                     className="flex items-center justify-center gap-3 w-full py-4 px-6 bg-primary text-white rounded-xl font-bold text-sm sm:text-base tracking-wider uppercase hover:bg-secondary transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-secondary/30 group"
                     style={{ color: '#FFFFFF' }}
                   >
-                    <span style={{ color: '#FFFFFF' }}>{t('hero.cta2') || 'BİZE ULAŞIN'}</span>
+                    <span style={{ color: '#FFFFFF' }}>{t('hero.cta2') || 'CONTACT US'}</span>
                     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" style={{ color: '#FFFFFF' }} />
                   </a>
                 </div>

@@ -18,15 +18,15 @@ const Certifications = () => {
         },
         {
             id: 2,
-            name: t('certifications.auth_cert') || 'Yetki Belgesi',
-            issuer: t('certifications.ministry') || 'T.C. Ulaştırma Bakanlığı',
+            name: t('certifications.auth_cert') || 'Authorization Certificate',
+            issuer: t('certifications.ministry') || 'Ministry of Transport',
             description: t('certifications.auth_desc') || 'Official Transport Authorization',
             image: '/certificates/page8_img4.jpeg',
         },
         {
             id: 3,
-            name: t('certifications.trademark') || 'Marka Tescil',
-            issuer: 'Türk Patent',
+            name: t('certifications.trademark') || 'Trademark Registration',
+            issuer: 'TPE',
             description: t('certifications.trademark_desc') || 'Registered Trademark',
             image: '/certificates/page8_img5.jpeg',
         },
@@ -83,7 +83,7 @@ const Certifications = () => {
 
     return (
         <>
-            <section id="certifications" className="py-28 sm:py-36 bg-white">
+            <section id="certifications" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     {/* Section Header */}
                     <motion.div
@@ -94,15 +94,15 @@ const Certifications = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className="inline-flex items-center gap-2 py-2 px-6 rounded-full bg-primary/5 text-primary text-xs sm:text-sm font-bold tracking-[0.2em] mb-6 border border-primary/10">
-                            {t('certifications.tag') || 'SERTİFİKALAR & ÜYELİKLER'}
+                            {t('certifications.tag') || 'CERTIFICATIONS & MEMBERSHIPS'}
                         </div>
 
                         <h2 className="text-3xl sm:text-4xl font-black mb-6 text-primary tracking-tight">
-                            {t('certifications.title') || 'Kalite ve Güvenilirlik'}
+                            {t('certifications.title') || 'Quality & Reliability'}
                         </h2>
 
                         <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
-                            {t('certifications.subtitle') || 'Uluslararası standartlarda hizmet kalitesi ve güvenilirliği belgelerimiz.'}
+                            {t('certifications.subtitle') || 'Our documents proving service quality and reliability at international standards.'}
                         </p>
                     </motion.div>
 
@@ -111,7 +111,7 @@ const Certifications = () => {
                         <div className="flex items-center gap-3 mb-8">
                             <Shield className="text-secondary" size={24} />
                             <h3 className="text-2xl font-black text-primary">
-                                {t('certifications.certificates') || 'Sertifikalar'}
+                                {t('certifications.certificates') || 'Certificates'}
                             </h3>
                         </div>
 
@@ -166,7 +166,7 @@ const Certifications = () => {
                         <div className="flex items-center gap-3 mb-8">
                             <BadgeCheck className="text-secondary" size={24} />
                             <h3 className="text-2xl font-black text-primary">
-                                {t('certifications.memberships') || 'Üyelikler'}
+                                {t('certifications.memberships') || 'Memberships'}
                             </h3>
                         </div>
 
@@ -260,7 +260,7 @@ const Certifications = () => {
 
                         {/* Click anywhere hint */}
                         <p className="fixed bottom-4 left-1/2 -translate-x-1/2 text-white/50 text-sm">
-                            {t('certifications.click_to_close') || 'Kapatmak için tıklayın'}
+                            {t('certifications.click_to_close') || 'Click to close'}
                         </p>
                     </motion.div>
                 )}

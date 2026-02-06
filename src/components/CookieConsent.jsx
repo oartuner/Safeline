@@ -44,11 +44,11 @@ const CookieConsent = () => {
                             <Cookie className="text-primary" size={24} />
                         </div>
                         <div>
-                            <h4 className="font-bold text-primary mb-1">
-                                {t('cookies.title') || 'Gizliliğinize Değer Veriyoruz'}
-                            </h4>
+                            <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                {t('cookies.title') || 'We Value Your Privacy'}
+                            </h3>
                             <p className="text-sm text-gray-600 leading-relaxed">
-                                {t('cookies.description') || 'Deneyiminizi geliştirmek için çerezleri kullanıyoruz. "Kabul Et"e tıklayarak çerez kullanımımızı onaylarsınız.'}
+                                {t('cookies.description') || 'We use cookies to enhance your experience. By clicking "Accept", you agree to our use of cookies.'}
                             </p>
                         </div>
                     </div>
@@ -56,16 +56,16 @@ const CookieConsent = () => {
                     {/* Buttons */}
                     <div className="flex items-center gap-3 w-full md:w-auto">
                         <button
-                            onClick={declineCookies}
-                            className="flex-1 md:flex-none px-5 py-2.5 text-sm font-medium text-gray-600 hover:text-gray-800 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
+                            onClick={handleDecline}
+                            className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                         >
-                            {t('cookies.decline') || 'Reddet'}
+                            {t('cookies.decline') || 'Decline'}
                         </button>
                         <button
-                            onClick={acceptCookies}
-                            className="flex-1 md:flex-none px-5 py-2.5 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors"
+                            onClick={handleAccept}
+                            className="px-6 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary-light transition-colors shadow-sm"
                         >
-                            {t('cookies.accept') || 'Kabul Et'}
+                            {t('cookies.accept') || 'Accept'}
                         </button>
                     </div>
                 </div>
