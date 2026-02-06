@@ -84,7 +84,7 @@ const OurValues = () => {
 
                         {/* Drawer Content */}
                         <div className="p-6 sm:p-8 space-y-6">
-                            {(t('about.values', { returnObjects: true }) || []).map((value, index) => {
+                            {(Array.isArray(t('about.values', { returnObjects: true })) ? t('about.values', { returnObjects: true }) : []).map((value, index) => {
                                 const descriptions = t('about.values_desc', { returnObjects: true }) || [];
                                 const valueIcons = [
                                     Users, Users2, Leaf, Target, Shield, Award, Globe2, Scale, TrendingUp,
@@ -108,7 +108,8 @@ const OurValues = () => {
                                         </div>
                                     </div>
                                 );
-                            })}
+                            })
+                            }
                         </div>
 
                         {/* Drawer Footer */}

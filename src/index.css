@@ -58,6 +58,11 @@
   --animate-shine: shine 1.5s ease-in-out;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 :root {
   /* New Logo Palette */
   --primary: #233778;
