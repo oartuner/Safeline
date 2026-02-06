@@ -1,0 +1,54 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Safeline Logistics",
+    "url": "https://safeline.com.tr",
+    "description": "Global logistics and freight forwarding company",
+    "values": [
+        {
+            "@type": "DefinedTerm",
+            "name": "Customer Orientation",
+            "description": "Customer satisfaction oriented solutions, understanding and meeting customer needs comprehensively"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Team Spirit",
+            "description": "Strong cooperation and collaboration among team members to achieve common goals"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Sustainability",
+            "description": "Commitment to environmental and social sustainability in all business operations"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Result-Oriented",
+            "description": "Focus on achieving measurable outcomes and delivering tangible results"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Integrity and Transparency",
+            "description": "Conducting business with honesty, ethical standards, and transparent communication"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Reliability",
+            "description": "Consistent delivery of promised services with unwavering dependability"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Respect to Environment and Society",
+            "description": "Active commitment to environmental protection and positive social impact"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Ethical Values",
+            "description": "Adherence to highest ethical standards in all business practices and decisions"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Change and Development",
+            "description": "Continuous improvement and adaptation to evolving industry demands and innovations"
+        }
+    ]
+}

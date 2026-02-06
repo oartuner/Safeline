@@ -3,6 +3,8 @@
         "home": "ANA SAYFA",
         "about": "HAKKIMIZDA",
         "services": "HİZMETLER",
+        "values": "DEĞERLERİMİZ",
+        "certifications": "SERTİFİKALAR",
         "contact": "İLETİŞİM",
         "quote": "TEKLİF AL"
     },
@@ -169,6 +171,8 @@
         }
     },
     "services_bento": {
+        "title": "Hizmetlerimiz",
+        "subtitle": "Küresel taşımacılık ihtiyaçlarınız için uçtan uca entegre lojistik çözümler",
         "land": {
             "title": "Kara Yolu Taşımacılığı",
             "desc": "Güvenilir ve hızlı kara yolu lojistik çözümleri.",
@@ -242,6 +246,7 @@
         "quality_policy": "Kalite Politikası"
     },
     "trust": {
+        "trusted_by": "KÜRESEL STRATEJİK ORTAKLAR VE TAŞIYICI AĞIMIZ",
         "iso_certified": "ISO 9001 Sertifikalı",
         "experience": "20+ Yıl Tecrübe",
         "global_network": "150+ Küresel Acente",

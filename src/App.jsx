@@ -10,6 +10,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 import TrustBanner from './components/TrustBanner';
 import TrustLogos from './components/TrustLogos';
 import CookieConsent from './components/CookieConsent';
+import OurValues from './components/OurValues';
 
 function App() {
   React.useEffect(() => {
@@ -26,9 +27,10 @@ function App() {
       <Navbar />
       <Hero />
       <TrustLogos />
-      <About />
-      <Certifications />
       <FeaturesSection />
+      <About />
+      <OurValues />
+      <Certifications />
       <Contact />
       <Footer />
       <WhatsAppButton />

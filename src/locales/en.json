@@ -3,6 +3,8 @@
         "home": "HOME",
         "about": "ABOUT",
         "services": "SERVICES",
+        "values": "VALUES",
+        "certifications": "CERTIFICATIONS",
         "contact": "CONTACT",
         "quote": "GET QUOTE"
     },
@@ -170,6 +172,8 @@
         }
     },
     "services_bento": {
+        "title": "Our Services",
+        "subtitle": "End-to-end integrated logistics solutions for all your global shipping needs",
         "land": {
             "title": "Land Freight",
             "desc": "Reliable and fast road logistics solutions.",
@@ -243,6 +247,7 @@
         "quality_policy": "Quality Policy"
     },
     "trust": {
+        "trusted_by": "GLOBAL STRATEGIC PARTNERS & CARRIER NETWORK",
         "iso_certified": "ISO 9001 Certified",
         "experience": "20+ Years Experience",
         "global_network": "150+ Global Agents",

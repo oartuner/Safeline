@@ -92,7 +92,7 @@ const Contact = () => {
 
       <style jsx="true">{`
         .contact-section {
-          background: var(--bg-light);
+          background: white;
         }
 
         .contact-header {

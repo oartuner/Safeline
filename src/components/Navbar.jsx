@@ -30,7 +30,7 @@ const Navbar = () => {
       setScrollProgress(docHeight > 0 ? (scrollY / docHeight) * 100 : 0);
 
       // Detect active section
-      const sections = ['contact', 'services', 'about', 'home'];
+      const sections = ['contact', 'certifications', 'values', 'about', 'services', 'home'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el && scrollY >= el.offsetTop - 200) {
@@ -53,8 +53,10 @@ const Navbar = () => {
 
   const menuItems = [
     { label: t('nav.home'), href: '#home', id: 'home' },
-    { label: t('nav.about'), href: '#about', id: 'about' },
     { label: t('nav.services'), href: '#services', id: 'services' },
+    { label: t('nav.about'), href: '#about', id: 'about' },
+    { label: t('nav.values'), href: '#values', id: 'values' },
+    { label: t('nav.certifications'), href: '#certifications', id: 'certifications' },
     { label: t('nav.contact'), href: '#contact', id: 'contact' },
   ];
 

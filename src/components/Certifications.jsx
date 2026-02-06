@@ -83,7 +83,7 @@ const Certifications = () => {
 
     return (
         <>
-            <section id="certifications" className="py-28 sm:py-36 bg-gradient-to-b from-white to-gray-50">
+            <section id="certifications" className="py-28 sm:py-36 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     {/* Section Header */}
                     <motion.div
@@ -94,11 +94,10 @@ const Certifications = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className="inline-flex items-center gap-2 py-2 px-6 rounded-full bg-primary/5 text-primary text-xs sm:text-sm font-bold tracking-[0.2em] mb-6 border border-primary/10">
-                            <Award size={16} />
                             {t('certifications.tag') || 'SERTİFİKALAR & ÜYELİKLER'}
                         </div>
 
-                        <h2 className="text-4xl sm:text-5xl font-black mb-6 text-primary tracking-tight">
+                        <h2 className="text-3xl sm:text-4xl font-black mb-6 text-primary tracking-tight">
                             {t('certifications.title') || 'Kalite ve Güvenilirlik'}
                         </h2>
 

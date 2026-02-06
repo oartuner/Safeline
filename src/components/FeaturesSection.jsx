@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Ship, Plane, Truck, TrainFront, Warehouse, Briefcase, ArrowRight, Sparkles } from 'lucide-react';
+import { Ship, Plane, Truck, TrainFront, Warehouse, Briefcase, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Modal from './Modal';
 
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
             icon: Plane,
             gradient: 'from-amber-500 to-yellow-400',
             glowColor: 'rgba(245, 158, 11, 0.3)',
-            image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80',
+            image: 'https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?auto=format&fit=crop&q=80',
         },
         {
             id: 3,
@@ -40,7 +40,7 @@ const FeaturesSection = () => {
             icon: Truck,
             gradient: 'from-cyan-500 to-teal-400',
             glowColor: 'rgba(20, 184, 166, 0.3)',
-            image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80',
+            image: '/TIR.png',
         },
         {
             id: 4,
@@ -78,7 +78,12 @@ const FeaturesSection = () => {
     ];
 
     return (
-        <section id="services" className="py-28 sm:py-40 bg-white relative overflow-hidden">
+        <section id="services" className="py-24 bg-primary relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-20 left-10 w-72 h-72 bg-secondary rounded-full blur-3xl"></div>
+                <div className="absolute bottom-20 right-10 w-72 h-72 bg-accent rounded-full blur-3xl"></div>
+            </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 {/* Section Header */}
                 <motion.div
@@ -88,17 +93,15 @@ const FeaturesSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <div className="inline-flex items-center gap-2 py-2 px-6 rounded-full bg-primary/5 text-primary text-xs sm:text-sm font-bold tracking-[0.2em] mb-6 border border-primary/10">
-                        <Sparkles size={16} />
+                    <div className="inline-flex items-center gap-2 py-2 px-6 rounded-full bg-white/10 text-white text-xs sm:text-sm font-bold tracking-[0.2em] mb-6 border border-white/20">
                         {t('nav.services').toUpperCase()}
                     </div>
 
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-primary tracking-tight">
-                        {t('nav.services') || 'Lojistik Çözümler'}
+                    <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 tracking-tight leading-tight">
+                        {t('services_bento.title')}
                     </h2>
-
-                    <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-                        {t('hero.description') || 'Küresel lojistik ihtiyaçlarınız için uçtan uca entegre çözümler.'}
+                    <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+                        {t('services_bento.subtitle')}
                     </p>
                 </motion.div>
 
@@ -138,7 +141,7 @@ function FeatureCard({ feature, index, onClick, serviceFeatures }) {
             onClick={onClick}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="group relative rounded-[2rem] overflow-hidden cursor-pointer flex flex-col bg-[#F8FAFC] border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 h-full"
+            className="group relative rounded-[2rem] overflow-hidden cursor-pointer flex flex-col bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 h-full"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
@@ -149,7 +152,7 @@ function FeatureCard({ feature, index, onClick, serviceFeatures }) {
                 <img
                     src={feature.image}
                     alt=""
-                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                    className={`w-full h-full object-cover ${feature.imgPos || 'object-center'} transition-transform duration-1000 group-hover:scale-110`}
                 />
                 <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-500" />
             </div>
