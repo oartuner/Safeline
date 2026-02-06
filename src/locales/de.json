@@ -154,6 +154,17 @@
                     "Begleitfahrzeuge",
                     "Schlüsselfertige Projekte"
                 ]
+            },
+            "warehouse": {
+                "title": "LAGERUNG & ZOLL",
+                "features": [
+                    "24/7 Sicherheit und Überwachung",
+                    "Modernes Bestandsmanagement",
+                    "Kommissionierung und Verpackung",
+                    "Professionelle Zollabwicklung",
+                    "Mehrwert-Lagerdienstleistungen",
+                    "Sichere und moderne Anlagen"
+                ]
             }
         }
     },
@@ -229,5 +240,20 @@
         "about_us": "Über Uns",
         "mission_vision": "Mission & Vision",
         "quality_policy": "Qualitätspolitik"
+    },
+    "trust": {
+        "iso_certified": "ISO 9001 Zertifiziert",
+        "experience": "20+ Jahre Erfahrung",
+        "global_network": "150+ Globale Agenten",
+        "support": "24/7 Support"
+    },
+    "cookies": {
+        "title": "Wir schätzen Ihre Privatsphäre",
+        "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern. Durch Klicken auf \"Akzeptieren\" stimmen Sie der Verwendung von Cookies zu.",
+        "accept": "Akzeptieren",
+        "decline": "Ablehnen"
+    },
+    "action": {
+        "explore": "Entdecken"
     }
 }

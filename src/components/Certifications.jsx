@@ -83,7 +83,7 @@ const Certifications = () => {
 
     return (
         <>
-            <section id="certifications" className="py-20 sm:py-28 bg-gradient-to-b from-white to-gray-50">
+            <section id="certifications" className="py-28 sm:py-36 bg-gradient-to-b from-white to-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     {/* Section Header */}
                     <motion.div
@@ -127,30 +127,33 @@ const Certifications = () => {
                                     className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden cursor-pointer"
                                     onClick={() => openLightbox(cert.image, cert.name)}
                                 >
-                                    {/* Certificate Image */}
+                                    {/* Certificate Image - DISABLED
                                     <div className="relative h-64 overflow-hidden bg-gray-50">
                                         <img
                                             src={cert.image}
                                             alt={cert.name}
                                             className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                                         />
-                                        {/* Zoom overlay */}
                                         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center">
                                             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-3 bg-white rounded-full shadow-lg">
                                                 <ZoomIn size={24} className="text-primary" />
                                             </div>
                                         </div>
                                     </div>
+                                    */}
 
                                     {/* Certificate Info */}
-                                    <div className="p-5 border-t border-gray-100">
-                                        <p className="text-xs font-bold text-secondary uppercase tracking-wider mb-1">
-                                            {cert.issuer}
-                                        </p>
-                                        <h4 className="text-lg font-black text-primary mb-1">
+                                    <div className="p-6">
+                                        <div className="flex items-center justify-between mb-3">
+                                            <p className="text-xs font-bold text-secondary uppercase tracking-wider">
+                                                {cert.issuer}
+                                            </p>
+                                            <ZoomIn size={16} className="text-gray-300 group-hover:text-primary transition-colors" />
+                                        </div>
+                                        <h4 className="text-xl font-black text-primary mb-2">
                                             {cert.name}
                                         </h4>
-                                        <p className="text-sm text-gray-500">
+                                        <p className="text-sm text-gray-500 leading-relaxed">
                                             {cert.description}
                                         </p>
                                     </div>
@@ -168,7 +171,7 @@ const Certifications = () => {
                             </h3>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
                             {memberships.map((member, index) => (
                                 <motion.div
                                     key={member.id}
@@ -179,29 +182,32 @@ const Certifications = () => {
                                     className="group bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-secondary/30 transition-all duration-500 overflow-hidden cursor-pointer"
                                     onClick={() => openLightbox(member.image, member.name)}
                                 >
-                                    {/* Membership Image */}
+                                    {/* Membership Image - DISABLED
                                     <div className="relative h-40 overflow-hidden bg-gray-50">
                                         <img
                                             src={member.image}
                                             alt={member.name}
                                             className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
                                         />
-                                        {/* Zoom overlay */}
                                         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center">
                                             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2 bg-white rounded-full shadow-lg">
                                                 <ZoomIn size={18} className="text-primary" />
                                             </div>
                                         </div>
                                     </div>
+                                    */}
 
                                     {/* Membership Info */}
-                                    <div className="p-4 border-t border-gray-100 text-center">
-                                        <h4 className="text-base font-black text-primary mb-1">
+                                    <div className="p-6 text-center flex flex-col items-center justify-center h-full min-h-[100px]">
+                                        <h4 className="text-lg font-black text-primary mb-1">
                                             {member.name}
                                         </h4>
                                         <p className="text-xs text-secondary font-bold">
                                             {member.year}
                                         </p>
+                                        <div className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <ZoomIn size={14} className="text-gray-400" />
+                                        </div>
                                     </div>
                                 </motion.div>
                             ))}

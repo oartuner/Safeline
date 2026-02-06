@@ -49,6 +49,7 @@
     0% {
       transform: translateX(-100%) skewX(-15deg);
     }
+
     100% {
       transform: translateX(200%) skewX(-15deg);
     }
@@ -161,7 +162,15 @@ img {
 }
 
 .section-padding {
-  padding: 7rem 0;
+  padding: 9rem 0;
+}
+
+.section-padding-lg {
+  padding: 10rem 0;
+}
+
+.section-gap {
+  margin-top: 2rem;
 }
 
 /* Section Tag */

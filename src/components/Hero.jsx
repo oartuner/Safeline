@@ -2,16 +2,23 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import NetworkAnimation from './NetworkAnimation';
+import WorldMapAnimation from './WorldMapAnimation';
+import LogisticsVisual from './LogisticsVisual';
+import AnimatedCounter from './AnimatedCounter';
 
 const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="relative min-h-[92vh] flex items-center pt-20 overflow-hidden bg-white">
-      {/* Immersive Background Animation */}
-      <div className="absolute inset-0 z-0 opacity-60">
-        <NetworkAnimation />
+    <section id="home" className="relative min-h-[75vh] flex items-center pt-16 pb-20 overflow-hidden bg-white">
+      {/* World Map Background - subtle & high quality */}
+      <div className="absolute inset-0 z-0 select-none overflow-hidden">
+        <div className="absolute inset-0 opacity-100">
+          <WorldMapAnimation />
+        </div>
+        {/* Visual Overlay for Readability - reduced opacity for visibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50/70 via-white/40 to-blue-50/70 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-white/10 backdrop-blur-[0.5px]" />
       </div>
 
       {/* Background Gradients for Depth */}
@@ -39,7 +46,7 @@ const Hero = () => {
 
           {/* Epic Main Title */}
           <motion.h1
-            className="text-6xl lg:text-9xl font-extrabold mb-10 leading-[0.95] text-primary tracking-tight"
+            className="text-5xl lg:text-7xl font-extrabold mb-8 leading-[0.95] text-primary tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -52,7 +59,7 @@ const Hero = () => {
 
           {/* Description */}
           <motion.p
-            className="text-xl md:text-2xl text-text-muted mb-12 leading-relaxed max-w-2xl mx-auto font-medium"
+            className="text-lg md:text-xl text-text-muted mb-10 leading-relaxed max-w-2xl mx-auto font-medium"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -79,24 +86,30 @@ const Hero = () => {
 
           {/* Professional Stats Bar */}
           <motion.div
-            className="mt-20 flex items-center justify-center gap-16 pt-12 border-t border-border-light/40"
+            className="mt-8 flex items-center justify-center gap-12 pt-6 border-t border-border-light/40"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <div className="text-center group cursor-default">
-              <p className="text-5xl font-black text-primary font-heading group-hover:text-secondary transition-colors transition-duration-300">150+</p>
+              <div className="text-5xl font-black text-primary font-heading group-hover:text-secondary transition-colors duration-300 flex justify-center items-center gap-1">
+                <AnimatedCounter from={0} to={150} duration={2.5} />
+                <span>+</span>
+              </div>
               <p className="text-xs text-text-muted font-black uppercase tracking-[0.2em] mt-2 opacity-80">{t('hero.stat1')}</p>
             </div>
             <div className="w-px h-16 bg-gradient-to-b from-transparent via-border-light to-transparent"></div>
             <div className="text-center group cursor-default">
-              <p className="text-5xl font-black text-secondary font-heading group-hover:text-primary transition-colors transition-duration-300">20+</p>
+              <div className="text-5xl font-black text-secondary font-heading group-hover:text-primary transition-colors duration-300 flex justify-center items-center gap-1">
+                <AnimatedCounter from={0} to={20} duration={2} />
+                <span>+</span>
+              </div>
               <p className="text-xs text-text-muted font-black uppercase tracking-[0.2em] mt-2 opacity-80">{t('hero.stat2')}</p>
             </div>
           </motion.div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

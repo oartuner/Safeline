@@ -240,5 +240,17 @@
         "about_us": "Hakkımızda",
         "mission_vision": "Misyon & Vizyon",
         "quality_policy": "Kalite Politikası"
+    },
+    "trust": {
+        "iso_certified": "ISO 9001 Sertifikalı",
+        "experience": "20+ Yıl Tecrübe",
+        "global_network": "150+ Küresel Acente",
+        "support": "7/24 Destek"
+    },
+    "cookies": {
+        "title": "Gizliliğinize Değer Veriyoruz",
+        "description": "Deneyiminizi geliştirmek ve trafiğimizi analiz etmek için çerezleri kullanıyoruz. \"Kabul Et\"e tıklayarak çerez kullanımımızı onaylarsınız.",
+        "accept": "Kabul Et",
+        "decline": "Reddet"
     }
 }

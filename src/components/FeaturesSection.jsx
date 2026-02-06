@@ -78,7 +78,7 @@ const FeaturesSection = () => {
     ];
 
     return (
-        <section id="services" className="py-20 sm:py-32 bg-white relative overflow-hidden">
+        <section id="services" className="py-28 sm:py-40 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 {/* Section Header */}
                 <motion.div
@@ -110,6 +110,7 @@ const FeaturesSection = () => {
                             feature={feature}
                             index={index}
                             onClick={() => setSelectedService(feature)}
+                            serviceFeatures={t(`services.items.${feature.serviceKey}.features`, { returnObjects: true })}
                         />
                     ))}
                 </div>
@@ -121,13 +122,14 @@ const FeaturesSection = () => {
                 title={selectedService?.title}
                 content={selectedService?.content}
                 features={t(`services.items.${selectedService?.serviceKey}.features`, { returnObjects: true })}
-                icon={selectedService ? <selectedService.icon size={32} /> : null}
+                icon={selectedService && selectedService.icon ? React.createElement(selectedService.icon, { size: 32 }) : null}
             />
         </section>
     );
 }
 
-function FeatureCard({ feature, index, onClick }) {
+function FeatureCard({ feature, index, onClick, serviceFeatures }) {
+    const { t } = useTranslation();
     const Icon = feature.icon;
     const [isHovered, setIsHovered] = useState(false);
 
@@ -142,8 +144,8 @@ function FeatureCard({ feature, index, onClick }) {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
         >
-            {/* Image section */}
-            <div className="relative overflow-hidden h-64">
+            {/* Image section with fixed aspect ratio */}
+            <div className="relative w-full aspect-video overflow-hidden shrink-0">
                 <img
                     src={feature.image}
                     alt=""
@@ -152,25 +154,37 @@ function FeatureCard({ feature, index, onClick }) {
                 <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-500" />
             </div>
 
-            {/* Content Section - The "Bottom Space" for High Readability */}
-            <div className="p-8 flex flex-col flex-grow bg-white relative z-10 border-t border-gray-50">
+            {/* Content Section - Flex column for alignment */}
+            <div className="p-8 flex flex-col flex-grow bg-white relative z-10 border-t border-gray-50 h-full">
                 {/* Icon Badge - Positioned to slightly overlap */}
                 <div className={`absolute -top-7 left-8 inline-flex p-4 rounded-2xl bg-gradient-to-br ${feature.gradient} shadow-xl group-hover:-translate-y-1 transition-transform duration-300`}>
                     <Icon className="text-white" size={24} />
                 </div>
 
-                <div className="mt-4">
-                    <h3 className="text-2xl font-black mb-3 text-primary tracking-tight leading-tight group-hover:text-secondary transition-colors duration-300">
+                <div className="mt-6 flex-grow">
+                    <h3 className="text-2xl font-black mb-3 text-primary tracking-tight leading-tight group-hover:text-secondary transition-colors duration-300 min-h-[3.5rem] flex items-end">
                         {feature.title}
                     </h3>
 
-                    <p className="text-gray-500 font-medium text-sm sm:text-base leading-relaxed mb-6 line-clamp-2">
+                    <p className="text-gray-500 font-medium text-sm sm:text-base leading-relaxed mb-6 line-clamp-2 h-[3rem]">
                         {feature.description}
                     </p>
+
+                    {/* Feature Preview List */}
+                    {serviceFeatures && Array.isArray(serviceFeatures) && (
+                        <ul className="mb-6 space-y-2">
+                            {serviceFeatures.slice(0, 3).map((item, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-gray-500 font-medium">
+                                    <span className={`mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-br ${feature.gradient} shrink-0`} />
+                                    <span className="line-clamp-1">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
 
-                <div className="mt-auto flex items-center gap-3 text-secondary font-bold text-sm tracking-widest uppercase items-center">
-                    <span className="group-hover:mr-2 transition-all duration-300">İncele</span>
+                <div className="mt-auto flex items-center gap-3 text-secondary font-bold text-sm tracking-widest uppercase items-center group/btn">
+                    <span className="group-hover:mr-2 transition-all duration-300">{t('action.explore') || 'Explore'}</span>
                     <div className="p-2 rounded-full bg-secondary/10 group-hover:bg-secondary group-hover:text-white transition-all duration-300">
                         <ArrowRight size={16} />
                     </div>

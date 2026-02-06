@@ -241,5 +241,20 @@
         "about_us": "About Us",
         "mission_vision": "Mission & Vision",
         "quality_policy": "Quality Policy"
+    },
+    "trust": {
+        "iso_certified": "ISO 9001 Certified",
+        "experience": "20+ Years Experience",
+        "global_network": "150+ Global Agents",
+        "support": "24/7 Support"
+    },
+    "cookies": {
+        "title": "We Value Your Privacy",
+        "description": "We use cookies to enhance your browsing experience and analyze our traffic. By clicking \"Accept\", you agree to our use of cookies.",
+        "accept": "Accept",
+        "decline": "Decline"
+    },
+    "action": {
+        "explore": "Explore"
     }
 }

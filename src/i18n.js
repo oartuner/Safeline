@@ -9,12 +9,23 @@ const resources = {
     de: { translation: de }
 };
 
+// Validate and clean up language selection
+const supportedLanguages = ['en', 'de'];
+const savedLanguage = localStorage.getItem('language');
+const defaultLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : 'en';
+
+// Clean up localStorage if invalid language is detected
+if (savedLanguage && !supportedLanguages.includes(savedLanguage)) {
+    localStorage.setItem('language', 'en');
+}
+
 i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: localStorage.getItem('language') || 'en',
+        lng: defaultLanguage,
         fallbackLng: 'en',
+        supportedLngs: supportedLanguages,
         interpolation: {
             escapeValue: false
         }

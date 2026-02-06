@@ -78,9 +78,9 @@ const Navbar = () => {
               src={logo}
               alt="Safeline Logistics"
               style={{
-                height: '40px',
+                height: '64px',
                 width: 'auto',
-                maxWidth: '150px',
+                maxWidth: '200px',
                 objectFit: 'contain',
                 display: 'block'
               }}
@@ -95,7 +95,7 @@ const Navbar = () => {
                 href={item.href}
                 onMouseEnter={() => setHoveredItem(item.id)}
                 onMouseLeave={() => setHoveredItem(null)}
-                className="relative px-5 py-2.5 rounded-full text-xs font-black tracking-widest uppercase transition-all duration-300 group"
+                className="relative px-4 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-300 group"
               >
                 {/* Hover/Active Background Hook */}
                 <div className={`absolute inset-0 rounded-full transition-all duration-300 ${activeSection === item.id
@@ -147,16 +147,16 @@ const Navbar = () => {
                     transition={{ duration: 0.15 }}
                     className="absolute right-0 mt-2 w-24 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-1 z-50"
                   >
-                    {languages.map((lang) => (
+                    {['en', 'de'].map((lng) => (
                       <button
-                        key={lang.code}
-                        onClick={() => changeLanguage(lang.code)}
-                        className={`w-full text-left px-4 py-2 text-sm flex items-center gap-2 hover:bg-gray-50 transition-colors ${lang.code === i18n.language
+                        key={lng}
+                        onClick={() => changeLanguage(lng)}
+                        className={`w-full text-left px-4 py-2 text-sm flex items-center gap-2 hover:bg-gray-50 transition-colors ${lng === i18n.language
                           ? 'bg-secondary/10 text-secondary font-bold'
                           : 'text-gray-700'
                           }`}
                       >
-                        <span className="font-medium">{lang.label}</span>
+                        <span className="font-medium">{lng.toUpperCase()}</span>
                       </button>
                     ))}
                   </motion.div>
