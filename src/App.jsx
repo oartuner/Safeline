@@ -14,10 +14,17 @@ import OurValues from './components/OurValues';
 
 function App() {
   React.useEffect(() => {
-    const saved = localStorage.getItem('language');
-    if (saved === 'tr') {
-      localStorage.setItem('language', 'en');
-      window.location.reload();
+    try {
+      const saved = localStorage.getItem('language');
+      if (saved === 'tr') {
+        localStorage.setItem('language', 'en');
+        // i18n instance is global, so this will trigger re-render if using useTranslation hook
+        import('./i18n').then(module => {
+          module.default.changeLanguage('en');
+        });
+      }
+    } catch (e) {
+      console.error('Storage access error:', e);
     }
   }, []);
 
