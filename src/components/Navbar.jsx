@@ -80,9 +80,9 @@ const Navbar = () => {
               src={logo}
               alt="Safeline Logistics"
               style={{
-                height: '64px',
+                height: '72px',
                 width: 'auto',
-                maxWidth: '200px',
+                maxWidth: '240px',
                 objectFit: 'contain',
                 display: 'block'
               }}

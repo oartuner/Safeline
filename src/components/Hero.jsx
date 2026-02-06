@@ -10,7 +10,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="relative min-h-[75vh] flex items-center pt-16 pb-20 overflow-hidden bg-white">
+    <section id="home" className="relative min-h-[60vh] flex items-center pt-16 pb-20 overflow-hidden bg-white">
       {/* World Map Background - subtle & high quality */}
       <div className="absolute inset-0 z-0 select-none overflow-hidden">
         <div className="absolute inset-0 opacity-100">
