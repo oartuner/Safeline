@@ -6,7 +6,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-24 contact-section">
+    <section id="contact" className="py-16 contact-section bg-gray-50">
       <div className="container">
         <div className="contact-header">
           <span className="section-tag">{t('contact.tag')}</span>
@@ -92,7 +92,7 @@ const Contact = () => {
 
       <style jsx="true">{`
         .contact-section {
-          background: white;
+          background: #f9fafb;
         }
 
         .contact-header {

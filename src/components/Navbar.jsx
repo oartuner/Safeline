@@ -79,7 +79,8 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Safeline Logistics"
-              className="h-12 sm:h-14 md:h-[72px] w-auto max-w-[180px] sm:max-w-[200px] md:max-w-[240px] object-contain block"
+              className="h-[64px] w-auto object-contain block"
+              style={{ height: '58px', width: 'auto' }}
             />
           </a>
 

@@ -13,7 +13,7 @@ const About = () => {
   const [selectedVal, setSelectedVal] = useState(null);
 
   return (
-    <section id="about" className="py-24 bg-gray-100 relative overflow-hidden">
+    <section id="about" className="py-16 bg-gray-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
         {/* Centered Header Section */}

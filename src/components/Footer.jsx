@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <div className="flex flex-wrap items-baseline mb-5">
             <div className="bg-white px-5 py-3 rounded-lg inline-block">
-              <img src={logo} alt="Safeline Logistics" className="h-[50px] object-contain" />
+              <img src={logo} alt="Safeline Logistics" className="h-[50px] object-contain" style={{ height: '50px', width: 'auto' }} />
             </div>
           </div>
           <p className="text-white/60 text-sm leading-relaxed mb-6">{t('footer.description')}</p>

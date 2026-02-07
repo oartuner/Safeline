@@ -11,7 +11,7 @@ const WorldMapAnimation = () => {
         { x: 470, y: 560, name: 'South America' }, // Brazil (Inland)
         { x: 760, y: 460, name: 'Africa' },       // Central Africa
         { x: 1260, y: 620, name: 'Australia' },   // Australia (Central)
-        { x: 940, y: 350, name: 'India' }         // India (Was Indian Ocean)
+        { x: 1240, y: 350, name: 'India' }        // India
     ];
 
     // Shipping routes between hubs
@@ -41,7 +41,7 @@ const WorldMapAnimation = () => {
                     y="0"
                     width="1440"
                     height="810"
-                    opacity="0.45"
+                    opacity="0.35"
                     style={{ filter: 'grayscale(100%) brightness(0.8) sepia(0.5) hue-rotate(190deg) saturate(1)' }}
                 />
 
@@ -66,7 +66,7 @@ const WorldMapAnimation = () => {
 
                     return (
                         <motion.path
-                            key={index}
+                            key={`route-${index}`}
                             d={`M ${fromHub.x} ${fromHub.y} Q ${midX} ${midY} ${toHub.x} ${toHub.y}`}
                             stroke="url(#routeGradient)"
                             strokeWidth="2.5"
@@ -78,7 +78,7 @@ const WorldMapAnimation = () => {
                                 opacity: [0, 0.7, 0.7, 0]
                             }}
                             transition={{
-                                duration: 8 + Math.random() * 2,
+                                duration: 8 + (index * 0.5), // Deterministic duration based on index
                                 delay: index * 0.8,
                                 repeat: Infinity,
                                 repeatDelay: 1,
@@ -90,7 +90,7 @@ const WorldMapAnimation = () => {
 
                 {/* 3. Logistics hubs - pulsing dots */}
                 {hubs.map((hub, index) => (
-                    <g key={index}>
+                    <g key={`hub-${index}`}>
                         {/* Outer pulse ring */}
                         <motion.circle
                             cx={hub.x}
@@ -138,21 +138,18 @@ const WorldMapAnimation = () => {
                             key={`cargo-${index}`}
                             r="3"
                             fill="#ffffff"
-                            initial={{ opacity: 0 }}
+                            initial={{ opacity: 0, cx: fromHub.x, cy: fromHub.y }}
                             animate={{
-                                // Custom tween along the path would be ideal, 
-                                // but simplified linear interpolation for particles
-                                // roughly following the path bounds
                                 cx: [fromHub.x, midX, toHub.x],
                                 cy: [fromHub.y, midY, toHub.y],
                                 opacity: [0, 1, 0]
                             }}
                             transition={{
-                                duration: 8 + Math.random() * 2,
+                                duration: 8 + (index * 0.5), // Match line duration logic
                                 delay: index * 0.8 + 0.5,
                                 repeat: Infinity,
                                 repeatDelay: 1,
-                                ease: "easeInOut" // Match line ease
+                                ease: "easeInOut"
                             }}
                         />
                     );
