@@ -56,13 +56,13 @@ const CookieConsent = () => {
                     {/* Buttons */}
                     <div className="flex items-center gap-3 w-full md:w-auto">
                         <button
-                            onClick={handleDecline}
+                            onClick={declineCookies}
                             className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                         >
                             {t('cookies.decline') || 'Decline'}
                         </button>
                         <button
-                            onClick={handleAccept}
+                            onClick={acceptCookies}
                             className="px-6 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary-light transition-colors shadow-sm"
                         >
                             {t('cookies.accept') || 'Accept'}
