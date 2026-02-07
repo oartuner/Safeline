@@ -257,5 +257,9 @@
         "description": "Deneyiminizi geliştirmek ve trafiğimizi analiz etmek için çerezleri kullanıyoruz. \"Kabul Et\"e tıklayarak çerez kullanımımızı onaylarsınız.",
         "accept": "Kabul Et",
         "decline": "Reddet"
+    },
+    "whatsapp": {
+        "tooltip": "Sorularınız mı var? WhatsApp üzerinden bize hemen ulaşın!",
+        "ariaLabel": "WhatsApp ile iletişime geçin"
     }
 }

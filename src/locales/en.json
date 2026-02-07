@@ -270,5 +270,9 @@
     },
     "action": {
         "explore": "Explore"
+    },
+    "whatsapp": {
+        "tooltip": "Have questions? Reach us instantly via WhatsApp!",
+        "ariaLabel": "Contact us via WhatsApp"
     }
 }

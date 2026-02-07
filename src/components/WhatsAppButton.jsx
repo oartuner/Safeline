@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, X } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const WhatsAppButton = () => {
+    const { t } = useTranslation();
     const [isVisible, setIsVisible] = useState(false);
     const [isTooltipVisible, setIsTooltipVisible] = useState(false);
     const phoneNumber = '902122820045'; // Safeline WhatsApp number
@@ -63,7 +65,7 @@ const WhatsAppButton = () => {
                                     <X size={16} />
                                 </button>
                                 <p className="text-sm text-gray-700 font-medium pr-4">
-                                    💬 Sorularınız mı var? WhatsApp üzerinden bize hemen ulaşın!
+                                    💬 {t('whatsapp.tooltip')}
                                 </p>
                                 <div className="absolute -bottom-2 right-8 w-4 h-4 bg-white border-r border-b border-gray-100 transform rotate-45"></div>
                             </motion.div>
@@ -74,7 +76,7 @@ const WhatsAppButton = () => {
                     <button
                         onClick={handleClick}
                         className="group relative flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl shadow-[#25D366]/30 hover:shadow-[#25D366]/50 transition-all duration-300 hover:scale-110"
-                        aria-label="WhatsApp ile iletişime geçin"
+                        aria-label={t('whatsapp.ariaLabel')}
                     >
                         {/* Pulse ring */}
                         <span className="absolute w-full h-full rounded-full bg-[#25D366] animate-ping opacity-30"></span>

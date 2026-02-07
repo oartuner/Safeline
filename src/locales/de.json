@@ -267,5 +267,9 @@
     },
     "action": {
         "explore": "Entdecken"
+    },
+    "whatsapp": {
+        "tooltip": "Haben Sie Fragen? Erreichen Sie uns sofort über WhatsApp!",
+        "ariaLabel": "Kontaktieren Sie uns über WhatsApp"
     }
 }
