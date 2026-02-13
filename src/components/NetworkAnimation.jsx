@@ -12,8 +12,9 @@ const NetworkAnimation = () => {
         let height = canvas.height = canvas.offsetHeight;
 
         const particles = [];
-        const particleCount = 60;
-        const connectionDistance = 200;
+        const isMobile = width < 768;
+        const particleCount = isMobile ? 25 : 60; // Reduce load on mobile
+        const connectionDistance = isMobile ? 100 : 200; // Shorter connections on mobile
         const mouse = { x: null, y: null, radius: 150 };
 
         class Particle {

@@ -42,7 +42,7 @@ const WorldMapAnimation = () => {
                     width="1440"
                     height="810"
                     opacity="0.35"
-                    style={{ filter: 'grayscale(100%) brightness(0.8) sepia(0.5) hue-rotate(190deg) saturate(1)' }}
+                    style={{ filter: 'grayscale(100%) opacity(0.4)' }}
                 />
 
                 <defs>
