@@ -74,12 +74,12 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <a href="#services" className="group px-6 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-primary to-primary-light !text-white rounded-full font-bold shadow-2xl shadow-primary/30 flex items-center justify-center gap-3 sm:gap-4 hover:scale-105 transition-all text-sm sm:text-base">
+            <a href="#contact" className="group px-6 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-primary to-primary-light !text-white rounded-full font-bold shadow-2xl shadow-primary/30 flex items-center justify-center gap-3 sm:gap-4 hover:scale-105 transition-all text-sm sm:text-base">
               <span className="!text-white">{t('hero.cta1')}</span>
               <ArrowRight className="w-5 h-5 !text-white group-hover:translate-x-1 transition-transform" />
             </a>
 
-            <a href="#contact" className="px-6 sm:px-10 py-4 sm:py-5 bg-white/80 backdrop-blur-md border-2 border-border-light text-primary rounded-full font-bold flex items-center justify-center gap-2 hover:border-secondary hover:text-secondary transition-all hover:bg-white shadow-xl text-sm sm:text-base">
+            <a href="#tradeLanes" className="px-6 sm:px-10 py-4 sm:py-5 bg-white/80 backdrop-blur-md border-2 border-border-light text-primary rounded-full font-bold flex items-center justify-center gap-2 hover:border-secondary hover:text-secondary transition-all hover:bg-white shadow-xl text-sm sm:text-base">
               <span>{t('hero.cta2')}</span>
             </a>
           </motion.div>

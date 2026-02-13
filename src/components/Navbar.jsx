@@ -6,7 +6,8 @@ import logo from '../assets/logo.webp';
 
 const languages = [
   { code: 'en', label: 'EN' },
-  { code: 'de', label: 'DE' }
+  { code: 'de', label: 'DE' },
+  { code: 'tr', label: 'TR' }
 ];
 
 const Navbar = () => {
@@ -144,7 +145,7 @@ const Navbar = () => {
                     transition={{ duration: 0.15 }}
                     className="absolute right-0 mt-2 w-24 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-1 z-50"
                   >
-                    {['en', 'de'].map((lng) => (
+                    {languages.map(({ code: lng }) => (
                       <button
                         key={lng}
                         onClick={() => changeLanguage(lng)}
@@ -200,6 +201,25 @@ const Navbar = () => {
                     {item.label}
                   </motion.a>
                 ))}
+
+                {/* Mobile Language Switcher */}
+                <div className="flex items-center justify-center gap-3 py-2 border-y border-gray-100 my-1">
+                  {languages.map(({ code, label }) => (
+                    <button
+                      key={code}
+                      onClick={() => {
+                        changeLanguage(code);
+                        setMobileMenuOpen(false);
+                      }}
+                      className={`px-3 py-1 rounded-lg text-sm font-bold transition-all ${i18n.language === code
+                        ? 'bg-secondary text-white shadow-md shadow-secondary/20'
+                        : 'text-gray-500 hover:bg-gray-100'
+                        }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
 
                 {/* Mobile CTA */}
                 <motion.a

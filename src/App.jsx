@@ -11,6 +11,8 @@ import TrustBanner from './components/TrustBanner';
 import TrustLogos from './components/TrustLogos';
 import CookieConsent from './components/CookieConsent';
 import OurValues from './components/OurValues';
+import WhyChooseUs from './components/WhyChooseUs';
+import TradeLanes from './components/TradeLanes';
 
 function App() {
   React.useEffect(() => {
@@ -35,7 +37,9 @@ function App() {
       <Hero />
       <TrustLogos />
       <FeaturesSection />
+      <TradeLanes />
       <About />
+      <WhyChooseUs />
       <OurValues />
       <Certifications />
       <Contact />

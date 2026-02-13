@@ -9,14 +9,14 @@
         "quote": "GET QUOTE"
     },
     "hero": {
-        "badge": "20+ YEARS OF EXPERIENCE",
-        "title1": "Safe Line,",
-        "title2": "Unlimited Solutions.",
-        "description": "As Safeline Logistics, we add speed, security and innovation to your global trade with integrated logistics solutions in sea, road, air and rail transportation.",
-        "cta1": "OUR SERVICES",
-        "cta2": "GET A QUOTE",
+        "badge": "GERMANY ↔ TÜRKİYE LOGISTICS",
+        "title1": "Your Reliable Link",
+        "title2": "Between Germany and Türkiye.",
+        "description": "Freight forwarding with clarity, speed, and a single point of contact. Sea, road, air, and rail — we handle it all.",
+        "cta1": "REQUEST A QUOTE",
+        "cta2": "OUR TRADE LANES",
         "stat1": "Agency Network",
-        "stat2": "Key Sectors",
+        "stat2": "Years Experience",
         "stat3": "Transport Modes",
         "experience_badge": "YEARS",
         "experience_text": "EXPERIENCE",
@@ -181,55 +181,121 @@
         }
     },
     "services_bento": {
-        "title": "Our Services",
-        "subtitle": "End-to-end integrated logistics solutions for all your global shipping needs",
-        "land": {
-            "title": "Land Freight",
-            "desc": "Reliable and fast road logistics solutions.",
-            "content": "We offer FTL (Full Truck Load), LTL (Less Than Truck Load), FTL Express Service, Super Express Minivan, Out Of Gauge and Heavy Weight Transportation, and Transit Shipments globally."
+        "title": "What We Do",
+        "subtitle": "Focused logistics services — no fluff, just results.",
+        "sea": {
+            "title": "Sea Freight",
+            "desc": "Global ocean freight — FCL, LCL, and project cargo.",
+            "content": "FCL and LCL loading, vessel chartering, special equipment, heavy and out of gauge transport, door to door delivery."
         },
         "air": {
             "title": "Air Freight",
-            "desc": "Fast and secure air cargo services worldwide.",
-            "content": "Our solutions include General Cargo, Charter Flight Service, Cross and Transit Transportation, Hand Carry, Door to Door Delivery, DGR Transportation, and Space Allocation with Airlines."
+            "desc": "Time-critical air cargo with guaranteed capacity.",
+            "content": "General cargo, charter flights, hand carry, DGR transport, and space allocation with airlines."
         },
-        "sea": {
-            "title": "Sea Freight",
-            "desc": "Cost-effective solutions for large volumes.",
-            "content": "We provide FCL and LCL Loading, Special Equipment, Vessel Chartering, Heavy and Out of Gauge Transportation, Door to Door Delivery, Intermodal/Multimodal, and Weekly Regular Services."
+        "land": {
+            "title": "Land Freight",
+            "desc": "FTL and LTL road transport across Europe and Türkiye.",
+            "content": "Full truck load, partial load, express services, heavy weight transport, and transit shipments."
         },
         "rail": {
             "title": "Rail Freight",
-            "desc": "Sustainable and efficient rail transport.",
-            "content": "We support you with Container and Conventional Wagon Transportation, Project Transportation, Cross and Transit Shipment, Value Added Services, and Door to Door Service."
+            "desc": "Sustainable rail freight for high-volume shipments.",
+            "content": "Container and wagon transport, project logistics, cross-border transit, and door to door service."
         },
         "project": {
             "title": "Project Logistics",
-            "desc": "Expert solutions for special and heavy cargo.",
-            "content": "We offer Logistics Consulting, Route Planning, HeavyLift, Project Vessel Chartering, Port Handling, Escort Vehicle Arrangement, and Turnkey Project Solutions."
+            "desc": "Turnkey solutions for heavy-lift and oversized cargo.",
+            "content": "Route planning, heavy-lift, vessel chartering, port handling, escort vehicles, and turnkey delivery."
         },
         "warehouse": {
-            "title": "Warehousing & Customs",
-            "desc": "Secure storage and expert customs support.",
-            "content": "Our modern warehousing facilities feature 24/7 security, inventory management, order fulfillment, and professional customs clearance to streamline your operations."
+            "title": "Customs & Warehousing",
+            "desc": "Customs clearance and bonded warehousing.",
+            "content": "Professional customs support, 24/7 secure storage, inventory management, and order fulfillment."
         }
     },
+    "whyUs": {
+        "tag": "WHY CHOOSE US",
+        "title": "Predictability and Clarity.",
+        "subtitle": "That is exactly what we focus on.",
+        "items": [
+            {
+                "title": "Clear Offers",
+                "desc": "No vague wording — transparent pricing from day one."
+            },
+            {
+                "title": "Honest Transit Times",
+                "desc": "Realistic timelines you can actually plan around."
+            },
+            {
+                "title": "Fast Reaction",
+                "desc": "When something changes, we act immediately — not next week."
+            },
+            {
+                "title": "One Contact Person",
+                "desc": "A single point of contact from quote to delivery. No handoffs."
+            },
+            {
+                "title": "Long-Term Mindset",
+                "desc": "We build partnerships, not one-time transactions."
+            }
+        ],
+        "closing": "We don't promise everything.",
+        "closing2": "We focus on what we can deliver — consistently."
+    },
+    "tradeLanes": {
+        "tag": "TRADE LANES",
+        "title": "Trade Lanes We Focus On",
+        "subtitle": "Specialized expertise on the routes that matter to your business.",
+        "routes": [
+            {
+                "title": "Germany → Türkiye",
+                "desc": "Regular departures, competitive transit times, and customs expertise for DE→TR shipments."
+            },
+            {
+                "title": "Türkiye → Germany",
+                "desc": "Reliable import solutions with full documentation support and door-to-door service."
+            },
+            {
+                "title": "Selected EU Countries",
+                "desc": "Extended network coverage across key European markets through trusted partners."
+            }
+        ],
+        "cta": "Get a Quote for This Route"
+    },
     "contact": {
-        "tag": "CONTACT",
-        "title": "Get in Touch",
-        "subtitle": "Get a quote for your logistics needs.",
-        "main_office": "Main Office",
+        "tag": "GET A QUOTE",
+        "title": "Tell Us About Your Shipment",
+        "subtitle": "We'll get back to you within 24 hours with a clear offer.",
+        "main_office": "Germany Office",
         "kz_office": "Kazakhstan Office",
         "phone": "Phone",
         "email": "Email",
         "form_name": "FULL NAME",
+        "form_company": "COMPANY",
         "form_email": "EMAIL",
-        "form_phone": "PHONE",
+        "form_phone": "PHONE (OPTIONAL)",
         "form_service": "SERVICE TYPE",
-        "form_message": "YOUR MESSAGE",
-        "form_select": "Select...",
-        "form_submit": "SEND QUOTE REQUEST",
-        "address": "Enka Binası, Esentepe Mahallesi, Büyükdere Caddesi No:108 K:9",
+        "form_origin": "ORIGIN (OPTIONAL)",
+        "form_destination": "DESTINATION (OPTIONAL)",
+        "form_details": "ADDITIONAL DETAILS (OPTIONAL)",
+        "form_select": "Select a service...",
+        "form_submit": "REQUEST YOUR QUOTE",
+        "form_sending": "SENDING...",
+        "form_success": "Thank you! We'll get back to you within 24 hours.",
+        "form_error": "Something went wrong. Please try again or call us directly.",
+        "form_required": "This field is required",
+        "form_invalid_email": "Please enter a valid email",
+        "form_origin_placeholder": "e.g. Hamburg, Germany",
+        "form_destination_placeholder": "e.g. Istanbul, Türkiye",
+        "form_details_placeholder": "Tell us about your cargo, timeline, or any special requirements...",
+        "trust_24h": "Response within 24 hours",
+        "trust_no_obligation": "No obligation quote",
+        "trust_secure": "Your data is secure",
+        "trust_call": "Prefer to talk?",
+        "more_details": "+ Add More Details",
+        "less_details": "- Less Details",
+        "address": "Sperberweg 4a, 41468 Neuss",
         "phone_val": "+90 212 282 00 45",
         "fax_val": "+90 212 272 30 20",
         "kz_val": "+7 747 120 87 89",

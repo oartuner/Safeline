@@ -7,14 +7,14 @@
         "quote": "ANGEBOT ANFORDERN"
     },
     "hero": {
-        "badge": "20+ JAHRE ERFAHRUNG",
-        "title1": "Sichere Linie,",
-        "title2": "Unbegrenzte Lösungen.",
-        "description": "Als Safeline Logistics verleihen wir Ihrem globalen Handel Geschwindigkeit, Sicherheit und Innovation mit integrierten Logistiklösungen im See-, Straßen-, Luft- und Schienenverkehr.",
-        "cta1": "UNSERE DIENSTLEISTUNGEN",
-        "cta2": "ANGEBOT ERHALTEN",
+        "badge": "LOGISTIK DEUTSCHLAND ↔ TÜRKEI",
+        "title1": "Ihre zuverlässige Verbindung",
+        "title2": "zwischen Deutschland und der Türkei.",
+        "description": "Spedition mit Klarheit, Geschwindigkeit und einem festen Ansprechpartner. See-, Straßen-, Luft- und Schienenverkehr — wir kümmern uns um alles.",
+        "cta1": "ANGEBOT ANFORDERN",
+        "cta2": "UNSERE HANDELSROUTEN",
         "stat1": "Agenturnetzwerk",
-        "stat2": "Schlüsselsektoren",
+        "stat2": "Jahre Erfahrung",
         "stat3": "Transportarten",
         "experience_badge": "JAHRE",
         "experience_text": "ERFAHRUNG",
@@ -178,55 +178,121 @@
         }
     },
     "services_bento": {
-        "title": "Unsere Dienstleistungen",
-        "subtitle": "Durchgängige integrierte Logistiklösungen für all Ihre globalen Versandanforderungen",
-        "land": {
-            "title": "Landverkehr",
-            "desc": "Zuverlässige und schnelle Straßenlogistik.",
-            "content": "Wir bieten weltweit FTL (Komplettladung), LTL (Teilladung), FTL Express Service, Super Express Minivan, Schwertransporte und Transitverkehre an."
+        "title": "Was wir tun",
+        "subtitle": "Fokussierte Logistikdienstleistungen — kein Ballast, nur Ergebnisse.",
+        "sea": {
+            "title": "Seefracht",
+            "desc": "Globale Seefracht — FCL, LCL und Projektladung.",
+            "content": "FCL- und LCL-Verladung, Schiffscharterung, Spezialausrüstung, Schwer- und Übermaßtransporte, Tür-zu-Tür-Lieferung."
         },
         "air": {
             "title": "Luftfracht",
-            "desc": "Weltweit schnelle und sichere Luftfracht.",
-            "content": "Unsere Lösungen umfassen allgemeine Luftfracht, Charterflüge, Transitverkehre, Hand Carry, Tür-zu-Tür-Lieferungen, DGR (Gefahrgut) und Platzgarantien bei Fluggesellschaften."
+            "desc": "Zeitkritische Luftfracht mit garantierter Kapazität.",
+            "content": "Allgemeine Fracht, Charterflüge, Hand Carry, DGR-Transporte und Platzgarantie bei Fluggesellschaften."
         },
-        "sea": {
-            "title": "Seefracht",
-            "desc": "Kosteneffiziente Lösungen für große Volumina.",
-            "content": "Wir bieten FCL- und LCL-Verladungen, Spezialausrüstung, Schiffscharterung, Schwer- und Übermaßtransporte, Tür-zu-Tür-Lieferungen und wöchentliche Liniendienste."
+        "land": {
+            "title": "Landverkehr",
+            "desc": "FTL- und LTL-Transporte quer durch Europa und die Türkei.",
+            "content": "Komplettladung, Teilladung, Expressdienste, Schwertransporte und Transitverkehre."
         },
         "rail": {
             "title": "Schienenverkehr",
-            "desc": "Nachhaltiger und effizienter Schienentransport.",
-            "content": "Wir unterstützen Sie bei Container- und konventionellen Waggontransporten, Projekttransporten, Transitverladungen, Mehrwertdiensten und im Tür-zu-Tür-Service."
+            "desc": "Nachhaltige Schienenfracht für großvolumige Sendungen.",
+            "content": "Container- und Waggontransport, Projektlogistik, grenzüberschreitender Transit und Tür-zu-Tür-Service."
         },
         "project": {
             "title": "Projektlogistik",
-            "desc": "Fachlösungen für Spezial- und Schwergut.",
-            "content": "Wir bieten Logistikberatung, Routenplanung, HeavyLift, Project Vessel Chartering, Hafenabwicklung, Begleitfahrzeuge und schlüsselfertige Projektlösungen."
+            "desc": "Schlüsselfertige Lösungen für Schwerlast und Übermaßladung.",
+            "content": "Routenplanung, HeavyLift, Schiffscharterung, Hafenabwicklung, Begleitfahrzeuge und schlüsselfertige Lieferung."
         },
         "warehouse": {
-            "title": "Lager & Zoll",
-            "desc": "Sichere Lagerung und Experten-Zollabwicklung.",
-            "content": "Unsere modernen Lagerhäuser bieten 24/7-Sicherheit, Bestandsmanagement, Auftragsabwicklung und professionelle Zollabwicklung für Ihre Logistik."
+            "title": "Zoll & Lagerung",
+            "desc": "Zollabwicklung und zollgebundene Lagerhaltung.",
+            "content": "Professionelle Zollunterstützung, 24/7-sichere Lagerung, Bestandsmanagement und Auftragserfüllung."
         }
     },
+    "whyUs": {
+        "tag": "WARUM WIR",
+        "title": "Planbarkeit und Klarheit.",
+        "subtitle": "Genau darauf konzentrieren wir uns.",
+        "items": [
+            {
+                "title": "Klare Angebote",
+                "desc": "Keine vagen Formulierungen — transparente Preise von Anfang an."
+            },
+            {
+                "title": "Ehrliche Laufzeiten",
+                "desc": "Realistische Zeitpläne, mit denen Sie tatsächlich planen können."
+            },
+            {
+                "title": "Schnelle Reaktion",
+                "desc": "Wenn sich etwas ändert, handeln wir sofort — nicht nächste Woche."
+            },
+            {
+                "title": "Ein Ansprechpartner",
+                "desc": "Ein fester Ansprechpartner vom Angebot bis zur Lieferung. Keine Übergaben."
+            },
+            {
+                "title": "Langfristiges Denken",
+                "desc": "Wir bauen Partnerschaften auf, keine einmaligen Geschäfte."
+            }
+        ],
+        "closing": "Wir versprechen nicht alles.",
+        "closing2": "Wir konzentrieren uns auf das, was wir liefern können — konsequent."
+    },
+    "tradeLanes": {
+        "tag": "HANDELSROUTEN",
+        "title": "Unsere Kernrouten",
+        "subtitle": "Spezialisierte Expertise auf den Routen, die für Ihr Geschäft wichtig sind.",
+        "routes": [
+            {
+                "title": "Deutschland → Türkei",
+                "desc": "Regelmäßige Abfahrten, wettbewerbsfähige Laufzeiten und Zollexpertise für DE→TR-Sendungen."
+            },
+            {
+                "title": "Türkei → Deutschland",
+                "desc": "Zuverlässige Importlösungen mit vollständiger Dokumentationsunterstützung und Tür-zu-Tür-Service."
+            },
+            {
+                "title": "Ausgewählte EU-Länder",
+                "desc": "Erweiterte Netzwerkabdeckung über wichtige europäische Märkte durch vertrauenswürdige Partner."
+            }
+        ],
+        "cta": "Angebot für diese Route"
+    },
     "contact": {
-        "tag": "KONTAKT",
-        "title": "Kontaktieren Sie Uns",
-        "subtitle": "Fordern Sie ein Angebot für Ihre Logistikbedürfnisse an.",
-        "main_office": "Hauptsitz",
+        "tag": "ANGEBOT EINHOLEN",
+        "title": "Erzählen Sie uns von Ihrer Sendung",
+        "subtitle": "Wir melden uns innerhalb von 24 Stunden mit einem klaren Angebot.",
+        "main_office": "Büro Deutschland",
         "kz_office": "Büro Kasachstan",
         "phone": "Telefon",
         "email": "E-Mail",
         "form_name": "VORNAME NACHNAME",
+        "form_company": "UNTERNEHMEN",
         "form_email": "E-MAIL",
-        "form_phone": "TELEFON",
+        "form_phone": "TELEFON (OPTIONAL)",
         "form_service": "DIENSTLEISTUNGSART",
-        "form_message": "IHRE NACHRICHT",
-        "form_select": "Bitte wählen...",
+        "form_origin": "HERKUNFT (OPTIONAL)",
+        "form_destination": "ZIEL (OPTIONAL)",
+        "form_details": "WEITERE DETAILS (OPTIONAL)",
+        "form_select": "Dienstleistung wählen...",
         "form_submit": "ANGEBOT ANFORDERN",
-        "address": "Enka Binası, Esentepe Mahallesi, Büyükdere Caddesi No:108 K:9",
+        "form_sending": "WIRD GESENDET...",
+        "form_success": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden.",
+        "form_error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
+        "form_required": "Dieses Feld ist erforderlich",
+        "form_invalid_email": "Bitte geben Sie eine gültige E-Mail ein",
+        "form_origin_placeholder": "z.B. Hamburg, Deutschland",
+        "form_destination_placeholder": "z.B. Istanbul, Türkei",
+        "form_details_placeholder": "Erzählen Sie uns über Ihre Ladung, Zeitrahmen oder besondere Anforderungen...",
+        "trust_24h": "Antwort innerhalb von 24 Stunden",
+        "trust_no_obligation": "Unverbindliches Angebot",
+        "trust_secure": "Ihre Daten sind sicher",
+        "trust_call": "Lieber sprechen?",
+        "more_details": "+ Weitere Details",
+        "less_details": "- Weniger Details",
+        "address": "Sperberweg 4a, 41468 Neuss",
         "phone_val": "+90 212 282 00 45",
         "fax_val": "+90 212 272 30 20",
         "kz_val": "+7 747 120 87 89",

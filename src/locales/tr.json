@@ -9,14 +9,14 @@
         "quote": "TEKLİF AL"
     },
     "hero": {
-        "badge": "20+ YILLIK DENEYİM",
-        "title1": "Güvenli Hat,",
-        "title2": "Sınırsız Çözüm.",
-        "description": "Safeline Logistics olarak; denizyolu, karayolu, havayolu ve demir yolu taşımacılığında entegre lojistik çözümlerle küresel ticaretinize hız, güvenlik ve yenilikçilik katıyoruz.",
-        "cta1": "HİZMETLERİMİZ",
-        "cta2": "TEKLİF ALIN",
+        "badge": "ALMANYA ↔ TÜRKİYE LOJİSTİK",
+        "title1": "Almanya ve Türkiye",
+        "title2": "Arasındaki Güvenilir Bağınız.",
+        "description": "Netlik, hız ve tek muhatap. Deniz, kara, hava ve demir yolu — hepsini biz yönetiyoruz.",
+        "cta1": "TEKLİF ALIN",
+        "cta2": "TİCARET HATLARIMIZ",
         "stat1": "Acente Ağı",
-        "stat2": "Hizmet Verilen Sektör",
+        "stat2": "Yıllık Deneyim",
         "stat3": "Ulaşım Modu",
         "experience_badge": "YIL",
         "experience_text": "DENEYİM",
@@ -204,22 +204,88 @@
             "content": "Modern depolama tesislerimizde 7/24 güvenlik, envanter yönetimi, sipariş hazırlama ve profesyonel gümrükleme hizmetleri ile operasyonlarınızı kolaylaştırıyoruz."
         }
     },
+    "whyUs": {
+        "tag": "NEDEN BİZ",
+        "title": "Öngörülebilirlik ve Netlik.",
+        "subtitle": "Tam olarak odaklandığımız konu bu.",
+        "items": [
+            {
+                "title": "Net Teklifler",
+                "desc": "Belirsiz ifadeler yok — ilk günden şeffaf fiyatlandırma."
+            },
+            {
+                "title": "Dürüst Transit Süreleri",
+                "desc": "Gerçekten planlanabilir, gerçekçi zaman çizelgeleri."
+            },
+            {
+                "title": "Hızlı Reaksiyon",
+                "desc": "Bir değişiklik olduğunda hemen harekete geçeriz — gelecek hafta değil."
+            },
+            {
+                "title": "Tek Muhatap",
+                "desc": "Tekliften teslimata tek bir iletişim kişisi. Aktarma yok."
+            },
+            {
+                "title": "Uzun Vadeli Bakış Açısı",
+                "desc": "Ortaklıklar kuruyoruz, tek seferlik işlemler değil."
+            }
+        ],
+        "closing": "Her şeyi vaat etmiyoruz.",
+        "closing2": "Tutarlı bir şekilde sunabileceğimiz şeylere odaklanıyoruz."
+    },
+    "tradeLanes": {
+        "tag": "TİCARET HATLARI",
+        "title": "Odaklandığımız Ticaret Hatları",
+        "subtitle": "İşiniz için önemli olan güzergâhlarda uzmanlaşmış deneyim.",
+        "routes": [
+            {
+                "title": "Almanya → Türkiye",
+                "desc": "Düzenli kalkışlar, rekabetçi transit süreler ve DE→TR sevkiyatları için gümrük uzmanlığı."
+            },
+            {
+                "title": "Türkiye → Almanya",
+                "desc": "Tam dokümantasyon desteği ve kapıdan kapıya hizmetle güvenilir ithalat çözümleri."
+            },
+            {
+                "title": "Seçili AB Ülkeleri",
+                "desc": "Güvenilir ortaklar aracılığıyla kilit Avrupa pazarlarında genişletilmiş ağ kapsamı."
+            }
+        ],
+        "cta": "Bu Güzergâh İçin Teklif Alın"
+    },
     "contact": {
-        "tag": "İLETİŞİM",
-        "title": "Bizimle İletişime Geçin",
-        "subtitle": "Lojistik ihtiyaçlarınız için hemen teklif alın.",
-        "main_office": "Merkez Ofis",
+        "tag": "TEKLİF ALIN",
+        "title": "Sevkiyatınızı Anlatın",
+        "subtitle": "24 saat içinde net bir teklifle size döneceğiz.",
+        "main_office": "Almanya Ofisi",
         "kz_office": "Kazakistan Ofisi",
         "phone": "Telefon",
         "email": "E-posta",
         "form_name": "AD SOYAD",
+        "form_company": "ŞİRKET",
         "form_email": "E-POSTA",
-        "form_phone": "TELEFON",
+        "form_phone": "TELEFON (OPSİYONEL)",
         "form_service": "HİZMET TİPİ",
-        "form_message": "MESAJINIZ",
-        "form_select": "Seçiniz...",
+        "form_origin": "ÇIKIŞ (OPSİYONEL)",
+        "form_destination": "VARIŞ (OPSİYONEL)",
+        "form_details": "EK BİLGİLER (OPSİYONEL)",
+        "form_select": "Hizmet seçiniz...",
         "form_submit": "TEKLİF TALEBİ GÖNDER",
-        "address": "Enka Binası, Esentepe Mahallesi, Büyükdere Caddesi No:108 K:9",
+        "form_sending": "GÖNDERİLİYOR...",
+        "form_success": "Teşekkürler! 24 saat içinde size dönüş yapacağız.",
+        "form_error": "Bir hata oluştu. Lütfen tekrar deneyin veya bizi doğrudan arayın.",
+        "form_required": "Bu alan zorunludur",
+        "form_invalid_email": "Lütfen geçerli bir e-posta adresi girin",
+        "form_origin_placeholder": "örn. Hamburg, Almanya",
+        "form_destination_placeholder": "örn. İstanbul, Türkiye",
+        "form_details_placeholder": "Kargonuz, zaman çizelgeniz veya özel gereksinimleriniz hakkında bilgi verin...",
+        "trust_24h": "24 saat içinde yanıt",
+        "trust_no_obligation": "Bağlayıcı olmayan teklif",
+        "trust_secure": "Verileriniz güvende",
+        "trust_call": "Konuşmayı mı tercih edersiniz?",
+        "more_details": "+ Daha Fazla Bilgi Ekle",
+        "less_details": "- Daha Az Bilgi",
+        "address": "Sperberweg 4a, 41468 Neuss",
         "phone_val": "+90 212 282 00 45",
         "fax_val": "+90 212 272 30 20",
         "kz_val": "+7 747 120 87 89",
