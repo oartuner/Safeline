@@ -57,7 +57,16 @@
         "quality_title": "KALİTE POLİTİKASI",
         "quality_desc": "Müşteri Memnuniyeti: Müşteri odaklı bir yaklaşım benimsiyor ve müşteri memnuniyetini en üst düzeyde tutuyoruz. Müşteri ihtiyaçlarını anlamak, beklentilerini karşılamak ve onlara değer katmak için çalışıyoruz.",
         "satisfaction_title": "MÜŞTERİ MEMNUNİYETİ",
-        "satisfaction_desc": "Şeffaf ve Kaliteli Hizmet: Müşterilerimize ihtiyaç ve beklentileri doğrultusunda açık, şeffaf, güvenilir ve kaliteli hizmet sunuyoruz."
+        "satisfaction_desc": "Şeffaf ve Kaliteli Hizmet: Müşterilerimize ihtiyaç ve beklentileri doğrultusunda açık, şeffaf, güvenilir ve kaliteli hizmet sunuyoruz.",
+        "stat_experience": "Yıllık Tecrübe",
+        "bridging_markets": "Pazarları Mükemmellikle Buluşturuyoruz",
+        "stat_certified": "Sertifikalı",
+        "stat_service_types": "Hizmet Türü",
+        "values_subtitle": "Lojistikte mükemmellik taahhüdümüzü yönlendiren ilkeler",
+        "explore_values": "{{count}} Temel Değerimizi Keşfedin",
+        "core_values_drawer_title": "Temel Değerlerimiz",
+        "core_values_drawer_subtitle": "Yaptığımız her şeyin temeli",
+        "close": "Kapat"
     },
     "certifications": {
         "tag": "SERTİFİKALAR & ÜYELİKLER",
@@ -327,5 +336,8 @@
     "whatsapp": {
         "tooltip": "Sorularınız mı var? WhatsApp üzerinden bize hemen ulaşın!",
         "ariaLabel": "WhatsApp ile iletişime geçin"
+    },
+    "action": {
+        "explore": "Keşfet"
     }
 }

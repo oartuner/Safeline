@@ -37,7 +37,7 @@ const About = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5 blur-3xl rounded-full pointer-events-none" />
 
             <h3 className="relative text-3xl sm:text-4xl font-black mb-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block">
-              Bridging Markets with Excellence
+              {t('about.bridging_markets')}
             </h3>
 
             <div className="grid md:grid-cols-2 gap-6 relative z-10 text-left">
