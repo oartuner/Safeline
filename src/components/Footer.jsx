@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import logo from '../assets/logo.webp';
+import logo from '../assets/logo-horizontal.webp';
 import { Linkedin, Instagram, Twitter, Send } from 'lucide-react';
 
 const Footer = () => {

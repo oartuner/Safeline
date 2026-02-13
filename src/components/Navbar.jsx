@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Sparkles } from 'lucide-react';
-import logo from '../assets/logo.webp';
+import logo from '../assets/logo-horizontal.webp';
 
 const languages = [
   { code: 'en', label: 'EN' },
@@ -80,8 +80,8 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Safeline Logistics"
-              className="h-[72px] w-auto object-contain block"
-              style={{ height: '72px', width: 'auto' }}
+              className="h-[50px] w-auto object-contain block"
+              style={{ height: '50px', width: 'auto' }}
             />
           </a>
 
